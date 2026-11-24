@@ -3670,10 +3670,17 @@ p, .sub, .lede, .desc, blockquote {
     .scue {
         display: none !important;
     }
-    .top {
+    .up {
         bottom: 16px !important;
         right: 14px !important;
         z-index: 99 !important;
+    }
+    .top {
+        bottom: auto !important;
+        pointer-events: none !important;
+    }
+    .top .bar {
+        pointer-events: auto !important;
     }
 
     /* Action Buttons in Hero & CTAs (.acts) */
@@ -4346,4 +4353,24 @@ p, .sub, .lede, .desc, blockquote {
 .dock-web-btn b,
 .dock-widget-right .dock-web-btn span {
     color: var(--forest, #263B35) !important;
+}
+
+/* Defensive pointer-events guards for mobile drawer & scrim */
+.scrim {
+    pointer-events: none !important;
+}
+.scrim.on {
+    pointer-events: auto !important;
+}
+.drawer {
+    pointer-events: none;
+}
+.drawer.on {
+    pointer-events: auto;
+}
+.top {
+    pointer-events: none;
+}
+.top .bar {
+    pointer-events: auto;
 }

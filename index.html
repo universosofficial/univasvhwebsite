@@ -1323,10 +1323,17 @@ header.top {
     .scue {
         display: none !important;
     }
-    .top {
+    .up {
         bottom: 16px !important;
         right: 14px !important;
         z-index: 99 !important;
+    }
+    .top {
+        bottom: auto !important;
+        pointer-events: none !important;
+    }
+    .top .bar {
+        pointer-events: auto !important;
     }
 
     /* Action Buttons in Hero & CTAs (.acts) */
