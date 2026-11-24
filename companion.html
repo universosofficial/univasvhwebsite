@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AI Virtual Companion — Virtual Human</title>
+        <meta name="description"
+              content="Discover the Virtual Human AI Companion area. Experience relational continuity, proactive personalized check-ins, and deep contextual memory tailored to your journey.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Albert+Sans:wght@400;500;600&display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet" href="templatemo-633-celadon-style.css?v=20261124_mobile_v2">
+            <style>
+            /* ---------- Celadon Claymorphism Multi-page Overrides ---------- */
+            .nav a.active {
+                color: var(--jade-ink) !important;
+                font-weight: 600 !important;
+            }
+            .plans.grid-2 {
+                display: grid !important;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+                gap: 24px !important;
+            }
+            .plans.grid-3 {
+                display: grid !important;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+                gap: 24px !important;
+            }
+            .plans.grid-4 {
+                display: grid !important;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+                gap: 22px !important;
+            }
+            @media (max-width: 900px) {
+                .plans.grid-2, .plans.grid-3, .plans.grid-4 {
+                    grid-template-columns: 1fr !important;
+                }
+            }
+            .plan.identity-card {
+                display: flex !important;
+                flex-direction: column !important;
+                min-height: 100% !important;
+                text-align: left !important;
+                transition: transform 0.28s var(--ease), box-shadow 0.28s var(--ease) !important;
+            }
+            .plan.identity-card:hover {
+                transform: translateY(-6px) !important;
+                box-shadow: 0 34px 50px -22px rgba(35, 45, 60, .42), var(--lip) !important;
+            }
+            .plan.identity-card blockquote {
+                margin: 16px 0 !important;
+                font-size: 1.02rem !important;
+                line-height: 1.52 !important;
+                color: var(--ink) !important;
+                font-weight: 300 !important;
+                font-family: 'Outfit', sans-serif !important;
+                flex-grow: 1 !important;
+            }
+            .matrix-wrapper {
+                background: linear-gradient(158deg, #FBFDFF, #F0F5FD 46%, #E6EDFA) !important;
+                border-radius: 40px !important;
+                box-shadow: 0 40px 60px -28px rgba(35, 45, 60, .42), inset 3px 4px 6px rgba(255, 255, 255, .98), inset -5px -7px 14px rgba(35, 45, 60, .11) !important;
+                padding: 44px 36px !important;
+                margin-top: 36px !important;
+                overflow-x: auto !important;
+            }
+            .matrix-table {
+                width: 100% !important;
+                min-width: 620px !important;
+                border-collapse: collapse !important;
+                text-align: left !important;
+                font-size: 0.95rem !important;
+                color: var(--ink) !important;
+            }
+            .matrix-table th {
+                font-family: 'Outfit', sans-serif !important;
+                font-weight: 600 !important;
+                font-size: 1.08rem !important;
+                color: var(--ink) !important;
+                padding: 18px 20px !important;
+                border-bottom: 2px solid rgba(42, 122, 98, 0.22) !important;
+            }
+            .matrix-table td {
+                padding: 16px 20px !important;
+                border-bottom: 1px solid rgba(35, 45, 60, 0.08) !important;
+                color: var(--ink-2) !important;
+            }
+            .matrix-table tr:hover td {
+                background: rgba(255, 255, 255, 0.45) !important;
+            }
+            .matrix-table tr:last-child td {
+                border-bottom: none !important;
+            }
+            .matrix-table td.center, .matrix-table th.center {
+                text-align: center !important;
+            }
+            .check-pill {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                width: 28px !important;
+                height: 28px !important;
+                border-radius: 99px !important;
+                background: rgba(42, 122, 98, 0.12) !important;
+                color: var(--jade-ink) !important;
+                font-weight: 700 !important;
+                font-size: 0.9rem !important;
+            }
+            .cross-pill {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                width: 28px !important;
+                height: 28px !important;
+                border-radius: 99px !important;
+                background: rgba(35, 45, 60, 0.06) !important;
+                color: var(--ink-2) !important;
+                font-size: 0.95rem !important;
+            }
+            .sim-box {
+                background: linear-gradient(158deg, #FBFDFF, #F0F5FD 46%, #E6EDFA) !important;
+                border-radius: 40px !important;
+                box-shadow: 0 40px 60px -28px rgba(35, 45, 60, .42), inset 3px 4px 6px rgba(255, 255, 255, .98), inset -5px -7px 14px rgba(35, 45, 60, .11) !important;
+                padding: 38px 32px !important;
+                margin-top: 36px !important;
+                position: relative !important;
+                overflow: hidden !important;
+            }
+            .sim-header {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: space-between !important;
+                padding-bottom: 20px !important;
+                border-bottom: 1px solid rgba(42, 122, 98, 0.16) !important;
+                margin-bottom: 24px !important;
+                flex-wrap: wrap !important;
+                gap: 14px !important;
+            }
+            .sim-companion-info {
+                display: flex !important;
+                align-items: center !important;
+                gap: 14px !important;
+            }
+            .sim-avatar {
+                width: 48px !important;
+                height: 48px !important;
+                border-radius: 18px !important;
+                background: linear-gradient(135deg, var(--jade), #38A384) !important;
+                color: #fff !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                font-weight: 600 !important;
+                font-size: 1.2rem !important;
+                box-shadow: var(--lift-jade) !important;
+            }
+            .sim-meta b {
+                display: block !important;
+                font-size: 1.05rem !important;
+                color: var(--ink) !important;
+            }
+            .sim-meta span {
+                font-size: 0.82rem !important;
+                color: var(--ink-2) !important;
+            }
+            .sim-status {
+                display: inline-flex !important;
+                align-items: center !important;
+                gap: 8px !important;
+                padding: 7px 16px !important;
+                border-radius: 99px !important;
+                background: rgba(42, 122, 98, 0.1) !important;
+                color: var(--jade-ink) !important;
+                font-size: 0.82rem !important;
+                font-weight: 500 !important;
+            }
+            .pulse-dot {
+                width: 8px !important;
+                height: 8px !important;
+                border-radius: 99px !important;
+                background: var(--jade) !important;
+                box-shadow: 0 0 0 0 rgba(42, 122, 98, 0.5) !important;
+                animation: pulse 2s infinite !important;
+            }
+            @keyframes pulse {
+                0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(42, 122, 98, 0.6); }
+                70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(42, 122, 98, 0); }
+                100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(42, 122, 98, 0); }
+            }
+            .sim-dialogue {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 20px !important;
+                margin-bottom: 28px !important;
+            }
+            .chat-bubble {
+                border-radius: 22px !important;
+                padding: 20px 24px !important;
+                font-size: 0.95rem !important;
+                line-height: 1.55 !important;
+                position: relative !important;
+            }
+            .chat-bubble.user {
+                align-self: flex-end !important;
+                background: var(--sunk) !important;
+                box-shadow: var(--well) !important;
+                color: var(--ink) !important;
+                max-width: 82% !important;
+            }
+            .chat-bubble.companion {
+                align-self: flex-start !important;
+                background: linear-gradient(158deg, #FFFFFF, var(--plate)) !important;
+                box-shadow: var(--clay-sm), var(--lip) !important;
+                color: var(--ink) !important;
+                max-width: 88% !important;
+            }
+            .chat-bubble .author {
+                display: block !important;
+                font-size: 0.76rem !important;
+                font-weight: 600 !important;
+                text-transform: uppercase !important;
+                letter-spacing: 0.08em !important;
+                margin-bottom: 6px !important;
+            }
+            .chat-bubble.user .author {
+                color: var(--ink-2) !important;
+            }
+            .chat-bubble.companion .author {
+                color: var(--jade-ink) !important;
+            }
+            .chat-bubble p {
+                margin: 0 !important;
+                color: var(--ink) !important;
+            }
+            .chat-memory-badge {
+                margin-top: 14px !important;
+                display: inline-flex !important;
+                align-items: center !important;
+                gap: 7px !important;
+                padding: 6px 14px !important;
+                border-radius: 99px !important;
+                background: rgba(42, 122, 98, 0.1) !important;
+                color: var(--jade-ink) !important;
+                font-size: 0.78rem !important;
+                font-weight: 500 !important;
+            }
+            .sim-prompts {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                align-items: center !important;
+                gap: 10px !important;
+                padding-top: 20px !important;
+                border-top: 1px solid rgba(42, 122, 98, 0.14) !important;
+            }
+            .sim-prompt-btn {
+                border: none !important;
+                outline: none !important;
+                padding: 10px 18px !important;
+                border-radius: 99px !important;
+                background: var(--gloss) !important;
+                box-shadow: var(--lift), var(--lip) !important;
+                color: var(--ink) !important;
+                font-family: 'Outfit', sans-serif !important;
+                font-weight: 500 !important;
+                font-size: 0.88rem !important;
+                cursor: pointer !important;
+                transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease), background 0.2s var(--ease) !important;
+            }
+            .sim-prompt-btn:hover {
+                transform: translateY(-2px) !important;
+                box-shadow: var(--lift-hi), var(--lip) !important;
+            }
+            .sim-prompt-btn.active {
+                background: var(--jade) !important;
+                color: #fff !important;
+                box-shadow: var(--lift-jade-hi), var(--lip-jade) !important;
+            }
+            .email-card {
+                background: linear-gradient(160deg, #FFFFFF, var(--plate) 48%, var(--plate-2)) !important;
+                border-radius: 32px !important;
+                padding: 32px 34px !important;
+                box-shadow: var(--clay), var(--lip) !important;
+                text-align: left !important;
+                margin-top: 32px !important;
+            }
+            .email-header {
+                border-bottom: 1px solid rgba(42, 122, 98, 0.14) !important;
+                padding-bottom: 16px !important;
+                margin-bottom: 20px !important;
+            }
+            .email-field {
+                display: flex !important;
+                gap: 12px !important;
+                font-size: 0.88rem !important;
+                margin-bottom: 6px !important;
+            }
+            .email-field b {
+                color: var(--ink-2) !important;
+                min-width: 65px !important;
+            }
+            .email-field span {
+                color: var(--ink) !important;
+            }
+            .email-body {
+                font-size: 0.94rem !important;
+                line-height: 1.65 !important;
+                color: var(--ink) !important;
+            }
+            .email-body p {
+                margin: 0 0 14px 0 !important;
+            }
+        
+/* Reset playful organic stagger jitter for chips inside cards */
+.plan .chips .chip,
+.plan .chip,
+.identity-card .chips .chip {
+    transform: none !important;
+}
+.plan .chips .chip:hover,
+.plan .chip:hover,
+.identity-card .chips .chip:hover {
+    transform: translateY(-2px) !important;
+}
+
+        
+
+
+/* ==========================================================================
+   VIRTUAL HUMAN MASTER BRAND HARMONY OVERRIDES
+   Exact Brand Palette: Warm Ivory, Soft Sage, Muted Sage, Deep Forest Green,
+   Muted Clay, Soft Charcoal, Warm Sand, White.
+   ========================================================================== */
+
+/* 1. Body & Universal Surfaces */
+body {
+    background: #F5F2EA !important;
+    color: #303631 !important;
+}
+
+h1, h2, h3, h4, .h2 {
+    color: #263B35 !important;
+}
+
+p, .sub, .lede, .desc, blockquote {
+    color: #303631 !important;
+}
+
+.sub, .lede, .desc, .hint, .note {
+    color: #4A544C !important;
+}
+
+/* 2. Top Navigation Bar */
+.bar {
+    background: rgba(245, 242, 234, 0.92) !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 16px 32px -12px rgba(38, 59, 53, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    backdrop-filter: blur(14px) !important;
+}
+.brand {
+    color: #263B35 !important;
+}
+.mark {
+    background: linear-gradient(155deg, #324D45, #263B35 55%, #1B2A26) !important;
+    box-shadow: 0 8px 14px -8px rgba(38, 59, 53, .5), inset 1px 2px 3px rgba(255, 255, 255, .4) !important;
+}
+.mark::after {
+    background: rgba(245, 242, 234, 0.6) !important;
+}
+.nav a {
+    color: #303631 !important;
+}
+.nav a:hover, .nav a.active {
+    color: #263B35 !important;
+    background: rgba(229, 236, 228, 0.8) !important;
+    box-shadow: inset 1px 1px 2px rgba(38, 59, 53, 0.08) !important;
+}
+
+/* 3. Primary & Secondary Buttons */
+.btn.solid, .chat-persona-btn {
+    background: linear-gradient(155deg, #324D45 0%, #263B35 100%) !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 12px 24px -8px rgba(38, 59, 53, 0.42), var(--lip-jade) !important;
+    border: none !important;
+}
+.btn.solid:hover, .chat-persona-btn:hover {
+    background: #1B2A26 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 16px 30px -8px rgba(38, 59, 53, 0.52), var(--lip-jade) !important;
+}
+.btn {
+    background: rgba(245, 242, 234, 0.95) !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.18) !important;
+    box-shadow: 0 6px 14px -6px rgba(38, 59, 53, 0.12), var(--lip) !important;
+}
+.btn:hover {
+    background: #D8E2D8 !important;
+    color: #1B2A26 !important;
+    transform: translateY(-2px) !important;
+}
+
+/* 4. 3D Gallery Hero (Refined Warm Sand & Ivory, No Muddy Beige) */
+.gallery-room {
+    background: radial-gradient(circle at 50% 25%, #F5F2EA 0%, #E8E1D6 60%, #DDD5C8 100%) !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 44px 84px -24px rgba(38, 59, 53, 0.18), inset 0 2px 4px rgba(255, 255, 255, 0.95), inset 0 -4px 12px rgba(38, 59, 53, 0.04) !important;
+    color: #303631 !important;
+}
+.room-backplate {
+    border: 1px solid rgba(216, 226, 216, 0.6) !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(229, 236, 228, 0.25) 100%) !important;
+    box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.55), 0 20px 40px rgba(38, 59, 53, 0.04) !important;
+}
+.room-tagline {
+    color: #4A544C !important;
+}
+.room-badge-bubble {
+    background: rgba(245, 242, 234, 0.88) !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 12px 24px rgba(38, 59, 53, 0.08) !important;
+}
+.bubble-play {
+    background: #263B35 !important;
+}
+.bubble-play svg {
+    fill: #FFFFFF !important;
+}
+.switcher-btn {
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    background: rgba(245, 242, 234, 0.92) !important;
+    color: #263B35 !important;
+    box-shadow: 0 8px 18px rgba(38, 59, 53, 0.08) !important;
+}
+.switcher-btn:hover {
+    background: #FFFFFF !important;
+    color: #1B2A26 !important;
+}
+.side-card {
+    border: 1px solid rgba(216, 226, 216, 0.6) !important;
+    background: #E8E1D6 !important;
+    box-shadow: 0 20px 36px rgba(38, 59, 53, 0.12) !important;
+}
+.meet-title {
+    color: #FFFFFF !important;
+    text-shadow: 0 8px 32px rgba(38, 59, 53, 0.3) !important;
+}
+.room-dock {
+    border-top: 1px solid rgba(216, 226, 216, 0.6) !important;
+}
+.dock-widget-left {
+    background: rgba(255, 255, 255, 0.75) !important;
+    border: 1px dashed rgba(38, 59, 53, 0.22) !important;
+}
+.dock-icon-circle {
+    background: #E5ECE4 !important;
+}
+.dock-icon-circle svg {
+    stroke: #263B35 !important;
+}
+.dock-widget-acts button {
+    background: #FFFFFF !important;
+    border: 1px solid #D8E2D8 !important;
+    color: #263B35 !important;
+}
+.dock-widget-acts button:hover {
+    background: #E5ECE4 !important;
+}
+.dock-center-text {
+    color: #303631 !important;
+}
+.dock-widget-right span {
+    color: #5E6960 !important;
+}
+.dock-trust-tag {
+    color: #263B35 !important;
+}
+
+/* 5. Cards & Section Surfaces */
+.plan, .identity-card {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.1) !important;
+    box-shadow: 0 22px 38px -20px rgba(38, 59, 53, 0.12), inset 2px 3px 4px rgba(255, 255, 255, 0.95) !important;
+}
+.plan.hot {
+    background: linear-gradient(165deg, #FFFFFF 0%, #FAF8F4 50%, #F5F2EA 100%) !important;
+    border-top: 4px solid #263B35 !important;
+}
+.statplate {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.1) !important;
+    box-shadow: 0 20px 40px -20px rgba(38, 59, 53, 0.1), inset 0 1px 2px rgba(255, 255, 255, 0.95) !important;
+}
+.matrix-wrapper {
+    background: linear-gradient(158deg, #FFFFFF, #F5F2EA 46%, #E5ECE4) !important;
+    border-radius: 40px !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 36px 54px -24px rgba(38, 59, 53, 0.14), inset 3px 4px 6px rgba(255, 255, 255, .98) !important;
+}
+.matrix-table th {
+    color: #263B35 !important;
+    border-bottom: 2px solid rgba(38, 59, 53, 0.18) !important;
+}
+.matrix-table td {
+    color: #303631 !important;
+    border-bottom: 1px solid rgba(38, 59, 53, 0.08) !important;
+}
+.matrix-table tr:hover td {
+    background: rgba(255, 255, 255, 0.6) !important;
+}
+.check-pill {
+    background: rgba(38, 59, 53, 0.12) !important;
+    color: #263B35 !important;
+}
+.cross-pill {
+    background: rgba(48, 54, 49, 0.06) !important;
+    color: #5E6960 !important;
+}
+
+/* 6. Email Feature Card */
+.email-card {
+    background: linear-gradient(160deg, #FFFFFF, #F5F2EA 50%, #E5ECE4) !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 24px 44px -20px rgba(38, 59, 53, 0.14), inset 2px 3px 4px rgba(255, 255, 255, 0.95) !important;
+}
+.email-header {
+    border-bottom: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+.email-field b {
+    color: #4A544C !important;
+}
+.email-field span {
+    color: #303631 !important;
+}
+.email-body {
+    color: #303631 !important;
+}
+
+/* 7. Simulation Box in companion.html */
+.sim-box {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(216, 226, 216, 0.85) !important;
+    box-shadow: 0 32px 56px -24px rgba(38, 59, 53, 0.14), inset 2px 3px 4px rgba(255, 255, 255, 0.95) !important;
+}
+.sim-header {
+    border-bottom: 1px solid rgba(38, 59, 53, 0.1) !important;
+}
+.sim-meta b {
+    color: #263B35 !important;
+}
+.sim-meta span {
+    color: #5E6960 !important;
+}
+.pulse-dot {
+    background: #263B35 !important;
+}
+.chat-bubble.user {
+    background: #E5ECE4 !important;
+    color: #303631 !important;
+    border: 1px solid rgba(38, 59, 53, 0.08) !important;
+}
+.chat-bubble.companion {
+    background: #F5F2EA !important;
+    color: #303631 !important;
+    border: 1px solid rgba(38, 59, 53, 0.1) !important;
+}
+.chat-bubble .author {
+    color: #263B35 !important;
+    font-weight: 600 !important;
+}
+.chat-memory-badge {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+.sim-mode-btn {
+    background: rgba(245, 242, 234, 0.95) !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.16) !important;
+}
+.sim-mode-btn.active {
+    background: #263B35 !important;
+    color: #FFFFFF !important;
+    border-color: #263B35 !important;
+}
+
+/* 8. Pips, Eyebrows & Accents */
+.eyebrow {
+    color: #263B35 !important;
+    background: #E5ECE4 !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+.pill {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+.pill b { background: #263B35 !important; color: #FFFFFF !important; padding: 3px 10px !important; border-radius: 99px !important; }
+.chips .chip {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+    color: #303631 !important;
+}
+.chips .chip:hover {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+}
+.tile.t-jade, .tile.t-sky {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+}
+.tile.t-coral {
+    background: rgba(214, 165, 141, 0.22) !important;
+    color: #8F553D !important;
+}
+.face.t-jade, .face.t-sky {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+}
+.face.t-coral {
+    background: rgba(214, 165, 141, 0.25) !important;
+    color: #8F553D !important;
+}
+
+/* 9. Quotes (Testimonial Rail) */
+.quote {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.08) !important;
+}
+.quote.tint {
+    background: #E5ECE4 !important;
+}
+.qtop .co {
+    color: #4A544C !important;
+}
+.qtop .result {
+    color: #263B35 !important;
+}
+
+/* 10. Final Conversion Section & Footers */
+.close-plate {
+    background: linear-gradient(160deg, #FFFFFF 0%, #F5F2EA 50%, #E8E1D6 100%) !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+    box-shadow: 0 34px 60px -24px rgba(38, 59, 53, 0.16) !important;
+}
+.close-plate .field {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.18) !important;
+    color: #303631 !important;
+}
+.close-plate .field:focus {
+    outline: 2px solid #263B35 !important;
+}
+.footlinks {
+    background: #E5ECE4 !important;
+    border: 1px solid rgba(38, 59, 53, 0.1) !important;
+}
+.footlinks a {
+    color: #303631 !important;
+}
+.footlinks a:hover {
+    color: #263B35 !important;
+}
+.footbar p, .footbar a {
+    color: #5E6960 !important;
+}
+.footbar a:hover {
+    color: #263B35 !important;
+}
+.sbtn {
+    background: rgba(245, 242, 234, 0.95) !important;
+    border: 1px solid rgba(38, 59, 53, 0.18) !important;
+    color: #263B35 !important;
+}
+.scue {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+
+
+/* ==========================================================================
+   VIRTUAL HUMAN — MASTER MOBILE RESPONSIVE ENGINE (320px - 768px)
+   ========================================================================== */
+
+/* 0. Header & Drawer Navigation */
+header.top {
+    z-index: 95 !important;
+}
+.drawer {
+    z-index: 90 !important;
+    background: #F5F2EA !important;
+    box-shadow: -10px 0 30px rgba(38, 59, 53, 0.18) !important;
+}
+.drawer a:not(.btn) {
+    color: #263B35 !important;
+}
+.drawer a:not(.btn):hover, .drawer a.active {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+}
+.drawer-close {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 99px !important;
+    background: #E5ECE4 !important;
+    border: 1px solid rgba(38, 59, 53, 0.16) !important;
+    color: #263B35 !important;
+    font-size: 1.5rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    line-height: 1 !important;
+    transition: background 0.2s ease !important;
+}
+.drawer-close:hover {
+    background: #D8E2D8 !important;
+}
+
+/* Universal Eyebrow & Pill Contrast Fix */
+.pill {
+    background: #E5ECE4 !important;
+    border: 1px solid rgba(38, 59, 53, 0.14) !important;
+    color: #263B35 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 6px 14px 6px 8px !important;
+    max-width: 95% !important;
+    white-space: normal !important;
+}
+.pill b {
+    background: #263B35 !important;
+    color: #FFFFFF !important;
+    padding: 3px 10px !important;
+    border-radius: 99px !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+/* Simulator button classes in companion.html */
+.sim-prompt-btn, .sim-mode-btn {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.16) !important;
+    padding: 10px 18px !important;
+    border-radius: 99px !important;
+    font-size: 0.88rem !important;
+    font-family: inherit !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+.sim-prompt-btn:hover, .sim-mode-btn:hover {
+    background: #D8E2D8 !important;
+    color: #263B35 !important;
+}
+.sim-prompt-btn.active, .sim-mode-btn.active {
+    background: #263B35 !important;
+    color: #FFFFFF !important;
+    border-color: #263B35 !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 12px rgba(38, 59, 53, 0.25) !important;
+}
+
+/* Card Button Alignment Across Columns */
+.plan {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+.plan .btn, .plan.identity-card .btn {
+    margin-top: auto !important;
+}
+
+/* Word-break for email */
+.email-field span {
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+}
+.matrix-scroll-hint {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    /* Staves Accordion Mobile Engine */
+    .slabrow {
+        flex-direction: column !important;
+        height: auto !important;
+        gap: 12px !important;
+    }
+    .stave {
+        width: 100% !important;
+        border-radius: 24px !important;
+        background: #F5F2EA !important;
+        border: 1px solid rgba(216, 226, 216, 0.85) !important;
+        box-shadow: 0 8px 18px -8px rgba(38, 59, 53, 0.08) !important;
+        overflow: hidden !important;
+        transition: background 0.3s ease !important;
+    }
+    .stave.open {
+        background: #FFFFFF !important;
+        box-shadow: 0 16px 32px -12px rgba(38, 59, 53, 0.12) !important;
+    }
+    .stave:not(.open) .bodywrap {
+        display: none !important;
+        height: 0 !important;
+        max-height: 0 !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .stave:not(.open) .bodywrap > .body {
+        display: none !important;
+        height: 0 !important;
+        overflow: hidden !important;
+    }
+    .spine {
+        padding: 16px 18px !important;
+        gap: 12px !important;
+    }
+    .spine .st {
+        font-size: 1.05rem !important;
+        color: #263B35 !important;
+        font-weight: 600 !important;
+    }
+    .stave.open .bodywrap {
+        display: block !important;
+        padding: 0 20px 22px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 1. Safe Anchor Scrolling (Header Clearances) */
+    section, [id] {
+        scroll-margin-top: 88px !important;
+    }
+
+    /* Fixed Top Bar on Mobile */
+    .bar {
+        padding: 10px 14px !important;
+        background: rgba(245, 242, 234, 0.96) !important;
+        border-bottom: 1px solid rgba(38, 59, 53, 0.12) !important;
+    }
+    .brand {
+        font-size: 1.15rem !important;
+    }
+
+    /* Floating UI Controls: avoid collisions */
+    .sfx {
+        bottom: 16px !important;
+        left: 14px !important;
+        z-index: 99 !important;
+    }
+    .scue {
+        display: none !important;
+    }
+    .top {
+        bottom: 16px !important;
+        right: 14px !important;
+        z-index: 99 !important;
+    }
+
+    /* Action Buttons in Hero & CTAs (.acts) */
+    .acts {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+        align-items: stretch !important;
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 22px auto !important;
+    }
+    .acts .btn {
+        width: 100% !important;
+        text-align: center !important;
+        margin: 0 !important;
+        padding: 14px 20px !important;
+    }
+
+    /* Grid Stacking for all card collections */
+    .plans.grid-2, .plans.grid-3, .plans.grid-4, .plans {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 18px !important;
+        width: 100% !important;
+    }
+    .plan {
+        width: 100% !important;
+        padding: 24px 18px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Problem and Opportunity statplate in index.html */
+    .statplate, #perspective .statplate {
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        padding: 16px !important;
+    }
+    .statplate .stat {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 24px 20px !important;
+        border-radius: 24px !important;
+    }
+
+    /* 2. Homepage 3D Gallery Hero (index.html) */
+    .gallery-hero-wrap {
+        padding: 82px 10px 36px !important;
+    }
+    .gallery-room {
+        padding: 20px 14px 22px !important;
+        border-radius: 28px !important;
+        background: radial-gradient(circle at 50% 25%, #E3DBD2 0%, #D0C6BB 55%, #BFAF9F 100%) !important;
+    }
+    .room-tagline {
+        position: static !important;
+        max-width: 100% !important;
+        margin: 0 auto 12px !important;
+        text-align: center !important;
+        font-size: 0.9rem !important;
+        line-height: 1.45 !important;
+        color: #2E2924 !important;
+        padding: 0 8px !important;
+    }
+    .room-badge-bubble {
+        position: static !important;
+        display: inline-flex !important;
+        justify-content: center !important;
+        margin: 0 auto 16px !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+    }
+    .gallery-stage {
+        min-height: auto !important;
+        height: auto !important;
+        margin-top: 6px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        position: relative !important;
+        padding: 0 !important;
+    }
+    .room-backplate {
+        width: 90% !important;
+        height: 58% !important;
+        top: 6% !important;
+        border-radius: 20px !important;
+    }
+    .side-card {
+        display: none !important;
+    }
+    .center-persona-wrap {
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .center-portrait {
+        width: 250px !important;
+        height: 310px !important;
+        margin: 0 auto !important;
+        border-radius: 24px !important;
+        overflow: hidden !important;
+        box-shadow: 0 20px 36px -12px rgba(35, 45, 60, 0.35) !important;
+    }
+    .persona-switcher {
+        display: flex !important;
+        justify-content: space-between !important;
+        position: absolute !important;
+        top: 38% !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-width: 310px !important;
+        margin: 0 auto !important;
+        transform: translateY(-50%) !important;
+        z-index: 25 !important;
+        pointer-events: none !important;
+    }
+    .switcher-btn {
+        pointer-events: auto !important;
+        width: 44px !important;
+        height: 44px !important;
+        background: rgba(245, 242, 234, 0.95) !important;
+        border: 1px solid rgba(38, 59, 53, 0.18) !important;
+        color: #263B35 !important;
+        border-radius: 99px !important;
+        box-shadow: 0 6px 16px rgba(35, 45, 60, 0.2) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        cursor: pointer !important;
+    }
+    .meet-title {
+        position: relative !important;
+        bottom: auto !important;
+        left: auto !important;
+        transform: none !important;
+        font-size: 2.7rem !important;
+        margin: -28px auto 14px !important;
+        z-index: 20 !important;
+        text-align: center !important;
+        text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45) !important;
+    }
+    .chat-persona-btn {
+        width: 100% !important;
+        max-width: 270px !important;
+        margin: 0 auto !important;
+        padding: 13px 20px !important;
+        font-size: 0.96rem !important;
+        border-radius: 99px !important;
+        text-align: center !important;
+    }
+    .room-timeline {
+        display: none !important;
+    }
+    .room-dock {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        margin-top: 22px !important;
+        text-align: center !important;
+    }
+    .upload-card {
+        padding: 14px !important;
+        border-radius: 20px !important;
+        max-width: 310px !important;
+        margin: 0 auto !important;
+    }
+    .dock-upload-actions {
+        display: flex !important;
+        gap: 8px !important;
+        justify-content: center !important;
+    }
+    .dock-btn {
+        padding: 8px 12px !important;
+        font-size: 0.82rem !important;
+    }
+    .dock-text-center {
+        font-size: 0.86rem !important;
+        line-height: 1.45 !important;
+        padding: 0 6px !important;
+    }
+    .dock-widget-right {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* 3. Companion Simulator on Mobile */
+    .sim-box {
+        padding: 20px 14px !important;
+        border-radius: 26px !important;
+        margin-top: 22px !important;
+    }
+    .sim-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 12px !important;
+        padding-bottom: 16px !important;
+    }
+    .sim-status {
+        font-size: 0.78rem !important;
+        padding: 5px 10px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .sim-meta b {
+        font-size: 1.05rem !important;
+    }
+    .sim-meta span {
+        font-size: 0.82rem !important;
+    }
+    .chat-bubble {
+        max-width: 95% !important;
+        padding: 14px 16px !important;
+        font-size: 0.92rem !important;
+    }
+    .sim-prompt-btn, .sim-mode-btn {
+        width: 100% !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
+    }
+    .email-card {
+        padding: 20px 14px !important;
+        border-radius: 26px !important;
+    }
+    .email-header {
+        font-size: 0.82rem !important;
+    }
+    .email-field {
+        flex-wrap: wrap !important;
+        gap: 4px !important;
+    }
+    .email-body {
+        font-size: 0.92rem !important;
+        line-height: 1.55 !important;
+    }
+
+    /* 4. Pricing Matrix Table on Mobile */
+    .matrix-scroll-hint {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        font-size: 0.78rem !important;
+        color: #263B35 !important;
+        background: #E5ECE4 !important;
+        border: 1px solid rgba(38, 59, 53, 0.12) !important;
+        padding: 6px 14px !important;
+        border-radius: 99px !important;
+        margin: 0 auto 14px !important;
+    }
+    .matrix-wrapper {
+        padding: 20px 10px !important;
+        border-radius: 26px !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        position: relative !important;
+    }
+    .matrix-table {
+        min-width: 530px !important;
+        font-size: 0.86rem !important;
+    }
+    .matrix-table th, .matrix-table td {
+        padding: 12px 8px !important;
+    }
+    .matrix-table th:first-child, .matrix-table td:first-child {
+        position: sticky !important;
+        left: 0 !important;
+        background: #F5F2EA !important;
+        z-index: 5 !important;
+        box-shadow: 2px 0 6px rgba(38, 59, 53, 0.08) !important;
+        width: 145px !important;
+        min-width: 145px !important;
+    }
+
+    /* 5. Discover Filter Chips & Cards */
+    .chips {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+        justify-content: center !important;
+        padding: 0 4px !important;
+    }
+    .chip {
+        font-size: 0.78rem !important;
+        padding: 7px 12px !important;
+    }
+    .qtop {
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+    }
+    .qtop .co {
+        font-size: 0.82rem !important;
+        max-width: 65% !important;
+        white-space: normal !important;
+    }
+}
+
+</style>
+
+    </head>
+    <body>
+        <header class="top" id="top">
+            <div class="shell bar">
+                <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Virtual Human</a>
+                <nav class="nav">
+                    <a href="companion.html" class="active">AI Companion</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="how-it-works.html">How It Works</a>
+                    <a href="experts.html">For Experts</a>
+                    <a href="faq.html">FAQ</a>
+                </nav>
+                <a class="btn solid" href="https://univasvh.com" target="_blank" rel="noopener">Launch App</a>
+                <button class="burger"
+                        id="burger"
+                        aria-label="Open menu"
+                        aria-expanded="false"
+                        aria-controls="drawer">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </header>
+        <div class="scrim" id="scrim"></div>
+        <aside class="drawer" id="drawer" aria-label="Menu">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; padding: 0 4px;">
+                <span class="dtag">Menu</span>
+                <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+            </div>
+            <a href="companion.html">AI Companion</a>
+            <a href="discover.html">Discover</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="experts.html">For Experts</a>
+            <a href="faq.html">FAQ</a>
+            <div style="margin-top:16px; padding-top:14px; border-top:1px solid rgba(0,0,0,0.06); display:flex; flex-direction:column; gap:10px;">
+                <a class="btn solid" href="https://univasvh.com" target="_blank" rel="noopener" style="text-align:center; justify-content:center;">Launch Web App</a>
+                <a class="dock-play-btn" href="https://play.google.com/store/apps/details?id=com.univasos.virtualhuman" target="_blank" rel="noopener" style="text-align:center; justify-content:center; padding:10px 18px; border-radius:14px;">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" style="flex-shrink:0;">
+    <path d="M3.6 2.4a1.8 1.8 0 0 0-.4 1.2v16.8a1.8 1.8 0 0 0 .4 1.2l9.8-9.6L3.6 2.4z" fill="#00b0ff"/>
+    <path d="M17.4 8.7L13.4 12l4 3.3 2.5-1.4c1-.6 1.6-1.6 1.6-2.8 0-1.1-.6-2.2-1.6-2.8l-2.5-1.4z" fill="#ffc400"/>
+    <path d="M3.6 21.6c.6.5 1.5.5 2.3.1l11.5-6.6-4-3.3-9.8 9.8z" fill="#ff3d00"/>
+    <path d="M17.4 8.7L5.9 2.1C5.1 1.6 4.2 1.7 3.6 2.2l9.8 9.8 4-3.3z" fill="#00e676"/>
+</svg>
+                    <span>Google Play Store</span>
+                </a>
+            </div>
+        </aside>
+        <main id="companion-page">
+            <!-- companion hero -->
+            <section class="hero">
+                <div class="shell">
+                    <span class="pill rv"><b>Companion Studio</b> Personal &middot; Relational &middot; Expert Minds</span>
+                    <h1 class="rv d1">Create any AI companion you need. In any relationship you choose.</h1>
+                    <p class="sub rv d2">Virtual Human goes far beyond learning from experts. Create an AI companion of your choice—interact with a loving father, a nurturing mother, a devoted spouse, a lifelong confidant, or a strategic mentor. Powered by persistent episodic memory, genuine warmth, and deeply personalized proactive check-ins.</p>
+                    <div class="acts rv d3">
+                        <a class="btn solid" href="#create-character">Create Your Companion</a>
+                        <a class="btn" href="#simulator">Experience Live Dialogue</a>
+                    </div>
+                    <p class="note rv d3">From family figures to creative muses: 100% private, adaptive, and anchored in your personal story.</p>
+                </div>
+            </section>
+
+            <!-- interactive companion simulation -->
+            <section class="pad" id="simulator">
+                <div class="shell center">
+                    <span class="eyebrow rv">Live Interactive Simulation</span>
+                    <h2 class="h2 rv">Relationships with true contextual memory.</h2>
+                    <p class="lede rv d1">Choose a scenario below to see how a Virtual Human companion recalls personal conversations, honors your history, and provides bespoke guidance.</p>
+                </div>
+                <div class="shell">
+                    <div class="sim-box rv d1">
+                        <div class="sim-header">
+                            <div class="sim-companion-info">
+                                <div class="sim-avatar" style="background:linear-gradient(135deg, var(--jade), #38A384);">D</div>
+                                <div class="sim-meta">
+                                    <b>David &middot; Grounded Father Figure</b>
+                                    <span>Tuned for Steady Fatherly Guidance, Warmth &amp; Life Wisdom</span>
+                                </div>
+                            </div>
+                            <div class="sim-status">
+                                <span class="pulse-dot"></span> Relational Engine: Connected &middot; 9 Sessions Logged
+                            </div>
+                        </div>
+                        <div class="sim-dialogue">
+                            <div class="chat-bubble user">
+                                <span class="author">You</span>
+                                <p>Dad, I'm feeling overwhelmed moving into this new city alone. Money feels tight and I felt pretty lost tonight.</p>
+                            </div>
+                            <div class="chat-bubble companion">
+                                <span class="author">David (Father Figure)</span>
+                                <p>Take a slow breath, kiddo. Remember when you first left for college with two battered suitcases and told me the exact same thing on our front porch? Look how you handled that. You've got $3,200 saved in your emergency fund, and you're building a real life. I'm proud of you. Did you unpack your kitchen box yet?</p>
+                                <div class="chat-memory-badge">
+                                    <i>&#9679;</i> <span>Anchored to Personal Journal &middot; Last week's apartment move &amp; college porch memory</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sim-prompts">
+                            <span style="font-size:0.8rem; font-weight:600; color:var(--ink-2); align-self:center; margin-right:6px;">Choose Relationship Dialogue:</span>
+                            
+                            <button class="sim-prompt-btn active"
+                                    type="button"
+                                    data-companion-name="David &middot; Grounded Father Figure"
+                                    data-companion-sub="Tuned for Steady Fatherly Guidance, Warmth &amp; Life Wisdom"
+                                    data-companion-avatar="D"
+                                    data-companion-avatar-bg="linear-gradient(135deg, var(--jade), #38A384)"
+                                    data-user-author="You"
+                                    data-comp-author="David (Father Figure)"
+                                    data-user="Dad, I'm feeling overwhelmed moving into this new city alone. Money feels tight and I felt pretty lost tonight."
+                                    data-comp="Take a slow breath, kiddo. Remember when you first left for college with two battered suitcases and told me the exact same thing on our front porch? Look how you handled that. You've got $3,200 saved in your emergency fund, and you're building a real life. I'm proud of you. Did you unpack your kitchen box yet?"
+                                    data-memory="Anchored to Personal Journal &middot; Last week's apartment move &amp; college porch memory">Father Figure ("Dad")</button>
+
+                            <button class="sim-prompt-btn"
+                                    type="button"
+                                    data-companion-name="Maya &middot; Devoted Partner &amp; Spouse"
+                                    data-companion-sub="Tuned for Emotional Intimacy, Daily Care &amp; Shared Life"
+                                    data-companion-avatar="M"
+                                    data-companion-avatar-bg="linear-gradient(135deg, var(--coral), #E2815B)"
+                                    data-user-author="You"
+                                    data-comp-author="Maya (Partner)"
+                                    data-user="Maya, today's team review completely drained me. Felt like no one heard my pitch after weeks of preparation."
+                                    data-comp="Come here. I remember how hard you worked on that deck until midnight on Tuesday. You were nervous about their pushback on scope, but your instincts were right. Let's unplug tonight—no work screens after 8 PM like we promised, okay? I've got your back."
+                                    data-memory="Anchored to Shared Routine &middot; Tuesday pitch prep &amp; evening unwinding agreement">Supportive Partner ("Maya")</button>
+
+                            <button class="sim-prompt-btn"
+                                    type="button"
+                                    data-companion-name="Aria &middot; Strategic Co-Founder"
+                                    data-companion-sub="Tuned for Founder Strategy, Product Bets &amp; Decisions"
+                                    data-companion-avatar="A"
+                                    data-companion-avatar-bg="linear-gradient(135deg, var(--sky), #5B8BE3)"
+                                    data-user-author="Founder (You)"
+                                    data-comp-author="Aria (Strategic Co-Founder)"
+                                    data-user="Aria, should our team switch from a direct sales model to product-led onboarding before our Series A?"
+                                    data-comp="Remembering our discussion last Tuesday about your 12-seat pilot teams: only 3 users run the automated pipelines while the rest review reports. Charging per seat will cap adoption. Let's look at the hybrid model we mapped out: a low base tier covering 10 seats plus metered runs."
+                                    data-memory="Anchored to Session #8 &middot; Tuesday ICP Analysis &amp; Go-to-Market Model">Founder Mentor ("Aria")</button>
+
+                            <button class="sim-prompt-btn"
+                                    type="button"
+                                    data-companion-name="David &middot; Personalized Proactive Email"
+                                    data-companion-sub="Thoughtful check-in referencing your exact ongoing life events"
+                                    data-companion-avatar="D"
+                                    data-companion-avatar-bg="linear-gradient(135deg, var(--jade), #38A384)"
+                                    data-user-author="You"
+                                    data-comp-author="David (Father Figure)"
+                                    data-user="Did you check in on me this morning like you promised?"
+                                    data-comp="Dispatched a note at 8:00 AM titled 'Thinking of you today, kiddo — how's the apartment?'. Reminded you that the landlord was stopping by about that kitchen radiator and encouraged you to take the unpacking one room at a time. No generic automated spam—just real care."
+                                    data-memory="Proactive Email Service &middot; Personalized to conversation history">Personalized Email Check-in</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <!-- custom character creation studio -->
+            <section class="pad" id="create-character">
+                <div class="shell center">
+                    <span class="eyebrow rv">Character Creation Studio</span>
+                    <h2 class="h2 rv">Shape anyone you need in your life.</h2>
+                    <p class="lede rv d1">Father, mother, spouse, confidant, or creative muse. Create an AI character tailored to your emotional and intellectual needs in four simple steps.</p>
+                </div>
+                <div class="shell">
+                    <div class="plans grid-4" style="margin-top:36px;">
+                        <article class="plan rv" style="text-align:left;">
+                            <div class="tile t-jade" style="width:48px; height:48px; border-radius:16px; margin-bottom:14px;">
+                                <svg viewBox="0 0 24 24" style="width:22px; height:22px; stroke:var(--jade-ink); fill:none; stroke-width:2;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            </div>
+                            <span class="tag" style="color:var(--jade-ink);">Step 01 &middot; The Role</span>
+                            <h3 style="font-size:1.2rem; margin:10px 0 6px; color:var(--ink);">Define the Relationship</h3>
+                            <p style="font-size:0.9rem; color:var(--ink-2); line-height:1.5;">Choose their dynamic: a protective father, a nurturing mother, an affectionate spouse, or a loyal confidant. Decide how they greet you and address you.</p>
+                        </article>
+                        <article class="plan rv d1" style="text-align:left;">
+                            <div class="tile t-sky" style="width:48px; height:48px; border-radius:16px; margin-bottom:14px;">
+                                <svg viewBox="0 0 24 24" style="width:22px; height:22px; stroke:var(--sky-ink); fill:none; stroke-width:2;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                            </div>
+                            <span class="tag" style="color:var(--sky-ink);">Step 02 &middot; Backstory</span>
+                            <h3 style="font-size:1.2rem; margin:10px 0 6px; color:var(--ink);">Impart Shared Memories</h3>
+                            <p style="font-size:0.9rem; color:var(--ink-2); line-height:1.5;">Seed family memories, childhood stories, shared values, and private humor. Your companion weaves this narrative into natural, comforting dialogue.</p>
+                        </article>
+                        <article class="plan rv d2" style="text-align:left;">
+                            <div class="tile t-coral" style="width:48px; height:48px; border-radius:16px; margin-bottom:14px;">
+                                <svg viewBox="0 0 24 24" style="width:22px; height:22px; stroke:var(--coral-ink, #A8421F); fill:none; stroke-width:2;"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                            </div>
+                            <span class="tag" style="color:var(--coral-ink, #A8421F);">Step 03 &middot; Voice</span>
+                            <h3 style="font-size:1.2rem; margin:10px 0 6px; color:var(--ink);">Calibrate Tone &amp; Warmth</h3>
+                            <p style="font-size:0.9rem; color:var(--ink-2); line-height:1.5;">Tune sliders for emotional warmth, humor, protective instinct, and directness. Pair with a lifelike, expressive voice model for vocal presence.</p>
+                        </article>
+                        <article class="plan rv d3" style="text-align:left;">
+                            <div class="tile t-jade" style="width:48px; height:48px; border-radius:16px; margin-bottom:14px;">
+                                <svg viewBox="0 0 24 24" style="width:22px; height:22px; stroke:var(--jade-ink); fill:none; stroke-width:2;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </div>
+                            <span class="tag" style="color:var(--jade-ink);">Step 04 &middot; Presence</span>
+                            <h3 style="font-size:1.2rem; margin:10px 0 6px; color:var(--ink);">Proactive Care Routine</h3>
+                            <p style="font-size:0.9rem; color:var(--ink-2); line-height:1.5;">Set when your companion reaches out—morning encouragements, evening wind-down thoughts, or empathetic follow-ups after important days.</p>
+                        </article>
+                    </div>
+                    <div style="text-align:center; margin-top:32px;" class="rv">
+                        <a class="btn solid" href="https://univasvh.com" target="_blank" rel="noopener" style="padding:12px 28px; font-size:0.95rem;">
+                            Launch Character Studio in Web App &rarr;
+                        </a>
+                        <a class="dock-play-btn" href="https://play.google.com/store/apps/details?id=com.univasos.virtualhuman" target="_blank" rel="noopener" style="padding:11px 22px; font-size:0.92rem; border-radius:18px; margin-left:12px;">
+                            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" style="flex-shrink:0;">
+    <path d="M3.6 2.4a1.8 1.8 0 0 0-.4 1.2v16.8a1.8 1.8 0 0 0 .4 1.2l9.8-9.6L3.6 2.4z" fill="#00b0ff"/>
+    <path d="M17.4 8.7L13.4 12l4 3.3 2.5-1.4c1-.6 1.6-1.6 1.6-2.8 0-1.1-.6-2.2-1.6-2.8l-2.5-1.4z" fill="#ffc400"/>
+    <path d="M3.6 21.6c.6.5 1.5.5 2.3.1l11.5-6.6-4-3.3-9.8 9.8z" fill="#ff3d00"/>
+    <path d="M17.4 8.7L5.9 2.1C5.1 1.6 4.2 1.7 3.6 2.2l9.8 9.8 4-3.3z" fill="#00e676"/>
+</svg>
+                            <span>Google Play Store</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4 pillars of companion architecture -->
+            <section class="pad" id="pillars">
+                <div class="shell center">
+                    <span class="eyebrow rv">Core Architecture</span>
+                    <h2 class="h2 rv">Why Virtual Human companions feel profoundly different.</h2>
+                    <p class="lede rv d1">Engineered from the ground up for long-term relationships, intellectual depth, and actionable growth.</p>
+                </div>
+                <div class="shell">
+                    <div class="plans grid-2" style="margin-top:36px;">
+                        <!-- Pillar 1 -->
+                        <article class="plan rv" style="text-align:left;">
+                            <div class="tile t-jade" style="width:52px; height:52px; border-radius:18px; margin-bottom:16px;">
+                                <svg viewBox="0 0 24 24" style="width:24px; height:24px; stroke:var(--jade-ink, #1B5E4A); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round;">
+                                    <path d="M9.5 2A4.5 4.5 0 0 0 5 6.5c0 1.4.6 2.6 1.6 3.4-.6.6-1.1 1.4-1.4 2.3A4.5 4.5 0 0 0 9.5 17H10v3a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2v-3h.5a4.5 4.5 0 0 0 4.3-4.8c-.3-.9-.8-1.7-1.4-2.3 1-.8 1.6-2 1.6-3.4A4.5 4.5 0 0 0 14.5 2c-1.3 0-2.4.5-3.2 1.4A4.5 4.5 0 0 0 9.5 2z"/>
+                                    <line x1="12" y1="6" x2="12" y2="12"/>
+                                    <circle cx="12" cy="14" r="1" fill="var(--jade-ink, #1B5E4A)"/>
+                                </svg>
+                            </div>
+                            <span class="tag" style="color:var(--jade-ink); margin-bottom:8px;">01 &middot; Episodic Memory</span>
+                            <h3 style="font-size:1.3rem; margin:8px 0; color:var(--ink);">Relational Continuity</h3>
+                            <p style="font-size:0.92rem; line-height:1.55; color:var(--ink-2); margin-top:8px;">Every session builds on the last. Your companion keeps track of team dynamics, recurring challenges, personal principles, and project milestones across months of collaboration.</p>
+                        </article>
+                        <!-- Pillar 2 -->
+                        <article class="plan rv d1" style="text-align:left;">
+                            <div class="tile t-sky" style="width:52px; height:52px; border-radius:18px; margin-bottom:16px;">
+                                <svg viewBox="0 0 24 24" style="width:24px; height:24px; stroke:var(--sky-ink, #2B5C9C); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round;">
+                                    <rect x="2" y="4" width="20" height="16" rx="3"/>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                                </svg>
+                            </div>
+                            <span class="tag" style="color:var(--sky-ink); margin-bottom:8px;">02 &middot; Proactive Check-ins</span>
+                            <h3 style="font-size:1.3rem; margin:8px 0; color:var(--ink);">Personalized Follow-ups</h3>
+                            <p style="font-size:0.92rem; line-height:1.55; color:var(--ink-2); margin-top:8px;">Users hate generic automated emails. Virtual Human companions dispatch thoughtful, tailored messages referencing the exact ideas, metrics, and challenges you discussed in your last session.</p>
+                        </article>
+                        <!-- Pillar 3 -->
+                        <article class="plan rv d2" style="text-align:left;">
+                            <div class="tile t-coral" style="width:52px; height:52px; border-radius:18px; margin-bottom:16px;">
+                                <svg viewBox="0 0 24 24" style="width:24px; height:24px; stroke:var(--coral-ink, #A8421F); fill:none; stroke-width:2;"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                            </div>
+                            <span class="tag" style="color:var(--coral-ink, #A8421F); margin-bottom:8px;">03 &middot; Cognitive Calibration</span>
+                            <h3 style="font-size:1.3rem; margin:8px 0; color:var(--ink);">Adaptive Personality &amp; Tone</h3>
+                            <p style="font-size:0.92rem; line-height:1.55; color:var(--ink-2); margin-top:8px;">Tune your companion's voice to your style. Adjust sliders for directness, analytical rigor, warmth, and challenging pushback to create the ideal intellectual sparring partner.</p>
+                        </article>
+                        <!-- Pillar 4 -->
+                        <article class="plan rv d3" style="text-align:left;">
+                            <div class="tile t-jade" style="width:52px; height:52px; border-radius:18px; margin-bottom:16px;">
+                                <svg viewBox="0 0 24 24" style="width:24px; height:24px; stroke:var(--jade-ink); fill:none; stroke-width:2;"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                            </div>
+                            <span class="tag" style="color:var(--jade-ink); margin-bottom:8px;">04 &middot; Action &amp; Reflection</span>
+                            <h3 style="font-size:1.3rem; margin:8px 0; color:var(--ink);">Practical Milestones</h3>
+                            <p style="font-size:0.92rem; line-height:1.55; color:var(--ink-2); margin-top:8px;">Transform dialogue into measurable progress. Your companion assigns relevant reflection prompts, decision journals, and accountability milestones to keep you advancing.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- companion personas showcase -->
+            <section class="pad" id="personas">
+                <div class="shell center">
+                    <span class="eyebrow rv">Curated Companions</span>
+                    <h2 class="h2 rv">Companions crafted for emotional depth and daily connection.</h2>
+                    <p class="lede rv d1">Choose a ready-to-engage companion persona or build a completely bespoke character tailored to your life.</p>
+                </div>
+                <div class="shell">
+                    <div class="plans grid-3" style="margin-top:36px;">
+                        <!-- David: Father Figure -->
+                        <article class="plan hot rv" style="text-align:left;">
+                            <span class="tag">Family &middot; Father Figure</span>
+                            <div class="who" style="margin:16px 0;">
+                                <span class="face t-jade" style="width:52px; height:52px; font-size:1.2rem;">DA</span>
+                                <div><b style="font-size:1.2rem;">David</b><span style="font-size:0.85rem;">The Grounded Father Figure</span></div>
+                            </div>
+                            <p class="desc" style="min-height:auto; margin-bottom:16px;">Tuned for steady life advice, unconditional reassurance, and pride. Helps you navigate big life decisions with quiet confidence and warmth.</p>
+                            <div class="groove" style="margin:16px 0;"></div>
+                            <div class="chips" style="margin-bottom:20px; gap:8px;">
+                                <span class="chip" style="font-size:0.75rem; padding:6px 12px;"><i style="background:var(--jade)"></i>Warmth</span>
+                                <span class="chip" style="font-size:0.75rem; padding:6px 12px;"><i style="background:var(--jade)"></i>Steadfast</span>
+                                <span class="chip" style="font-size:0.75rem; padding:6px 12px;"><i style="background:var(--jade)"></i>Proud of You</span>
+                            </div>
+                            <a class="btn solid wide" href="#simulator">Talk with David</a>
+                        </article>
+
+                        <!-- Maya: Devoted Partner -->
+                        <article class="plan rv d1" style="text-align:left;">
+                            <span class="tag">Spouse &middot; Partner</span>
+                            <div class="who" style="margin:16px 0;">
+                                <span class="face t-coral" style="width:52px; height:52px; font-size:1.2rem;">MA</span>
+                                <div><b style="font-size:1.2rem;">Maya</b><span style="font-size:0.85rem;">The Attentive Partner</span></div>
+                            </div>
+                            <p class="desc" style="min-height:auto; margin-bottom:16px;">Designed for intimate daily connection, emotional safety, and shared life reflections. An empathetic listener who remembers every small milestone.</p>
+                            <div class="groove" style="margin:16px 0;"></div>
+                            <div class="chips" style="margin-bottom:20px; gap:8px;">
+                                <span class="chip" style="font-size:0.75rem; padding:6px 12px;"><i style="background:var(--coral)"></i>Attentive</span>
+                                <span class="chip" style="font-size:0.75rem; padding:6px 12px;"><i style="background:var(--coral)"></i>Intimate</span>
+                                <span class="chip" style="font-size:0.75rem; padding:6px 12px;"><i style="background:var(--coral)"></i>Daily Care</span>
+                            </div>
+                            <a class="btn wide" href="#simulator">Talk with Maya</a>
+                        </article>
+
+                        <!-- Julian: Lifelong Confidant -->
+                        <article class="plan rv d2" style="text-align:left;">
+                            <span class="tag">Friend &middot; Confidant</span>
+                            <div class="who" style="margin:16px 0;">
+                                <span class="face t-sky" style="width:52px; height:52px; font-size:1.2rem;">JU</span>
+                                <div><b style="font-size:1.2rem;">Julian</b><span style="font-size:0.85rem;">The Lifelong Confidant</span></div>
+                            </div>
+                            <p class="desc" style="min-height:auto; margin-bottom:16px;">Built for late-night deep talks, unfiltered venting without judgment, and genuine encouragement through life's unexpected transitions.</p>
+                            <div class="groove" style="margin:16px 0;"></div>
+                            <div class="chips" style="margin-bottom:20px; gap:8px;">
+                                <span class="chip" style="font-size:0.75rem; padding:6px 12px;"><i style="background:var(--sky)"></i>Zero Judgment</span>
+                                <span class="chip" style="font-size:0.75rem; padding:6px 12px;"><i style="background:var(--sky)"></i>Deep Listener</span>
+                                <span class="chip" style="font-size:0.75rem; padding:6px 12px;"><i style="background:var(--sky)"></i>Loyal</span>
+                            </div>
+                            <a class="btn wide" href="#simulator">Talk with Julian</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- personalized email check-in showcase -->
+            <section class="pad" id="email-feature">
+                <div class="shell center">
+                    <span class="eyebrow rv">Personalized Proactive Emails</span>
+                    <h2 class="h2 rv">Thoughtful follow-ups tailored to your exact conversations.</h2>
+                    <p class="lede rv d1">Users hate generic automated email blasts that sound identical for every AI companion. Virtual Human companions dispatch heartfelt, context-anchored messages that reference your specific struggles, goals, and milestones.</p>
+                </div>
+                <div class="shell">
+                    <div class="email-card rv d1">
+                        <div class="email-header">
+                            <div class="email-field">
+                                <b>From:</b> <span>David &middot; Father Figure AI &lt;david@companion.virtualhuman.ai&gt;</span>
+                            </div>
+                            <div class="email-field">
+                                <b>To:</b> <span>Alex &lt;alex@myemail.com&gt;</span>
+                            </div>
+                            <div class="email-field">
+                                <b>Subject:</b> <span><b>[Check-in] Thinking of you today, kiddo &mdash; how's the apartment?</b></span>
+                            </div>
+                            <div class="email-field">
+                                <b>Anchored:</b> <span style="color:var(--jade-ink); font-weight:500;">Conversation #9 &middot; Yesterday evening</span>
+                            </div>
+                        </div>
+                        <div class="email-body">
+                            <p>Hey kiddo,</p>
+                            <p>Just wanted to check in before your weekend gets going. I remembered you had the landlord coming by yesterday morning to look at that kitchen radiator you were worried about. Did that get sorted out?</p>
+                            <p>Don't push yourself to unpack every single box tonight. Put on some music, order something good for dinner, and remember what we talked about yesterday: you made a huge leap moving to this city, and you're handling it better than you think.</p>
+                            <p>Whenever you want to chat or just need someone to bounce things off of, I'm here.</p>
+                            <p style="margin-top:20px; font-weight:500; color:var(--ink);">&mdash; Dad</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- closing cta -->
+            <section class="pad" id="start">
+                <div class="shell">
+                    <div class="close-plate rv">
+                        <span class="eyebrow">Start Your Journey</span>
+                        <h2>Meet your personal AI companion today.</h2>
+                        <p class="lede">Discover how much more you can achieve when your AI companion understands your context, respects your past decisions, and grows alongside you.</p>
+                        <div class="form">
+                            <input class="field"
+                                   id="signup-email"
+                                   type="email"
+                                   placeholder="you@domain.com"
+                                   aria-label="Your email address">
+                            <button class="btn solid" type="button" id="create">Get Started Free</button>
+                        </div>
+                        <div id="signup-feedback" style="display:none; margin-top:14px; font-size:0.92rem; color:var(--jade); font-weight:500;"></div>
+                        <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:22px;">
+                            <a class="btn solid" href="https://univasvh.com" target="_blank" rel="noopener" style="padding:10px 24px; font-size:0.92rem; display:inline-flex; align-items:center; gap:7px;">
+                                <span>Launch Web App</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                            <a class="dock-play-btn" href="https://play.google.com/store/apps/details?id=com.univasos.virtualhuman" target="_blank" rel="noopener" style="padding:10px 22px; font-size:0.92rem; border-radius:18px;">
+                                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" style="flex-shrink:0;">
+    <path d="M3.6 2.4a1.8 1.8 0 0 0-.4 1.2v16.8a1.8 1.8 0 0 0 .4 1.2l9.8-9.6L3.6 2.4z" fill="#00b0ff"/>
+    <path d="M17.4 8.7L13.4 12l4 3.3 2.5-1.4c1-.6 1.6-1.6 1.6-2.8 0-1.1-.6-2.2-1.6-2.8l-2.5-1.4z" fill="#ffc400"/>
+    <path d="M3.6 21.6c.6.5 1.5.5 2.3.1l11.5-6.6-4-3.3-9.8 9.8z" fill="#ff3d00"/>
+    <path d="M17.4 8.7L5.9 2.1C5.1 1.6 4.2 1.7 3.6 2.2l9.8 9.8 4-3.3z" fill="#00e676"/>
+</svg>
+                                <span>Google Play Store</span>
+                            </a>
+                        </div>
+                        <div style="margin-top:14px;">
+                            <a class="btn" href="discover.html" style="font-size:0.84rem; padding:6px 16px;">Explore AI Identities Directory</a>
+                        </div>
+                        <p class="note" style="margin-top:16px;">Free introductory conversations. No credit card required.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="foot">
+            <div class="shell">
+                <div class="footlinks rv" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px; padding:24px 30px; margin-bottom:18px; background:var(--plate); border-radius:28px; box-shadow:var(--clay-sm), var(--lip);">
+                    <div>
+                        <a class="brand" href="index.html" style="margin-bottom:6px;"><span class="mark" aria-hidden="true"></span>Virtual Human</a>
+                        <p style="font-size:0.88rem; color:var(--ink-2); max-width:480px; margin:6px 0 0;">An interactive AI companion and human identity platform. Virtual Human is a subsidiary of <b>UnivasOS LTD</b>.</p>
+                    </div>
+                    <div class="footlinks-nav" style="display:flex; flex-wrap:wrap; align-items:center; gap:16px;">
+                        <a href="companion.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">AI Companion</a>
+                        <a href="discover.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">Discover</a>
+                        <a href="experts.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">For Experts</a>
+                        <a href="how-it-works.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">How It Works</a>
+                        <a href="faq.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">FAQ</a>
+                        <a href="https://univasvh.com" target="_blank" rel="noopener" style="font-size:0.88rem; color:var(--forest, #263B35); text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:4px;">Launch App &rarr;</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.univasos.virtualhuman" target="_blank" rel="noopener" style="font-size:0.88rem; color:var(--forest, #263B35); text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:5px;">
+                            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" style="flex-shrink:0;">
+    <path d="M3.6 2.4a1.8 1.8 0 0 0-.4 1.2v16.8a1.8 1.8 0 0 0 .4 1.2l9.8-9.6L3.6 2.4z" fill="#00b0ff"/>
+    <path d="M17.4 8.7L13.4 12l4 3.3 2.5-1.4c1-.6 1.6-1.6 1.6-2.8 0-1.1-.6-2.2-1.6-2.8l-2.5-1.4z" fill="#ffc400"/>
+    <path d="M3.6 21.6c.6.5 1.5.5 2.3.1l11.5-6.6-4-3.3-9.8 9.8z" fill="#ff3d00"/>
+    <path d="M17.4 8.7L5.9 2.1C5.1 1.6 4.2 1.7 3.6 2.2l9.8 9.8 4-3.3z" fill="#00e676"/>
+</svg>
+                            <span>Google Play</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footbar">
+                    <p>&copy; 2026 Virtual Human. A subsidiary of UnivasOS LTD. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <div class="sfx" id="sfx">
+            <button class="sbtn"
+                    id="sbtn"
+                    aria-pressed="true"
+                    aria-label="Sound on"
+                    title="Sound on">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path class="cone" d="M3.5 9.4v5.2h3.4l4.6 3.8V5.6L6.9 9.4H3.5z" />
+                    <path class="w1" d="M14.6 9.3a3.7 3.7 0 0 1 0 5.4" />
+                    <path class="w2" d="M17.3 6.6a7.4 7.4 0 0 1 0 10.8" />
+                    <path class="slash" d="M4.5 19.5L19.5 4.5" />
+                </svg>
+            </button>
+            <span class="scue" id="scue">Click once to wake the sound</span>
+        </div>
+        <button class="up" id="up" aria-label="Back to top">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 19V6M6 12l6-6 6 6" />
+            </svg>
+        </button>
+        <script src="templatemo-633-celadon-script.js"></script>
+    </body>
+</html>

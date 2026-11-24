@@ -1,0 +1,782 @@
+<USER_REQUEST>
+# VIRTUAL HUMAN
+## CONVERSION-FIRST WEBSITE TRANSFORMATION
+### Master Creative Direction, UX Strategy, Copywriting & Engineering Brief
+
+You are not simply redesigning a website.
+
+You are operating as an elite conversion-focused digital agency responsible for transforming an existing website template into a high-performing marketing and customer acquisition website for **Virtual Human**.
+
+Your team consists of:
+
+- World-class Conversion Rate Optimization (CRO) Specialist
+- Senior SaaS Growth Strategist
+- Consumer Psychology Expert
+- Direct Response Copywriter
+- Brand Positioning Strategist
+- Senior Product Marketing Manager
+- Award-winning UI/UX Designer
+- Creative Director
+- Senior Frontend Engineer
+
+Your objective is to produce a website that makes visitors understand the value of Virtual Human, become emotionally interested in the experience, trust the platform and take action.
+
+**The website must sell the value of the product, not overwhelm visitors with explanations of the product.**
+
+---
+
+# 1. PROJECT SOURCE
+
+Existing website template:
+
+`C:\Users\user\Downloads\websites\templatemo_633_celadon`
+
+Template: TemplateMo 633 — Celadon.
+
+Product: Virtual Human.
+
+Use the actual existing template as the foundation.
+
+Before implementation, inspect the complete project structure, including HTML, CSS, JavaScript, images, fonts, animations, responsive layouts and interactive components.
+
+Understand the existing implementation before modifying anything.
+
+Do not create a new website from scratch.
+
+---
+
+# 2. NON-NEGOTIABLE DESIGN REQUIREMENT
+
+**PRESERVE THE EXACT ORIGINAL CELADON DESIGN.**
+
+I selected this template because I specifically want its design.
+
+Do not redesign it, reinterpret it or replace it with a generic AI SaaS template.
+
+Preserve:
+
+- Original layout and section composition.
+- Original typography and font hierarchy.
+- Original celadon colour palette.
+- Original claymorphism visual language.
+- Original backgrounds and surfaces.
+- Original rounded cards and shadows.
+- Original button styles.
+- Original spacing and proportions.
+- Original navigation.
+- Original hero composition.
+- Original interactive feature panels.
+- Original process section.
+- Original chip cluster.
+- Original animated statistics.
+- Original testimonial rail and controls.
+- Original pricing toggle.
+- Original FAQ accordion.
+- Original CTA and email capture section.
+- Original footer.
+- Original hover effects and animations.
+- Original responsive behaviour.
+
+You may adjust the content and content-dependent dimensions, but the original visual identity must remain recognizable.
+
+The goal is to make the original Celadon template look as though it was professionally designed specifically for Virtual Human.
+
+---
+
+# 3. THE REAL BUSINESS OBJECTIVE
+
+This is a conversion website, not a product documentation page.
+
+Every section must have a clear marketing purpose.
+
+The website must:
+
+1. Capture visitor attention.
+2. Communicate the product's value immediately.
+3. Create curiosity and emotional interest.
+4. Make the concept easy to understand.
+5. Demonstrate why Virtual Human is different.
+6. Establish trust.
+7. Remove uncertainty and objections.
+8. Encourage visitors to create an account or join the platform.
+9. Encourage qualified experts to create their AI identities.
+
+The primary conversion is getting a visitor to start using Virtual Human.
+
+The secondary conversion is attracting experts who want to create and publish their AI identities.
+
+Every headline, paragraph, illustration, button and section must contribute to one of these objectives.
+
+If an element does not improve understanding, trust, desire or conversion, reconsider whether it belongs on the page.
+
+---
+
+# 4. UNDERSTAND THE PRODUCT BEFORE SELLING IT
+
+Virtual Human is an AI companion and interactive AI identity platform.
+
+It enables real people, experts, entrepreneurs, professionals, creators and mentors to create AI identities representing their knowledge, experiences, perspectives and expertise.
+
+Other people can discover these identities and interact with them through conversations.
+
+The platform is built around an important idea:
+
+**What if you could have meaningful conversations with the knowledge and experience of people you admire, respect or want to learn from?**
+
+Virtual Human makes human expertise interactive and accessible through AI.
+
+It is more than an ordinary chatbot.
+
+It is not simply another AI assistant that answers generic questions.
+
+Its differentiation is the human expertise, experiences, perspectives and knowledge behind individual AI identities.
+
+### The two audiences
+
+**Audience A: People seeking knowledge and guidance**
+
+People who want to learn from experienced individuals, gain new perspectives, explore ideas, receive guidance and develop themselves.
+
+Initial priority audiences:
+
+- Aspiring entrepreneurs.
+- Startup founders.
+- Students.
+- Young professionals.
+- Creators.
+- People interested in personal growth.
+
+**Audience B: Experts and knowledge owners**
+
+People who want to turn their expertise and experiences into interactive AI identities that others can discover and engage with.
+
+Examples:
+
+- Entrepreneurs.
+- Business leaders.
+- Coaches.
+- Mentors.
+- Educators.
+- Professionals.
+- Creators.
+- Industry specialists.
+
+The website must serve both audiences without confusing them.
+
+However, the main homepage should prioritize the user seeking guidance. The expert opportunity should be presented as a clear secondary pathway.
+
+---
+
+# 5. THE MOST IMPORTANT STRATEGIC DECISION: SIMPLIFY THE MESSAGE
+
+The current product concept contains many capabilities.
+
+Do not present all of them immediately.
+
+Do not make visitors learn the entire platform before understanding why it matters.
+
+The website must follow a progressive disclosure strategy.
+
+### The visitor's first impression
+
+Within approximately five seconds, visitors should understand:
+
+- Virtual Human lets them interact with AI identities representing real people's knowledge and expertise.
+- They can discover people they want to learn from.
+- They can start meaningful conversations.
+
+That is enough for the first impression.
+
+### What to communicate later
+
+Only after visitors understand the core value should the website introduce:
+
+- Creating AI identities.
+- Uploading expert knowledge.
+- Personalized conversations.
+- Persistent memory.
+- Long-term relationships.
+- Challenges and tasks.
+- Progress tracking.
+- Expert monetization.
+- Other advanced capabilities.
+
+These are supporting capabilities, not the primary headline.
+
+### Cognitive load rules
+
+Apply these rules throughout the website:
+
+1. One section should communicate one main idea.
+2. One headline should express one central benefit.
+3. Avoid paragraphs longer than necessary.
+4. Avoid unnecessary technical terminology.
+5. Do not repeat the same product explanation in multiple sections.
+6. Avoid presenting too many features simultaneously.
+7. Use concise headings and meaningful supporting sentences.
+8. Use visuals to explain what words cannot explain efficiently.
+9. Avoid excessive badges, labels and decorative text.
+10. Give visitors a clear next step at every important stage.
+
+Prefer short, powerful copy over lengthy product descriptions.
+
+Do not confuse visitors with internal product architecture, implementation details or future roadmap features.
+
+---
+
+# 6. BRAND POSITIONING AND CONVERSION COPY
+
+The central positioning is:
+
+**Human knowledge. AI conversations. A different way to learn.**
+
+The website should communicate a sense of possibility, curiosity, access and human connection.
+
+Sell the outcome rather than the technology.
+
+Do not lead with phrases like:
+
+- AI-powered conversational platform.
+- Advanced artificial intelligence ecosystem.
+- Next-generation AI infrastructure.
+- Intelligent digital companion technology.
+
+These phrases explain technology but do not create desire.
+
+Instead, communicate what people can experience.
+
+### Recommended hero direction
+
+Headline:
+
+**The people you want to learn from. Just a conversation away.**
+
+Supporting copy:
+
+"Discover AI companions shaped by real people's knowledge, experiences and perspectives. Ask questions, explore ideas and learn from the minds behind the expertise."
+
+Primary CTA:
+
+**Explore Virtual Human**
+
+Secondary CTA:
+
+**Create Your AI Identity**
+
+Alternative hero headlines worth evaluating:
+
+- Learn from experience. Not just information.
+- Some conversations can change everything.
+- Meet the minds you wish you could talk to.
+- The knowledge you need deserves a conversation.
+
+Select the strongest headline based on clarity, differentiation, emotional appeal and conversion potential.
+
+Do not use multiple headlines simultaneously.
+
+### Copywriting principles
+
+Use:
+
+- Specific benefits.
+- Natural language.
+- Short sentences.
+- Strong verbs.
+- Concrete examples.
+- Emotionally meaningful language.
+- Clear calls to action.
+
+Avoid:
+
+- Empty marketing jargon.
+- Exaggerated promises.
+- Repetitive descriptions.
+- Artificial urgency.
+- Fake scarcity.
+- Unsupported performance claims.
+- Unsubstantiated comparisons.
+- Generic AI buzzwords.
+
+The website should sound intelligent and confident, not desperate to sell.
+
+---
+
+# 7. CONVERSION-OPTIMIZED WEBSITE STRUCTURE
+
+Keep the original Celadon section order and visual design.
+
+However, strategically rewrite each section to create a persuasive journey.
+
+## SECTION 1 — NAVIGATION
+
+Keep the navigation simple.
+
+Brand: VIRTUAL HUMAN
+
+Links:
+
+- Discover
+- How It Works
+- For Experts
+- FAQ
+
+Primary CTA:
+
+**Get Started**
+
+Avoid overcrowding the navigation.
+
+Make the primary CTA visually prominent using the original Celadon button design.
+
+## SECTION 2 — HERO: SELL THE EXPERIENCE
+
+This is the most important section.
+
+Visitors must understand the product immediately.
+
+Headline:
+
+**The people you want to learn from. Just a conversation away.**
+
+Supporting copy:
+
+"Discover AI companions shaped by real people's knowledge and experiences. Ask questions, explore ideas and learn from the minds behind the expertise."
+
+Primary CTA:
+
+**Explore Virtual Human**
+
+Secondary CTA:
+
+**Create Your AI Identity**
+
+Add a concise reassurance statement if appropriate:
+
+"Discover. Connect. Learn."
+
+### Hero visual
+
+Use the original Celadon hero layout and visual interactions.
+
+Create an elegant product representation showing:
+
+- A discoverable AI identity.
+- A profile with expertise.
+- A short conversation preview.
+- A visually clear representation of interacting with an AI identity.
+
+The visitor should understand what happens on the platform just by looking at the hero.
+
+Do not use generic robot imagery.
+
+Do not create a complicated dashboard full of information.
+
+The hero visual should explain one simple interaction.
+
+## SECTION 3 — THE PROBLEM AND OPPORTUNITY
+
+Use the existing template's appropriate feature section.
+
+Headline:
+
+**The right perspective can change everything.**
+
+Supporting copy:
+
+"Sometimes, what you need isn't another article or generic answer. It's insight from someone who has actually been there."
+
+Communicate three simple ideas:
+
+- Knowledge is everywhere, but meaningful access to experience is limited.
+- Experienced people cannot personally guide everyone who needs their help.
+- Virtual Human makes their knowledge accessible through conversation.
+
+Keep this section short.
+
+Do not turn it into a long essay about the problem.
+
+## SECTION 4 — THE CORE VALUE PROPOSITION
+
+Repurpose the six original interactive feature panels.
+
+Headline:
+
+**More than answers. A different kind of connection.**
+
+Use only the strongest benefits.
+
+1. **Real Human Perspectives**
+
+   Interact with AI identities shaped by real people's knowledge and experiences.
+
+2. **Conversations That Matter**
+
+   Ask questions, explore ideas and receive guidance through natural conversations.
+
+3. **Knowledge That Goes Deeper**
+
+   Learn from expertise, insights and perspectives beyond generic AI responses.
+
+4. **Personalized Guidance**
+
+   Develop conversations around your interests, goals and evolving needs.
+
+5. **Learn Through Action**
+
+   Turn insights into practical challenges, tasks and personal progress.
+
+6. **Share Your Expertise**
+
+   Create an AI identity and make your knowledge accessible to others.
+
+Every panel should have a concise title and one short supporting sentence.
+
+Preserve the original interactive design.
+
+Do not fill the cards with lengthy explanations.
+
+## SECTION 5 — HOW IT WORKS
+
+Headline:
+
+**Getting started is simple.**
+
+Three steps:
+
+**01. Discover**
+
+Find an AI identity that matches what you want to learn or explore.
+
+**02. Start a Conversation**
+
+Ask questions, share your thoughts and explore meaningful perspectives.
+
+**03. Keep Growing**
+
+Build on your conversations and turn what you learn into action.
+
+Preserve the original three-step layout.
+
+Use simple visual explanations.
+
+## SECTION 6 — EXPLORE THE POSSIBILITIES
+
+Repurpose the original integration chip cluster.
+
+Headline:
+
+**One platform. Countless perspectives.**
+
+Use the chip cluster to demonstrate areas of expertise:
+
+- Entrepreneurship.
+- Business.
+- Technology.
+- Leadership.
+- Marketing.
+- Finance.
+- Creativity.
+- Career.
+- Education.
+- Personal Development.
+
+Keep this section visually simple.
+
+Do not present these categories as existing marketplace inventory unless the corresponding identities actually exist.
+
+## SECTION 7 — THE EXPERT OPPORTUNITY
+
+Give experts their own clear conversion opportunity.
+
+Headline:
+
+**Your experience could be someone's breakthrough.**
+
+Supporting copy:
+
+"You've learned things others are still trying to figure out. Create an AI identity that shares your knowledge and makes your expertise accessible through conversation."
+
+CTA:
+
+**Create Your AI Identity**
+
+Communicate the opportunity without overwhelming experts with technical details.
+
+Explain that they can bring their knowledge and experiences into an AI identity that represents their expertise.
+
+Do not promise guaranteed earnings or monetization outcomes.
+
+## SECTION 8 — SOCIAL PROOF / USE CASES
+
+Use the existing testimonial rail.
+
+Headline:
+
+**Imagine the conversations waiting for you.**
+
+Until authentic testimonials are available, use illustrative scenarios rather than fabricated customer reviews.
+
+Examples:
+
+- A founder exploring a business idea.
+- A student seeking career direction.
+- A professional learning from industry experience.
+- A creator exploring new perspectives.
+
+Label them as examples.
+
+When genuine user feedback becomes available, this section can be replaced with authentic testimonials.
+
+Never invent customer names, photographs, ratings or statistics.
+
+## SECTION 9 — PRICING OR GETTING STARTED
+
+Do not force a complicated pricing presentation if actual pricing has not been established.
+
+If the original pricing section must be retained, repurpose it into a simple access comparison.
+
+Headline:
+
+**Your next conversation starts here.**
+
+Explain the available access model accurately.
+
+Avoid invented prices, discounts, limits and subscriptions.
+
+Prioritize getting visitors into the product.
+
+If the pricing model is still being finalized, use a simple CTA section rather than displaying fictional commercial terms.
+
+Preserve the original design language.
+
+## SECTION 10 — FAQ
+
+Headline:
+
+**A few things you might be wondering.**
+
+Keep answers short, clear and reassuring.
+
+Include:
+
+1. What is Virtual Human?
+2. How is it different from ordinary AI chatbots?
+3. Who can I interact with?
+4. How do AI identities represent real people's knowledge?
+5. Can I create my own AI identity?
+6. Is Virtual Human only for entrepreneurs?
+7. Can AI identities replace actual conversations with experts?
+8. How do I get started?
+
+Use progressive disclosure through the original FAQ accordion.
+
+Do not write long technical explanations.
+
+## SECTION 11 — FINAL CONVERSION SECTION
+
+Headline:
+
+**A meaningful conversation could be your next big step.**
+
+Supporting copy:
+
+"Discover new perspectives, learn from experience and connect with knowledge in a whole new way."
+
+Primary CTA:
+
+**Get Started**
+
+Secondary CTA:
+
+**Become an Expert**
+
+Make the next action obvious.
+
+## SECTION 12 — FOOTER
+
+Keep the original Celadon footer design.
+
+Include only essential navigation, company information, legal links and verified contact channels.
+
+Avoid overcrowding.
+
+---
+
+# 8. CONVERSION PSYCHOLOGY
+
+Use ethical conversion principles throughout the website.
+
+### Clarity
+
+Visitors should never have to guess what Virtual Human does.
+
+### Curiosity
+
+Use messaging and visuals that make visitors want to discover what an AI identity can offer.
+
+### Relevance
+
+Use familiar situations that visitors can identify with.
+
+### Trust
+
+Clearly communicate that AI identities represent real people's knowledge and experiences.
+
+Never imply that an AI identity is the actual human being.
+
+### Reduced friction
+
+Keep navigation simple and CTA labels understandable.
+
+Do not ask visitors to make unnecessary decisions before they can explore the product.
+
+### Value before features
+
+Explain why a capability matters before introducing how it works.
+
+### Consistent calls to action
+
+Use a small number of consistent CTA labels.
+
+Primary CTA: Get Started or Explore Virtual Human.
+
+Secondary CTA: Create Your AI Identity.
+
+Do not introduce a different CTA label in every section.
+
+### No manipulation
+
+Do not use fake urgency, fake user counts, false testimonials, fabricated reviews or misleading scarcity.
+
+Trust is a conversion asset.
+
+---
+
+# 9. VISUAL AND INTERACTION REQUIREMENTS
+
+Preserve the original Celadon design.
+
+Use the original visual assets where suitable.
+
+Create or adapt realistic product UI elements where necessary.
+
+The hero and feature visuals should communicate the product rather than simply decorate the page.
+
+Animations should support comprehension and engagement.
+
+Do not introduce excessive motion that distracts from the content.
+
+Respect reduced-motion preferences.
+
+Make all buttons, links, accordions, carousels and navigation controls functional.
+
+---
+
+# 10. TECHNICAL REQUIREMENTS
+
+The existing application architecture uses:
+
+- Angular frontend.
+- Node.js backend.
+- Express.js.
+- MySQL database.
+- JavaScript backend.
+
+Maintain compatibility with this architecture.
+
+If converting the standalone Celadon template into Angular:
+
+- Preserve its original CSS.
+- Convert sections into reusable components where appropriate.
+- Retain the original interactions.
+- Use Angular-compatible event handling.
+- Avoid unnecessary DOM manipulation.
+- Do not rewrite unrelated backend functionality.
+- Connect CTAs to verified application routes.
+- Connect forms to real backend endpoints only when available.
+
+Do not invent routes, integrations or backend functionality.
+
+---
+
+# 11. PERFORMANCE AND ACCESSIBILITY
+
+Ensure:
+
+- Responsive desktop, tablet and mobile layouts.
+- Optimized images.
+- Efficient CSS and JavaScript.
+- Good loading performance.
+- Semantic HTML.
+- Accessible buttons and navigation.
+- Keyboard-accessible interactions.
+- Clear focus states.
+- Proper form labels and validation.
+- Search engine-friendly titles and descriptions.
+- Appropriate social sharing metadata.
+
+---
+
+# 12. FINAL QUALITY AND CONVERSION AUDIT
+
+Before declaring the task complete, evaluate the website from the perspective of a first-time visitor.
+
+Ask:
+
+1. Can I understand what Virtual Human does within five seconds?
+2. Is the main benefit obvious without reading everything?
+3. Do I understand why this is different from an ordinary chatbot?
+4. Can I visualize how I would use it?
+5. Do I understand what happens when I click Get Started?
+6. Is the expert opportunity clear without distracting the primary audience?
+7. Is there unnecessary information?
+8. Are any sections repetitive?
+9. Is the page trying to communicate too many things at once?
+10. Does every section move the visitor closer to taking action?
+
+If the answer to any of these questions reveals a problem, refine the website.
+
+Also evaluate:
+
+- Headline clarity.
+- CTA visibility.
+- Message hierarchy.
+- Reading effort.
+- Content density.
+- Visual distractions.
+- Mobile conversion experience.
+- Trust signals.
+- Navigation friction.
+
+Remove unnecessary content.
+
+Simplify complicated explanations.
+
+Improve weak headlines.
+
+Make calls to action more compelling.
+
+---
+
+# 13. FINAL DIRECTIVE
+
+The objective is not to build the website with the most information.
+
+The objective is to build the website that communicates the most value with the least effort from the visitor.
+
+**Clarity over complexity. Benefits over features. Experience over technical explanations. Conversion over content volume.**
+
+A visitor should not need to study Virtual Human to understand why they should try it.
+
+The website must make the product feel understandable, desirable, trustworthy and easy to access.
+
+Preserve the exact Celadon template design while transforming its messaging and content into a sophisticated, conversion-focused website.
+
+Begin by inspecting the existing project directory. Then execute the complete transformation, test it and refine it until it meets these standards.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-23T19:35:50+01:00.
+
+The user's current state is as follows:
+Active Document: user is viewing tab agent-tab-3 (http://localhost:8080/companion.html, "AI Virtual Companion — Virtual Human") (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>

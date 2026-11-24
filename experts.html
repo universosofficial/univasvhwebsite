@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>For Experts &amp; Knowledge Owners — Virtual Human</title>
+        <meta name="description"
+              content="Transform your experience, mental models, and frameworks into an interactive AI identity. Scale your mentorship without sacrificing your calendar.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Albert+Sans:wght@400;500;600&display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet" href="templatemo-633-celadon-style.css?v=20261124_mobile_v2">
+            <style>
+            /* ---------- Celadon Claymorphism Multi-page Overrides ---------- */
+            .nav a.active {
+                color: var(--jade-ink) !important;
+                font-weight: 600 !important;
+            }
+            .plans.grid-2 {
+                display: grid !important;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+                gap: 24px !important;
+            }
+            .plans.grid-3 {
+                display: grid !important;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+                gap: 24px !important;
+            }
+            .plans.grid-4 {
+                display: grid !important;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+                gap: 22px !important;
+            }
+            @media (max-width: 900px) {
+                .plans.grid-2, .plans.grid-3, .plans.grid-4 {
+                    grid-template-columns: 1fr !important;
+                }
+            }
+            .plan.identity-card {
+                display: flex !important;
+                flex-direction: column !important;
+                min-height: 100% !important;
+                text-align: left !important;
+                transition: transform 0.28s var(--ease), box-shadow 0.28s var(--ease) !important;
+            }
+            .plan.identity-card:hover {
+                transform: translateY(-6px) !important;
+                box-shadow: 0 34px 50px -22px rgba(35, 45, 60, .42), var(--lip) !important;
+            }
+            .plan.identity-card blockquote {
+                margin: 16px 0 !important;
+                font-size: 1.02rem !important;
+                line-height: 1.52 !important;
+                color: var(--ink) !important;
+                font-weight: 300 !important;
+                font-family: 'Outfit', sans-serif !important;
+                flex-grow: 1 !important;
+            }
+            .matrix-wrapper {
+                background: linear-gradient(158deg, #FBFDFF, #F0F5FD 46%, #E6EDFA) !important;
+                border-radius: 40px !important;
+                box-shadow: 0 40px 60px -28px rgba(35, 45, 60, .42), inset 3px 4px 6px rgba(255, 255, 255, .98), inset -5px -7px 14px rgba(35, 45, 60, .11) !important;
+                padding: 44px 36px !important;
+                margin-top: 36px !important;
+                overflow-x: auto !important;
+            }
+            .matrix-table {
+                width: 100% !important;
+                min-width: 620px !important;
+                border-collapse: collapse !important;
+                text-align: left !important;
+                font-size: 0.95rem !important;
+                color: var(--ink) !important;
+            }
+            .matrix-table th {
+                font-family: 'Outfit', sans-serif !important;
+                font-weight: 600 !important;
+                font-size: 1.08rem !important;
+                color: var(--ink) !important;
+                padding: 18px 20px !important;
+                border-bottom: 2px solid rgba(42, 122, 98, 0.22) !important;
+            }
+            .matrix-table td {
+                padding: 16px 20px !important;
+                border-bottom: 1px solid rgba(35, 45, 60, 0.08) !important;
+                color: var(--ink-2) !important;
+            }
+            .matrix-table tr:hover td {
+                background: rgba(255, 255, 255, 0.45) !important;
+            }
+            .matrix-table tr:last-child td {
+                border-bottom: none !important;
+            }
+            .matrix-table td.center, .matrix-table th.center {
+                text-align: center !important;
+            }
+            .check-pill {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                width: 28px !important;
+                height: 28px !important;
+                border-radius: 99px !important;
+                background: rgba(42, 122, 98, 0.12) !important;
+                color: var(--jade-ink) !important;
+                font-weight: 700 !important;
+                font-size: 0.9rem !important;
+            }
+            .cross-pill {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                width: 28px !important;
+                height: 28px !important;
+                border-radius: 99px !important;
+                background: rgba(35, 45, 60, 0.06) !important;
+                color: var(--ink-2) !important;
+                font-size: 0.95rem !important;
+            }
+            .sim-box {
+                background: linear-gradient(158deg, #FBFDFF, #F0F5FD 46%, #E6EDFA) !important;
+                border-radius: 40px !important;
+                box-shadow: 0 40px 60px -28px rgba(35, 45, 60, .42), inset 3px 4px 6px rgba(255, 255, 255, .98), inset -5px -7px 14px rgba(35, 45, 60, .11) !important;
+                padding: 38px 32px !important;
+                margin-top: 36px !important;
+                position: relative !important;
+                overflow: hidden !important;
+            }
+            .sim-header {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: space-between !important;
+                padding-bottom: 20px !important;
+                border-bottom: 1px solid rgba(42, 122, 98, 0.16) !important;
+                margin-bottom: 24px !important;
+                flex-wrap: wrap !important;
+                gap: 14px !important;
+            }
+            .sim-companion-info {
+                display: flex !important;
+                align-items: center !important;
+                gap: 14px !important;
+            }
+            .sim-avatar {
+                width: 48px !important;
+                height: 48px !important;
+                border-radius: 18px !important;
+                background: linear-gradient(135deg, var(--jade), #38A384) !important;
+                color: #fff !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                font-weight: 600 !important;
+                font-size: 1.2rem !important;
+                box-shadow: var(--lift-jade) !important;
+            }
+            .sim-meta b {
+                display: block !important;
+                font-size: 1.05rem !important;
+                color: var(--ink) !important;
+            }
+            .sim-meta span {
+                font-size: 0.82rem !important;
+                color: var(--ink-2) !important;
+            }
+            .sim-status {
+                display: inline-flex !important;
+                align-items: center !important;
+                gap: 8px !important;
+                padding: 7px 16px !important;
+                border-radius: 99px !important;
+                background: rgba(42, 122, 98, 0.1) !important;
+                color: var(--jade-ink) !important;
+                font-size: 0.82rem !important;
+                font-weight: 500 !important;
+            }
+            .pulse-dot {
+                width: 8px !important;
+                height: 8px !important;
+                border-radius: 99px !important;
+                background: var(--jade) !important;
+                box-shadow: 0 0 0 0 rgba(42, 122, 98, 0.5) !important;
+                animation: pulse 2s infinite !important;
+            }
+            @keyframes pulse {
+                0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(42, 122, 98, 0.6); }
+                70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(42, 122, 98, 0); }
+                100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(42, 122, 98, 0); }
+            }
+            .sim-dialogue {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 20px !important;
+                margin-bottom: 28px !important;
+            }
+            .chat-bubble {
+                border-radius: 22px !important;
+                padding: 20px 24px !important;
+                font-size: 0.95rem !important;
+                line-height: 1.55 !important;
+                position: relative !important;
+            }
+            .chat-bubble.user {
+                align-self: flex-end !important;
+                background: var(--sunk) !important;
+                box-shadow: var(--well) !important;
+                color: var(--ink) !important;
+                max-width: 82% !important;
+            }
+            .chat-bubble.companion {
+                align-self: flex-start !important;
+                background: linear-gradient(158deg, #FFFFFF, var(--plate)) !important;
+                box-shadow: var(--clay-sm), var(--lip) !important;
+                color: var(--ink) !important;
+                max-width: 88% !important;
+            }
+            .chat-bubble .author {
+                display: block !important;
+                font-size: 0.76rem !important;
+                font-weight: 600 !important;
+                text-transform: uppercase !important;
+                letter-spacing: 0.08em !important;
+                margin-bottom: 6px !important;
+            }
+            .chat-bubble.user .author {
+                color: var(--ink-2) !important;
+            }
+            .chat-bubble.companion .author {
+                color: var(--jade-ink) !important;
+            }
+            .chat-bubble p {
+                margin: 0 !important;
+                color: var(--ink) !important;
+            }
+            .chat-memory-badge {
+                margin-top: 14px !important;
+                display: inline-flex !important;
+                align-items: center !important;
+                gap: 7px !important;
+                padding: 6px 14px !important;
+                border-radius: 99px !important;
+                background: rgba(42, 122, 98, 0.1) !important;
+                color: var(--jade-ink) !important;
+                font-size: 0.78rem !important;
+                font-weight: 500 !important;
+            }
+            .sim-prompts {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                align-items: center !important;
+                gap: 10px !important;
+                padding-top: 20px !important;
+                border-top: 1px solid rgba(42, 122, 98, 0.14) !important;
+            }
+            .sim-prompt-btn {
+                border: none !important;
+                outline: none !important;
+                padding: 10px 18px !important;
+                border-radius: 99px !important;
+                background: var(--gloss) !important;
+                box-shadow: var(--lift), var(--lip) !important;
+                color: var(--ink) !important;
+                font-family: 'Outfit', sans-serif !important;
+                font-weight: 500 !important;
+                font-size: 0.88rem !important;
+                cursor: pointer !important;
+                transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease), background 0.2s var(--ease) !important;
+            }
+            .sim-prompt-btn:hover {
+                transform: translateY(-2px) !important;
+                box-shadow: var(--lift-hi), var(--lip) !important;
+            }
+            .sim-prompt-btn.active {
+                background: var(--jade) !important;
+                color: #fff !important;
+                box-shadow: var(--lift-jade-hi), var(--lip-jade) !important;
+            }
+            .email-card {
+                background: linear-gradient(160deg, #FFFFFF, var(--plate) 48%, var(--plate-2)) !important;
+                border-radius: 32px !important;
+                padding: 32px 34px !important;
+                box-shadow: var(--clay), var(--lip) !important;
+                text-align: left !important;
+                margin-top: 32px !important;
+            }
+            .email-header {
+                border-bottom: 1px solid rgba(42, 122, 98, 0.14) !important;
+                padding-bottom: 16px !important;
+                margin-bottom: 20px !important;
+            }
+            .email-field {
+                display: flex !important;
+                gap: 12px !important;
+                font-size: 0.88rem !important;
+                margin-bottom: 6px !important;
+            }
+            .email-field b {
+                color: var(--ink-2) !important;
+                min-width: 65px !important;
+            }
+            .email-field span {
+                color: var(--ink) !important;
+            }
+            .email-body {
+                font-size: 0.94rem !important;
+                line-height: 1.65 !important;
+                color: var(--ink) !important;
+            }
+            .email-body p {
+                margin: 0 0 14px 0 !important;
+            }
+        
+/* Reset playful organic stagger jitter for chips inside cards */
+.plan .chips .chip,
+.plan .chip,
+.identity-card .chips .chip {
+    transform: none !important;
+}
+.plan .chips .chip:hover,
+.plan .chip:hover,
+.identity-card .chips .chip:hover {
+    transform: translateY(-2px) !important;
+}
+
+        
+
+
+/* ==========================================================================
+   VIRTUAL HUMAN MASTER BRAND HARMONY OVERRIDES
+   Exact Brand Palette: Warm Ivory, Soft Sage, Muted Sage, Deep Forest Green,
+   Muted Clay, Soft Charcoal, Warm Sand, White.
+   ========================================================================== */
+
+/* 1. Body & Universal Surfaces */
+body {
+    background: #F5F2EA !important;
+    color: #303631 !important;
+}
+
+h1, h2, h3, h4, .h2 {
+    color: #263B35 !important;
+}
+
+p, .sub, .lede, .desc, blockquote {
+    color: #303631 !important;
+}
+
+.sub, .lede, .desc, .hint, .note {
+    color: #4A544C !important;
+}
+
+/* 2. Top Navigation Bar */
+.bar {
+    background: rgba(245, 242, 234, 0.92) !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 16px 32px -12px rgba(38, 59, 53, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    backdrop-filter: blur(14px) !important;
+}
+.brand {
+    color: #263B35 !important;
+}
+.mark {
+    background: linear-gradient(155deg, #324D45, #263B35 55%, #1B2A26) !important;
+    box-shadow: 0 8px 14px -8px rgba(38, 59, 53, .5), inset 1px 2px 3px rgba(255, 255, 255, .4) !important;
+}
+.mark::after {
+    background: rgba(245, 242, 234, 0.6) !important;
+}
+.nav a {
+    color: #303631 !important;
+}
+.nav a:hover, .nav a.active {
+    color: #263B35 !important;
+    background: rgba(229, 236, 228, 0.8) !important;
+    box-shadow: inset 1px 1px 2px rgba(38, 59, 53, 0.08) !important;
+}
+
+/* 3. Primary & Secondary Buttons */
+.btn.solid, .chat-persona-btn {
+    background: linear-gradient(155deg, #324D45 0%, #263B35 100%) !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 12px 24px -8px rgba(38, 59, 53, 0.42), var(--lip-jade) !important;
+    border: none !important;
+}
+.btn.solid:hover, .chat-persona-btn:hover {
+    background: #1B2A26 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 16px 30px -8px rgba(38, 59, 53, 0.52), var(--lip-jade) !important;
+}
+.btn {
+    background: rgba(245, 242, 234, 0.95) !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.18) !important;
+    box-shadow: 0 6px 14px -6px rgba(38, 59, 53, 0.12), var(--lip) !important;
+}
+.btn:hover {
+    background: #D8E2D8 !important;
+    color: #1B2A26 !important;
+    transform: translateY(-2px) !important;
+}
+
+/* 4. 3D Gallery Hero (Refined Warm Sand & Ivory, No Muddy Beige) */
+.gallery-room {
+    background: radial-gradient(circle at 50% 25%, #F5F2EA 0%, #E8E1D6 60%, #DDD5C8 100%) !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 44px 84px -24px rgba(38, 59, 53, 0.18), inset 0 2px 4px rgba(255, 255, 255, 0.95), inset 0 -4px 12px rgba(38, 59, 53, 0.04) !important;
+    color: #303631 !important;
+}
+.room-backplate {
+    border: 1px solid rgba(216, 226, 216, 0.6) !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(229, 236, 228, 0.25) 100%) !important;
+    box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.55), 0 20px 40px rgba(38, 59, 53, 0.04) !important;
+}
+.room-tagline {
+    color: #4A544C !important;
+}
+.room-badge-bubble {
+    background: rgba(245, 242, 234, 0.88) !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 12px 24px rgba(38, 59, 53, 0.08) !important;
+}
+.bubble-play {
+    background: #263B35 !important;
+}
+.bubble-play svg {
+    fill: #FFFFFF !important;
+}
+.switcher-btn {
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    background: rgba(245, 242, 234, 0.92) !important;
+    color: #263B35 !important;
+    box-shadow: 0 8px 18px rgba(38, 59, 53, 0.08) !important;
+}
+.switcher-btn:hover {
+    background: #FFFFFF !important;
+    color: #1B2A26 !important;
+}
+.side-card {
+    border: 1px solid rgba(216, 226, 216, 0.6) !important;
+    background: #E8E1D6 !important;
+    box-shadow: 0 20px 36px rgba(38, 59, 53, 0.12) !important;
+}
+.meet-title {
+    color: #FFFFFF !important;
+    text-shadow: 0 8px 32px rgba(38, 59, 53, 0.3) !important;
+}
+.room-dock {
+    border-top: 1px solid rgba(216, 226, 216, 0.6) !important;
+}
+.dock-widget-left {
+    background: rgba(255, 255, 255, 0.75) !important;
+    border: 1px dashed rgba(38, 59, 53, 0.22) !important;
+}
+.dock-icon-circle {
+    background: #E5ECE4 !important;
+}
+.dock-icon-circle svg {
+    stroke: #263B35 !important;
+}
+.dock-widget-acts button {
+    background: #FFFFFF !important;
+    border: 1px solid #D8E2D8 !important;
+    color: #263B35 !important;
+}
+.dock-widget-acts button:hover {
+    background: #E5ECE4 !important;
+}
+.dock-center-text {
+    color: #303631 !important;
+}
+.dock-widget-right span {
+    color: #5E6960 !important;
+}
+.dock-trust-tag {
+    color: #263B35 !important;
+}
+
+/* 5. Cards & Section Surfaces */
+.plan, .identity-card {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.1) !important;
+    box-shadow: 0 22px 38px -20px rgba(38, 59, 53, 0.12), inset 2px 3px 4px rgba(255, 255, 255, 0.95) !important;
+}
+.plan.hot {
+    background: linear-gradient(165deg, #FFFFFF 0%, #FAF8F4 50%, #F5F2EA 100%) !important;
+    border-top: 4px solid #263B35 !important;
+}
+.statplate {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.1) !important;
+    box-shadow: 0 20px 40px -20px rgba(38, 59, 53, 0.1), inset 0 1px 2px rgba(255, 255, 255, 0.95) !important;
+}
+.matrix-wrapper {
+    background: linear-gradient(158deg, #FFFFFF, #F5F2EA 46%, #E5ECE4) !important;
+    border-radius: 40px !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 36px 54px -24px rgba(38, 59, 53, 0.14), inset 3px 4px 6px rgba(255, 255, 255, .98) !important;
+}
+.matrix-table th {
+    color: #263B35 !important;
+    border-bottom: 2px solid rgba(38, 59, 53, 0.18) !important;
+}
+.matrix-table td {
+    color: #303631 !important;
+    border-bottom: 1px solid rgba(38, 59, 53, 0.08) !important;
+}
+.matrix-table tr:hover td {
+    background: rgba(255, 255, 255, 0.6) !important;
+}
+.check-pill {
+    background: rgba(38, 59, 53, 0.12) !important;
+    color: #263B35 !important;
+}
+.cross-pill {
+    background: rgba(48, 54, 49, 0.06) !important;
+    color: #5E6960 !important;
+}
+
+/* 6. Email Feature Card */
+.email-card {
+    background: linear-gradient(160deg, #FFFFFF, #F5F2EA 50%, #E5ECE4) !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 24px 44px -20px rgba(38, 59, 53, 0.14), inset 2px 3px 4px rgba(255, 255, 255, 0.95) !important;
+}
+.email-header {
+    border-bottom: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+.email-field b {
+    color: #4A544C !important;
+}
+.email-field span {
+    color: #303631 !important;
+}
+.email-body {
+    color: #303631 !important;
+}
+
+/* 7. Simulation Box in companion.html */
+.sim-box {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(216, 226, 216, 0.85) !important;
+    box-shadow: 0 32px 56px -24px rgba(38, 59, 53, 0.14), inset 2px 3px 4px rgba(255, 255, 255, 0.95) !important;
+}
+.sim-header {
+    border-bottom: 1px solid rgba(38, 59, 53, 0.1) !important;
+}
+.sim-meta b {
+    color: #263B35 !important;
+}
+.sim-meta span {
+    color: #5E6960 !important;
+}
+.pulse-dot {
+    background: #263B35 !important;
+}
+.chat-bubble.user {
+    background: #E5ECE4 !important;
+    color: #303631 !important;
+    border: 1px solid rgba(38, 59, 53, 0.08) !important;
+}
+.chat-bubble.companion {
+    background: #F5F2EA !important;
+    color: #303631 !important;
+    border: 1px solid rgba(38, 59, 53, 0.1) !important;
+}
+.chat-bubble .author {
+    color: #263B35 !important;
+    font-weight: 600 !important;
+}
+.chat-memory-badge {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+.sim-mode-btn {
+    background: rgba(245, 242, 234, 0.95) !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.16) !important;
+}
+.sim-mode-btn.active {
+    background: #263B35 !important;
+    color: #FFFFFF !important;
+    border-color: #263B35 !important;
+}
+
+/* 8. Pips, Eyebrows & Accents */
+.eyebrow {
+    color: #263B35 !important;
+    background: #E5ECE4 !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+.pill {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+.pill b { background: #263B35 !important; color: #FFFFFF !important; padding: 3px 10px !important; border-radius: 99px !important; }
+.chips .chip {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+    color: #303631 !important;
+}
+.chips .chip:hover {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+}
+.tile.t-jade, .tile.t-sky {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+}
+.tile.t-coral {
+    background: rgba(214, 165, 141, 0.22) !important;
+    color: #8F553D !important;
+}
+.face.t-jade, .face.t-sky {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+}
+.face.t-coral {
+    background: rgba(214, 165, 141, 0.25) !important;
+    color: #8F553D !important;
+}
+
+/* 9. Quotes (Testimonial Rail) */
+.quote {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.08) !important;
+}
+.quote.tint {
+    background: #E5ECE4 !important;
+}
+.qtop .co {
+    color: #4A544C !important;
+}
+.qtop .result {
+    color: #263B35 !important;
+}
+
+/* 10. Final Conversion Section & Footers */
+.close-plate {
+    background: linear-gradient(160deg, #FFFFFF 0%, #F5F2EA 50%, #E8E1D6 100%) !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+    box-shadow: 0 34px 60px -24px rgba(38, 59, 53, 0.16) !important;
+}
+.close-plate .field {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.18) !important;
+    color: #303631 !important;
+}
+.close-plate .field:focus {
+    outline: 2px solid #263B35 !important;
+}
+.footlinks {
+    background: #E5ECE4 !important;
+    border: 1px solid rgba(38, 59, 53, 0.1) !important;
+}
+.footlinks a {
+    color: #303631 !important;
+}
+.footlinks a:hover {
+    color: #263B35 !important;
+}
+.footbar p, .footbar a {
+    color: #5E6960 !important;
+}
+.footbar a:hover {
+    color: #263B35 !important;
+}
+.sbtn {
+    background: rgba(245, 242, 234, 0.95) !important;
+    border: 1px solid rgba(38, 59, 53, 0.18) !important;
+    color: #263B35 !important;
+}
+.scue {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+
+
+/* ==========================================================================
+   VIRTUAL HUMAN — MASTER MOBILE RESPONSIVE ENGINE (320px - 768px)
+   ========================================================================== */
+
+/* 0. Header & Drawer Navigation */
+header.top {
+    z-index: 95 !important;
+}
+.drawer {
+    z-index: 90 !important;
+    background: #F5F2EA !important;
+    box-shadow: -10px 0 30px rgba(38, 59, 53, 0.18) !important;
+}
+.drawer a:not(.btn) {
+    color: #263B35 !important;
+}
+.drawer a:not(.btn):hover, .drawer a.active {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+}
+.drawer-close {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 99px !important;
+    background: #E5ECE4 !important;
+    border: 1px solid rgba(38, 59, 53, 0.16) !important;
+    color: #263B35 !important;
+    font-size: 1.5rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    line-height: 1 !important;
+    transition: background 0.2s ease !important;
+}
+.drawer-close:hover {
+    background: #D8E2D8 !important;
+}
+
+/* Universal Eyebrow & Pill Contrast Fix */
+.pill {
+    background: #E5ECE4 !important;
+    border: 1px solid rgba(38, 59, 53, 0.14) !important;
+    color: #263B35 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 6px 14px 6px 8px !important;
+    max-width: 95% !important;
+    white-space: normal !important;
+}
+.pill b {
+    background: #263B35 !important;
+    color: #FFFFFF !important;
+    padding: 3px 10px !important;
+    border-radius: 99px !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+/* Simulator button classes in companion.html */
+.sim-prompt-btn, .sim-mode-btn {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.16) !important;
+    padding: 10px 18px !important;
+    border-radius: 99px !important;
+    font-size: 0.88rem !important;
+    font-family: inherit !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+.sim-prompt-btn:hover, .sim-mode-btn:hover {
+    background: #D8E2D8 !important;
+    color: #263B35 !important;
+}
+.sim-prompt-btn.active, .sim-mode-btn.active {
+    background: #263B35 !important;
+    color: #FFFFFF !important;
+    border-color: #263B35 !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 12px rgba(38, 59, 53, 0.25) !important;
+}
+
+/* Card Button Alignment Across Columns */
+.plan {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+.plan .btn, .plan.identity-card .btn {
+    margin-top: auto !important;
+}
+
+/* Word-break for email */
+.email-field span {
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+}
+.matrix-scroll-hint {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    /* Staves Accordion Mobile Engine */
+    .slabrow {
+        flex-direction: column !important;
+        height: auto !important;
+        gap: 12px !important;
+    }
+    .stave {
+        width: 100% !important;
+        border-radius: 24px !important;
+        background: #F5F2EA !important;
+        border: 1px solid rgba(216, 226, 216, 0.85) !important;
+        box-shadow: 0 8px 18px -8px rgba(38, 59, 53, 0.08) !important;
+        overflow: hidden !important;
+        transition: background 0.3s ease !important;
+    }
+    .stave.open {
+        background: #FFFFFF !important;
+        box-shadow: 0 16px 32px -12px rgba(38, 59, 53, 0.12) !important;
+    }
+    .stave:not(.open) .bodywrap {
+        display: none !important;
+        height: 0 !important;
+        max-height: 0 !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .stave:not(.open) .bodywrap > .body {
+        display: none !important;
+        height: 0 !important;
+        overflow: hidden !important;
+    }
+    .spine {
+        padding: 16px 18px !important;
+        gap: 12px !important;
+    }
+    .spine .st {
+        font-size: 1.05rem !important;
+        color: #263B35 !important;
+        font-weight: 600 !important;
+    }
+    .stave.open .bodywrap {
+        display: block !important;
+        padding: 0 20px 22px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 1. Safe Anchor Scrolling (Header Clearances) */
+    section, [id] {
+        scroll-margin-top: 88px !important;
+    }
+
+    /* Fixed Top Bar on Mobile */
+    .bar {
+        padding: 10px 14px !important;
+        background: rgba(245, 242, 234, 0.96) !important;
+        border-bottom: 1px solid rgba(38, 59, 53, 0.12) !important;
+    }
+    .brand {
+        font-size: 1.15rem !important;
+    }
+
+    /* Floating UI Controls: avoid collisions */
+    .sfx {
+        bottom: 16px !important;
+        left: 14px !important;
+        z-index: 99 !important;
+    }
+    .scue {
+        display: none !important;
+    }
+    .top {
+        bottom: 16px !important;
+        right: 14px !important;
+        z-index: 99 !important;
+    }
+
+    /* Action Buttons in Hero & CTAs (.acts) */
+    .acts {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+        align-items: stretch !important;
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 22px auto !important;
+    }
+    .acts .btn {
+        width: 100% !important;
+        text-align: center !important;
+        margin: 0 !important;
+        padding: 14px 20px !important;
+    }
+
+    /* Grid Stacking for all card collections */
+    .plans.grid-2, .plans.grid-3, .plans.grid-4, .plans {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 18px !important;
+        width: 100% !important;
+    }
+    .plan {
+        width: 100% !important;
+        padding: 24px 18px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Problem and Opportunity statplate in index.html */
+    .statplate, #perspective .statplate {
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        padding: 16px !important;
+    }
+    .statplate .stat {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 24px 20px !important;
+        border-radius: 24px !important;
+    }
+
+    /* 2. Homepage 3D Gallery Hero (index.html) */
+    .gallery-hero-wrap {
+        padding: 82px 10px 36px !important;
+    }
+    .gallery-room {
+        padding: 20px 14px 22px !important;
+        border-radius: 28px !important;
+        background: radial-gradient(circle at 50% 25%, #E3DBD2 0%, #D0C6BB 55%, #BFAF9F 100%) !important;
+    }
+    .room-tagline {
+        position: static !important;
+        max-width: 100% !important;
+        margin: 0 auto 12px !important;
+        text-align: center !important;
+        font-size: 0.9rem !important;
+        line-height: 1.45 !important;
+        color: #2E2924 !important;
+        padding: 0 8px !important;
+    }
+    .room-badge-bubble {
+        position: static !important;
+        display: inline-flex !important;
+        justify-content: center !important;
+        margin: 0 auto 16px !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+    }
+    .gallery-stage {
+        min-height: auto !important;
+        height: auto !important;
+        margin-top: 6px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        position: relative !important;
+        padding: 0 !important;
+    }
+    .room-backplate {
+        width: 90% !important;
+        height: 58% !important;
+        top: 6% !important;
+        border-radius: 20px !important;
+    }
+    .side-card {
+        display: none !important;
+    }
+    .center-persona-wrap {
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .center-portrait {
+        width: 250px !important;
+        height: 310px !important;
+        margin: 0 auto !important;
+        border-radius: 24px !important;
+        overflow: hidden !important;
+        box-shadow: 0 20px 36px -12px rgba(35, 45, 60, 0.35) !important;
+    }
+    .persona-switcher {
+        display: flex !important;
+        justify-content: space-between !important;
+        position: absolute !important;
+        top: 38% !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-width: 310px !important;
+        margin: 0 auto !important;
+        transform: translateY(-50%) !important;
+        z-index: 25 !important;
+        pointer-events: none !important;
+    }
+    .switcher-btn {
+        pointer-events: auto !important;
+        width: 44px !important;
+        height: 44px !important;
+        background: rgba(245, 242, 234, 0.95) !important;
+        border: 1px solid rgba(38, 59, 53, 0.18) !important;
+        color: #263B35 !important;
+        border-radius: 99px !important;
+        box-shadow: 0 6px 16px rgba(35, 45, 60, 0.2) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        cursor: pointer !important;
+    }
+    .meet-title {
+        position: relative !important;
+        bottom: auto !important;
+        left: auto !important;
+        transform: none !important;
+        font-size: 2.7rem !important;
+        margin: -28px auto 14px !important;
+        z-index: 20 !important;
+        text-align: center !important;
+        text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45) !important;
+    }
+    .chat-persona-btn {
+        width: 100% !important;
+        max-width: 270px !important;
+        margin: 0 auto !important;
+        padding: 13px 20px !important;
+        font-size: 0.96rem !important;
+        border-radius: 99px !important;
+        text-align: center !important;
+    }
+    .room-timeline {
+        display: none !important;
+    }
+    .room-dock {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        margin-top: 22px !important;
+        text-align: center !important;
+    }
+    .upload-card {
+        padding: 14px !important;
+        border-radius: 20px !important;
+        max-width: 310px !important;
+        margin: 0 auto !important;
+    }
+    .dock-upload-actions {
+        display: flex !important;
+        gap: 8px !important;
+        justify-content: center !important;
+    }
+    .dock-btn {
+        padding: 8px 12px !important;
+        font-size: 0.82rem !important;
+    }
+    .dock-text-center {
+        font-size: 0.86rem !important;
+        line-height: 1.45 !important;
+        padding: 0 6px !important;
+    }
+    .dock-widget-right {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* 3. Companion Simulator on Mobile */
+    .sim-box {
+        padding: 20px 14px !important;
+        border-radius: 26px !important;
+        margin-top: 22px !important;
+    }
+    .sim-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 12px !important;
+        padding-bottom: 16px !important;
+    }
+    .sim-status {
+        font-size: 0.78rem !important;
+        padding: 5px 10px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .sim-meta b {
+        font-size: 1.05rem !important;
+    }
+    .sim-meta span {
+        font-size: 0.82rem !important;
+    }
+    .chat-bubble {
+        max-width: 95% !important;
+        padding: 14px 16px !important;
+        font-size: 0.92rem !important;
+    }
+    .sim-prompt-btn, .sim-mode-btn {
+        width: 100% !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
+    }
+    .email-card {
+        padding: 20px 14px !important;
+        border-radius: 26px !important;
+    }
+    .email-header {
+        font-size: 0.82rem !important;
+    }
+    .email-field {
+        flex-wrap: wrap !important;
+        gap: 4px !important;
+    }
+    .email-body {
+        font-size: 0.92rem !important;
+        line-height: 1.55 !important;
+    }
+
+    /* 4. Pricing Matrix Table on Mobile */
+    .matrix-scroll-hint {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        font-size: 0.78rem !important;
+        color: #263B35 !important;
+        background: #E5ECE4 !important;
+        border: 1px solid rgba(38, 59, 53, 0.12) !important;
+        padding: 6px 14px !important;
+        border-radius: 99px !important;
+        margin: 0 auto 14px !important;
+    }
+    .matrix-wrapper {
+        padding: 20px 10px !important;
+        border-radius: 26px !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        position: relative !important;
+    }
+    .matrix-table {
+        min-width: 530px !important;
+        font-size: 0.86rem !important;
+    }
+    .matrix-table th, .matrix-table td {
+        padding: 12px 8px !important;
+    }
+    .matrix-table th:first-child, .matrix-table td:first-child {
+        position: sticky !important;
+        left: 0 !important;
+        background: #F5F2EA !important;
+        z-index: 5 !important;
+        box-shadow: 2px 0 6px rgba(38, 59, 53, 0.08) !important;
+        width: 145px !important;
+        min-width: 145px !important;
+    }
+
+    /* 5. Discover Filter Chips & Cards */
+    .chips {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+        justify-content: center !important;
+        padding: 0 4px !important;
+    }
+    .chip {
+        font-size: 0.78rem !important;
+        padding: 7px 12px !important;
+    }
+    .qtop {
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+    }
+    .qtop .co {
+        font-size: 0.82rem !important;
+        max-width: 65% !important;
+        white-space: normal !important;
+    }
+}
+
+</style>
+
+    </head>
+    <body>
+        <header class="top" id="top">
+            <div class="shell bar">
+                <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Virtual Human</a>
+                <nav class="nav">
+                    <a href="companion.html">AI Companion</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="how-it-works.html">How It Works</a>
+                    <a href="experts.html" class="active">For Experts</a>
+                    <a href="faq.html">FAQ</a>
+                </nav>
+                <a class="btn solid" href="https://univasvh.com" target="_blank" rel="noopener">Launch App</a>
+                <button class="burger"
+                        id="burger"
+                        aria-label="Open menu"
+                        aria-expanded="false"
+                        aria-controls="drawer">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </header>
+        <div class="scrim" id="scrim"></div>
+        <aside class="drawer" id="drawer" aria-label="Menu">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; padding: 0 4px;">
+                <span class="dtag">Menu</span>
+                <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+            </div>
+            <a href="companion.html">AI Companion</a>
+            <a href="discover.html">Discover</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="experts.html">For Experts</a>
+            <a href="faq.html">FAQ</a>
+            <div style="margin-top:16px; padding-top:14px; border-top:1px solid rgba(0,0,0,0.06); display:flex; flex-direction:column; gap:10px;">
+                <a class="btn solid" href="https://univasvh.com" target="_blank" rel="noopener" style="text-align:center; justify-content:center;">Launch Web App</a>
+                <a class="dock-play-btn" href="https://play.google.com/store/apps/details?id=com.univasos.virtualhuman" target="_blank" rel="noopener" style="text-align:center; justify-content:center; padding:10px 18px; border-radius:14px;">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" style="flex-shrink:0;">
+    <path d="M3.6 2.4a1.8 1.8 0 0 0-.4 1.2v16.8a1.8 1.8 0 0 0 .4 1.2l9.8-9.6L3.6 2.4z" fill="#00b0ff"/>
+    <path d="M17.4 8.7L13.4 12l4 3.3 2.5-1.4c1-.6 1.6-1.6 1.6-2.8 0-1.1-.6-2.2-1.6-2.8l-2.5-1.4z" fill="#ffc400"/>
+    <path d="M3.6 21.6c.6.5 1.5.5 2.3.1l11.5-6.6-4-3.3-9.8 9.8z" fill="#ff3d00"/>
+    <path d="M17.4 8.7L5.9 2.1C5.1 1.6 4.2 1.7 3.6 2.2l9.8 9.8 4-3.3z" fill="#00e676"/>
+</svg>
+                    <span>Google Play Store</span>
+                </a>
+            </div>
+        </aside>
+        <main id="experts-page">
+            <!-- hero -->
+            <section class="hero">
+                <div class="shell">
+                    <span class="pill rv"><b>For Experts</b> Knowledge Sharing at Scale</span>
+                    <h1 class="rv d1">Your experience could be someone's breakthrough.</h1>
+                    <p class="sub rv d2">You've learned things others are still trying to figure out. Create an AI identity that shares your knowledge and makes your expertise accessible through conversation.</p>
+                    <div class="acts rv d3">
+                        <a class="btn solid" href="#apply">Create Your AI Identity</a>
+                        <a class="btn" href="#process">See How It Works</a>
+                    </div>
+                    <p class="note rv d3">You retain 100% intellectual property ownership of your uploaded knowledge.</p>
+                </div>
+            </section>
+
+            <!-- creator process -->
+            <section class="pad" id="process">
+                <div class="shell center">
+                    <span class="eyebrow rv">Creator Studio</span>
+                    <h2 class="h2 rv">From lived experience to an interactive AI identity.</h2>
+                    <p class="lede rv d1">Four simple steps to configure, test, and publish your interactive digital counterpart.</p>
+                </div>
+                <div class="shell">
+                    <div class="plans grid-4" style="margin-top:36px;">
+                        <article class="plan rv" style="text-align:left;">
+                            <div class="tile t-jade" style="width:48px; height:48px; border-radius:16px; margin-bottom:14px;">
+                                <svg viewBox="0 0 24 24" style="width:22px; height:22px; stroke:var(--jade-ink); fill:none; stroke-width:2;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            </div>
+                            <span class="tag" style="color:var(--jade-ink);">Step 01 &middot; Ingest</span>
+                            <h3 style="font-size:1.2rem; margin:10px 0 6px; color:var(--ink);">Knowledge Vault</h3>
+                            <p style="font-size:0.9rem; color:var(--ink-2); line-height:1.5;">Upload your essays, podcasts, presentations, books, and frameworks. Your AI identity reasons from your actual materials.</p>
+                        </article>
+                        <article class="plan rv d1" style="text-align:left;">
+                            <div class="tile t-sky" style="width:48px; height:48px; border-radius:16px; margin-bottom:14px;">
+                                <svg viewBox="0 0 24 24" style="width:22px; height:22px; stroke:var(--sky-ink); fill:none; stroke-width:2;"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                            </div>
+                            <span class="tag" style="color:var(--sky-ink);">Step 02 &middot; Calibrate</span>
+                            <h3 style="font-size:1.2rem; margin:10px 0 6px; color:var(--ink);">Personality &amp; Guardrails</h3>
+                            <p style="font-size:0.9rem; color:var(--ink-2); line-height:1.5;">Define communication rhythm, analytical strictness, and specific boundaries. Set topics you decline to advise on.</p>
+                        </article>
+                        <article class="plan rv d2" style="text-align:left;">
+                            <div class="tile t-coral" style="width:48px; height:48px; border-radius:16px; margin-bottom:14px;">
+                                <svg viewBox="0 0 24 24" style="width:22px; height:22px; stroke:var(--coral-ink, #A8421F); fill:none; stroke-width:2;"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                            </div>
+                            <span class="tag" style="color:var(--coral-ink, #A8421F);">Step 03 &middot; Voice</span>
+                            <h3 style="font-size:1.2rem; margin:10px 0 6px; color:var(--ink);">Verified Identity</h3>
+                            <p style="font-size:0.9rem; color:var(--ink-2); line-height:1.5;">Pair your written identity with a natural voice model. Once verified, receive an authentic creator seal on the directory.</p>
+                        </article>
+                        <article class="plan rv d3" style="text-align:left;">
+                            <div class="tile t-jade" style="width:48px; height:48px; border-radius:16px; margin-bottom:14px;">
+                                <svg viewBox="0 0 24 24" style="width:22px; height:22px; stroke:var(--jade-ink); fill:none; stroke-width:2;"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            </div>
+                            <span class="tag" style="color:var(--jade-ink);">Step 04 &middot; Publish</span>
+                            <h3 style="font-size:1.2rem; margin:10px 0 6px; color:var(--ink);">Scale Your Mentorship</h3>
+                            <p style="font-size:0.9rem; color:var(--ink-2); line-height:1.5;">Distribute introductory sessions to build audience connection, and offer deeper access with full creator control.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ownership & security -->
+            <section class="pad-s" id="guarantees">
+                <div class="shell center">
+                    <span class="eyebrow rv">Trust &amp; Sovereignty</span>
+                    <h2 class="h2 rv">Your ideas remain strictly yours.</h2>
+                </div>
+                <div class="shell">
+                    <div class="plans grid-3" style="margin-top:36px;">
+                        <article class="plan rv" style="text-align:left;">
+                            <span class="tag" style="color:var(--jade-ink);">Zero Training</span>
+                            <h3 style="font-size:1.25rem; margin:12px 0 8px; color:var(--ink);">No Public LLM Training</h3>
+                            <p style="font-size:0.9rem; color:var(--ink-2); line-height:1.55;">Your uploaded documents and case studies are strictly used to serve your identity's retrieval engine. They are never exported or used to train open LLM models.</p>
+                        </article>
+                        <article class="plan rv d1" style="text-align:left;">
+                            <span class="tag" style="color:var(--sky-ink);">Data Privacy</span>
+                            <h3 style="font-size:1.25rem; margin:12px 0 8px; color:var(--ink);">Granular Privacy Controls</h3>
+                            <p style="font-size:0.9rem; color:var(--ink-2); line-height:1.55;">Flag sensitive files as internal reasoning context only—your AI identity can synthesize principles without quoting proprietary figures or client names.</p>
+                        </article>
+                        <article class="plan rv d2" style="text-align:left;">
+                            <span class="tag" style="color:var(--coral-ink, #A8421F);">Calendar Sync</span>
+                            <h3 style="font-size:1.25rem; margin:12px 0 8px; color:var(--ink);">Live Escalation Option</h3>
+                            <p style="font-size:0.9rem; color:var(--ink-2); line-height:1.55;">Enable users who hit complex, high-stakes decisions to request a direct, paid consultation on your live calendar directly through the conversation window.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- creator application plate -->
+            <section class="pad" id="apply">
+                <div class="shell">
+                    <div class="close-plate rv">
+                        <span class="eyebrow">Apply for Early Access</span>
+                        <h2>Build your interactive AI identity.</h2>
+                        <p class="lede">Join pioneering founders, researchers, and mentors shaping the future of interactive human knowledge.</p>
+                        <div class="form">
+                            <input class="field"
+                                   id="signup-email"
+                                   type="email"
+                                   placeholder="expert@domain.com"
+                                   aria-label="Your email address">
+                            <button class="btn solid" type="button" id="create">Request Studio Access</button>
+                        </div>
+                        <div id="signup-feedback" style="display:none; margin-top:14px; font-size:0.92rem; color:var(--jade); font-weight:500;"></div>
+                        <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:22px;">
+                            <a class="btn solid" href="https://univasvh.com" target="_blank" rel="noopener" style="padding:10px 24px; font-size:0.92rem;">Launch Web App &rarr;</a>
+                            <a class="dock-play-btn" href="https://play.google.com/store/apps/details?id=com.univasos.virtualhuman" target="_blank" rel="noopener" style="padding:10px 22px; font-size:0.92rem; border-radius:18px;">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" style="flex-shrink:0;">
+    <path d="M3.6 2.4a1.8 1.8 0 0 0-.4 1.2v16.8a1.8 1.8 0 0 0 .4 1.2l9.8-9.6L3.6 2.4z" fill="#00b0ff"/>
+    <path d="M17.4 8.7L13.4 12l4 3.3 2.5-1.4c1-.6 1.6-1.6 1.6-2.8 0-1.1-.6-2.2-1.6-2.8l-2.5-1.4z" fill="#ffc400"/>
+    <path d="M3.6 21.6c.6.5 1.5.5 2.3.1l11.5-6.6-4-3.3-9.8 9.8z" fill="#ff3d00"/>
+    <path d="M17.4 8.7L5.9 2.1C5.1 1.6 4.2 1.7 3.6 2.2l9.8 9.8 4-3.3z" fill="#00e676"/>
+</svg>
+                                <span>Google Play Store</span>
+                            </a>
+                        </div>
+                        <p class="note" style="margin-top:16px;">We review each creator application to ensure high-quality knowledge grounding.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="foot">
+            <div class="shell">
+                <div class="footlinks rv" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px; padding:24px 30px; margin-bottom:18px; background:var(--plate); border-radius:28px; box-shadow:var(--clay-sm), var(--lip);">
+                    <div>
+                        <a class="brand" href="index.html" style="margin-bottom:6px;"><span class="mark" aria-hidden="true"></span>Virtual Human</a>
+                        <p style="font-size:0.88rem; color:var(--ink-2); max-width:480px; margin:6px 0 0;">An interactive AI companion and human identity platform. Virtual Human is a subsidiary of <b>UnivasOS LTD</b>.</p>
+                    </div>
+                    <div class="footlinks-nav" style="display:flex; flex-wrap:wrap; align-items:center; gap:16px;">
+                        <a href="companion.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">AI Companion</a>
+                        <a href="discover.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">Discover</a>
+                        <a href="experts.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">For Experts</a>
+                        <a href="how-it-works.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">How It Works</a>
+                        <a href="faq.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">FAQ</a>
+                        <a href="https://univasvh.com" target="_blank" rel="noopener" style="font-size:0.88rem; color:var(--forest, #263B35); text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:4px;">Launch App &rarr;</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.univasos.virtualhuman" target="_blank" rel="noopener" style="font-size:0.88rem; color:var(--forest, #263B35); text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:5px;">
+                            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" style="flex-shrink:0;">
+    <path d="M3.6 2.4a1.8 1.8 0 0 0-.4 1.2v16.8a1.8 1.8 0 0 0 .4 1.2l9.8-9.6L3.6 2.4z" fill="#00b0ff"/>
+    <path d="M17.4 8.7L13.4 12l4 3.3 2.5-1.4c1-.6 1.6-1.6 1.6-2.8 0-1.1-.6-2.2-1.6-2.8l-2.5-1.4z" fill="#ffc400"/>
+    <path d="M3.6 21.6c.6.5 1.5.5 2.3.1l11.5-6.6-4-3.3-9.8 9.8z" fill="#ff3d00"/>
+    <path d="M17.4 8.7L5.9 2.1C5.1 1.6 4.2 1.7 3.6 2.2l9.8 9.8 4-3.3z" fill="#00e676"/>
+</svg>
+                            <span>Google Play</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footbar">
+                    <p>&copy; 2026 Virtual Human. A subsidiary of UnivasOS LTD. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <div class="sfx" id="sfx">
+            <button class="sbtn"
+                    id="sbtn"
+                    aria-pressed="true"
+                    aria-label="Sound on"
+                    title="Sound on">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path class="cone" d="M3.5 9.4v5.2h3.4l4.6 3.8V5.6L6.9 9.4H3.5z" />
+                    <path class="w1" d="M14.6 9.3a3.7 3.7 0 0 1 0 5.4" />
+                    <path class="w2" d="M17.3 6.6a7.4 7.4 0 0 1 0 10.8" />
+                    <path class="slash" d="M4.5 19.5L19.5 4.5" />
+                </svg>
+            </button>
+            <span class="scue" id="scue">Click once to wake the sound</span>
+        </div>
+        <button class="up" id="up" aria-label="Back to top">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 19V6M6 12l6-6 6 6" />
+            </svg>
+        </button>
+        <script src="templatemo-633-celadon-script.js"></script>
+    </body>
+</html>

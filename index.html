@@ -1,0 +1,2498 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Virtual Human — Human Knowledge. Artificial Intelligence. Meaningful Conversations.</title>
+        <meta name="description"
+              content="Meet AI identities and virtual companions shaped by real people's knowledge, experiences and perspectives. Discover remarkable minds, explore ideas and access continuous guidance.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Albert+Sans:wght@400;500;600&display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet" href="templatemo-633-celadon-style.css?v=20261124_mobile_v2">
+            <style>
+            /* ---------- Celadon Claymorphism Multi-page Overrides ---------- */
+            .nav a.active {
+                color: var(--jade-ink) !important;
+                font-weight: 600 !important;
+            }
+            .plans.grid-2 {
+                display: grid !important;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+                gap: 24px !important;
+            }
+            .plans.grid-3 {
+                display: grid !important;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+                gap: 24px !important;
+            }
+            .plans.grid-4 {
+                display: grid !important;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+                gap: 22px !important;
+            }
+            @media (max-width: 900px) {
+                .plans.grid-2, .plans.grid-3, .plans.grid-4 {
+                    grid-template-columns: 1fr !important;
+                }
+            }
+            .plan.identity-card {
+                display: flex !important;
+                flex-direction: column !important;
+                min-height: 100% !important;
+                text-align: left !important;
+                transition: transform 0.28s var(--ease), box-shadow 0.28s var(--ease) !important;
+            }
+            .plan.identity-card:hover {
+                transform: translateY(-6px) !important;
+                box-shadow: 0 34px 50px -22px rgba(35, 45, 60, .42), var(--lip) !important;
+            }
+            .plan.identity-card blockquote {
+                margin: 16px 0 !important;
+                font-size: 1.02rem !important;
+                line-height: 1.52 !important;
+                color: var(--ink) !important;
+                font-weight: 300 !important;
+                font-family: 'Outfit', sans-serif !important;
+                flex-grow: 1 !important;
+            }
+            .matrix-wrapper {
+                background: linear-gradient(158deg, #FBFDFF, #F0F5FD 46%, #E6EDFA) !important;
+                border-radius: 40px !important;
+                box-shadow: 0 40px 60px -28px rgba(35, 45, 60, .42), inset 3px 4px 6px rgba(255, 255, 255, .98), inset -5px -7px 14px rgba(35, 45, 60, .11) !important;
+                padding: 44px 36px !important;
+                margin-top: 36px !important;
+                overflow-x: auto !important;
+            }
+            .matrix-table {
+                width: 100% !important;
+                min-width: 620px !important;
+                border-collapse: collapse !important;
+                text-align: left !important;
+                font-size: 0.95rem !important;
+                color: var(--ink) !important;
+            }
+            .matrix-table th {
+                font-family: 'Outfit', sans-serif !important;
+                font-weight: 600 !important;
+                font-size: 1.08rem !important;
+                color: var(--ink) !important;
+                padding: 18px 20px !important;
+                border-bottom: 2px solid rgba(42, 122, 98, 0.22) !important;
+            }
+            .matrix-table td {
+                padding: 16px 20px !important;
+                border-bottom: 1px solid rgba(35, 45, 60, 0.08) !important;
+                color: var(--ink-2) !important;
+            }
+            .matrix-table tr:hover td {
+                background: rgba(255, 255, 255, 0.45) !important;
+            }
+            .matrix-table tr:last-child td {
+                border-bottom: none !important;
+            }
+            .matrix-table td.center, .matrix-table th.center {
+                text-align: center !important;
+            }
+            .check-pill {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                width: 28px !important;
+                height: 28px !important;
+                border-radius: 99px !important;
+                background: rgba(42, 122, 98, 0.12) !important;
+                color: var(--jade-ink) !important;
+                font-weight: 700 !important;
+                font-size: 0.9rem !important;
+            }
+            .cross-pill {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                width: 28px !important;
+                height: 28px !important;
+                border-radius: 99px !important;
+                background: rgba(35, 45, 60, 0.06) !important;
+                color: var(--ink-2) !important;
+                font-size: 0.95rem !important;
+            }
+            .sim-box {
+                background: linear-gradient(158deg, #FBFDFF, #F0F5FD 46%, #E6EDFA) !important;
+                border-radius: 40px !important;
+                box-shadow: 0 40px 60px -28px rgba(35, 45, 60, .42), inset 3px 4px 6px rgba(255, 255, 255, .98), inset -5px -7px 14px rgba(35, 45, 60, .11) !important;
+                padding: 38px 32px !important;
+                margin-top: 36px !important;
+                position: relative !important;
+                overflow: hidden !important;
+            }
+            .sim-header {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: space-between !important;
+                padding-bottom: 20px !important;
+                border-bottom: 1px solid rgba(42, 122, 98, 0.16) !important;
+                margin-bottom: 24px !important;
+                flex-wrap: wrap !important;
+                gap: 14px !important;
+            }
+            .sim-companion-info {
+                display: flex !important;
+                align-items: center !important;
+                gap: 14px !important;
+            }
+            .sim-avatar {
+                width: 48px !important;
+                height: 48px !important;
+                border-radius: 18px !important;
+                background: linear-gradient(135deg, var(--jade), #38A384) !important;
+                color: #fff !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                font-weight: 600 !important;
+                font-size: 1.2rem !important;
+                box-shadow: var(--lift-jade) !important;
+            }
+            .sim-meta b {
+                display: block !important;
+                font-size: 1.05rem !important;
+                color: var(--ink) !important;
+            }
+            .sim-meta span {
+                font-size: 0.82rem !important;
+                color: var(--ink-2) !important;
+            }
+            .sim-status {
+                display: inline-flex !important;
+                align-items: center !important;
+                gap: 8px !important;
+                padding: 7px 16px !important;
+                border-radius: 99px !important;
+                background: rgba(42, 122, 98, 0.1) !important;
+                color: var(--jade-ink) !important;
+                font-size: 0.82rem !important;
+                font-weight: 500 !important;
+            }
+            .pulse-dot {
+                width: 8px !important;
+                height: 8px !important;
+                border-radius: 99px !important;
+                background: var(--jade) !important;
+                box-shadow: 0 0 0 0 rgba(42, 122, 98, 0.5) !important;
+                animation: pulse 2s infinite !important;
+            }
+            @keyframes pulse {
+                0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(42, 122, 98, 0.6); }
+                70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(42, 122, 98, 0); }
+                100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(42, 122, 98, 0); }
+            }
+            .sim-dialogue {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 20px !important;
+                margin-bottom: 28px !important;
+            }
+            .chat-bubble {
+                border-radius: 22px !important;
+                padding: 20px 24px !important;
+                font-size: 0.95rem !important;
+                line-height: 1.55 !important;
+                position: relative !important;
+            }
+            .chat-bubble.user {
+                align-self: flex-end !important;
+                background: var(--sunk) !important;
+                box-shadow: var(--well) !important;
+                color: var(--ink) !important;
+                max-width: 82% !important;
+            }
+            .chat-bubble.companion {
+                align-self: flex-start !important;
+                background: linear-gradient(158deg, #FFFFFF, var(--plate)) !important;
+                box-shadow: var(--clay-sm), var(--lip) !important;
+                color: var(--ink) !important;
+                max-width: 88% !important;
+            }
+            .chat-bubble .author {
+                display: block !important;
+                font-size: 0.76rem !important;
+                font-weight: 600 !important;
+                text-transform: uppercase !important;
+                letter-spacing: 0.08em !important;
+                margin-bottom: 6px !important;
+            }
+            .chat-bubble.user .author {
+                color: var(--ink-2) !important;
+            }
+            .chat-bubble.companion .author {
+                color: var(--jade-ink) !important;
+            }
+            .chat-bubble p {
+                margin: 0 !important;
+                color: var(--ink) !important;
+            }
+            .chat-memory-badge {
+                margin-top: 14px !important;
+                display: inline-flex !important;
+                align-items: center !important;
+                gap: 7px !important;
+                padding: 6px 14px !important;
+                border-radius: 99px !important;
+                background: rgba(42, 122, 98, 0.1) !important;
+                color: var(--jade-ink) !important;
+                font-size: 0.78rem !important;
+                font-weight: 500 !important;
+            }
+            .sim-prompts {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                align-items: center !important;
+                gap: 10px !important;
+                padding-top: 20px !important;
+                border-top: 1px solid rgba(42, 122, 98, 0.14) !important;
+            }
+            .sim-prompt-btn {
+                border: none !important;
+                outline: none !important;
+                padding: 10px 18px !important;
+                border-radius: 99px !important;
+                background: var(--gloss) !important;
+                box-shadow: var(--lift), var(--lip) !important;
+                color: var(--ink) !important;
+                font-family: 'Outfit', sans-serif !important;
+                font-weight: 500 !important;
+                font-size: 0.88rem !important;
+                cursor: pointer !important;
+                transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease), background 0.2s var(--ease) !important;
+            }
+            .sim-prompt-btn:hover {
+                transform: translateY(-2px) !important;
+                box-shadow: var(--lift-hi), var(--lip) !important;
+            }
+            .sim-prompt-btn.active {
+                background: var(--jade) !important;
+                color: #fff !important;
+                box-shadow: var(--lift-jade-hi), var(--lip-jade) !important;
+            }
+            .email-card {
+                background: linear-gradient(160deg, #FFFFFF, var(--plate) 48%, var(--plate-2)) !important;
+                border-radius: 32px !important;
+                padding: 32px 34px !important;
+                box-shadow: var(--clay), var(--lip) !important;
+                text-align: left !important;
+                margin-top: 32px !important;
+            }
+            .email-header {
+                border-bottom: 1px solid rgba(42, 122, 98, 0.14) !important;
+                padding-bottom: 16px !important;
+                margin-bottom: 20px !important;
+            }
+            .email-field {
+                display: flex !important;
+                gap: 12px !important;
+                font-size: 0.88rem !important;
+                margin-bottom: 6px !important;
+            }
+            .email-field b {
+                color: var(--ink-2) !important;
+                min-width: 65px !important;
+            }
+            .email-field span {
+                color: var(--ink) !important;
+            }
+            .email-body {
+                font-size: 0.94rem !important;
+                line-height: 1.65 !important;
+                color: var(--ink) !important;
+            }
+            .email-body p {
+                margin: 0 0 14px 0 !important;
+            }
+        
+/* Reset playful organic stagger jitter for chips inside cards */
+.plan .chips .chip,
+.plan .chip,
+.identity-card .chips .chip {
+    transform: none !important;
+}
+.plan .chips .chip:hover,
+.plan .chip:hover,
+.identity-card .chips .chip:hover {
+    transform: translateY(-2px) !important;
+}
+
+        
+
+/* ==========================================================================
+   ANAM / HALO-LAB 3D GALLERY HERO (EXACT REFERENCE REPLICATION)
+   ========================================================================== */
+.gallery-hero-wrap {
+    padding: 110px 20px 72px;
+    max-width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gallery-room {
+    background: radial-gradient(circle at 50% 30%, #E3DBD2 0%, #D0C6BB 55%, #BFAF9F 100%);
+    border-radius: 44px;
+    box-shadow: 0 48px 90px -24px rgba(35, 45, 60, 0.32), inset 0 2px 5px rgba(255, 255, 255, 0.8), inset 0 -6px 16px rgba(0, 0, 0, 0.08);
+    padding: 36px 48px 36px;
+    position: relative;
+    overflow: hidden;
+    color: #2E2924;
+    perspective: 1200px;
+}
+
+/* Perspective room lighting & architectural backplate */
+.room-backplate {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 68%;
+    height: 62%;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 28px;
+    box-shadow: inset 0 0 80px rgba(255, 255, 255, 0.22), 0 20px 40px rgba(0, 0, 0, 0.06);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.04) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Top bar inside the room */
+.room-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 24px;
+}
+.room-brand {
+    font-size: 1.65rem;
+    font-weight: 600;
+    font-family: 'Albert Sans', 'Outfit', sans-serif;
+    letter-spacing: -0.03em;
+    color: #2A241F;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.room-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.room-nav a {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: rgba(42, 36, 31, 0.72);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.room-nav a:hover, .room-nav a.active {
+    color: #1A1613;
+}
+.room-cta {
+    background: #FFFFFF;
+    color: #2A241F !important;
+    padding: 10px 24px;
+    border-radius: 99px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.room-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Main gallery stage holding the 3D personas */
+.gallery-stage {
+    position: relative;
+    min-height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    padding: 10px 0 20px;
+}
+
+/* Top-left tagline */
+.room-tagline {
+    position: absolute;
+    top: 24px;
+    left: 48px;
+    max-width: 260px;
+    font-size: 0.96rem;
+    line-height: 1.45;
+    color: rgba(42, 36, 31, 0.78);
+    font-weight: 400;
+    z-index: 5;
+}
+
+/* Top-right floating preview bubble */
+.room-badge-bubble {
+    position: absolute;
+    top: 24px;
+    right: 56px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    cursor: pointer;
+    transition: transform 0.24s ease;
+}
+.room-badge-bubble:hover {
+    transform: scale(1.08);
+}
+.bubble-inner {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.bubble-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bubble-play {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.bubble-play svg {
+    width: 10px;
+    height: 10px;
+    fill: #2A241F;
+    margin-left: 1px;
+}
+
+/* 3D Side Cards */
+.side-card {
+    position: absolute;
+    width: 210px;
+    height: 310px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 44px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: #D1C7BD;
+    transition: all 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+    cursor: pointer;
+    z-index: 3;
+}
+.side-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.92) contrast(0.96);
+    transition: filter 0.3s ease;
+}
+.side-card:hover img {
+    filter: brightness(1) contrast(1);
+}
+.side-card.left {
+    left: 7%;
+    transform: rotateY(26deg) scale(0.88);
+    opacity: 0.72;
+}
+.side-card.left:hover {
+    transform: rotateY(20deg) scale(0.94);
+    opacity: 0.95;
+}
+.side-card.right {
+    right: 7%;
+    transform: rotateY(-26deg) scale(0.88);
+    opacity: 0.72;
+}
+.side-card.right:hover {
+    transform: rotateY(-20deg) scale(0.94);
+    opacity: 0.95;
+}
+
+/* Center Stage with Persona */
+.center-persona-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 4;
+    width: 480px;
+    height: 520px;
+}
+
+/* Backplate Switcher Arrows */
+.persona-switcher {
+    position: absolute;
+    top: 42%;
+    left: -70px;
+    right: -70px;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 6;
+}
+.switcher-btn {
+    pointer-events: auto;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2A241F;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.22s ease;
+}
+.switcher-btn:hover {
+    background: #FFFFFF;
+    transform: scale(1.1);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+}
+.switcher-btn svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    stroke-width: 2.2;
+    fill: none;
+}
+
+/* Central Portrait Image */
+.center-portrait {
+    position: relative;
+    width: 380px;
+    height: 440px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.center-portrait img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 28px 28px 0 0;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.18));
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+/* Iconic Big "Meet Mia / Meet Maya" Title */
+.meet-title {
+    position: absolute;
+    bottom: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5.6rem;
+    font-weight: 400;
+    font-family: 'Albert Sans', 'Outfit', sans-serif;
+    letter-spacing: -0.04em;
+    color: rgba(255, 255, 255, 0.94);
+    text-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    margin: 0;
+    line-height: 0.9;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 5;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Chat with Persona CTA button */
+.chat-persona-btn {
+    position: relative;
+    z-index: 7;
+    margin-top: 14px;
+    background: #1C1814;
+    color: #FFFFFF !important;
+    padding: 14px 38px;
+    border-radius: 99px;
+    font-size: 0.98rem;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 16px 36px rgba(28, 24, 20, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.25s ease;
+}
+.chat-persona-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 22px 48px rgba(28, 24, 20, 0.45);
+    background: #0E0C0A;
+}
+
+/* Lower Dock Strip */
+.room-dock {
+    margin-top: 36px;
+    padding-top: 26px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1fr;
+    gap: 28px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+/* Left upload teaser widget */
+.dock-widget-left {
+    background: rgba(255, 255, 255, 0.32);
+    backdrop-filter: blur(10px);
+    border: 1px dashed rgba(42, 36, 31, 0.25);
+    border-radius: 20px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.2s ease;
+}
+.dock-widget-left:hover {
+    background: rgba(255, 255, 255, 0.45);
+}
+.dock-icon-circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.dock-icon-circle svg {
+    width: 20px;
+    height: 20px;
+    stroke: #2A241F;
+    fill: none;
+    stroke-width: 1.8;
+}
+.dock-widget-info {
+    font-size: 0.84rem;
+    line-height: 1.35;
+    color: #2A241F;
+}
+.dock-widget-info b {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.dock-widget-acts {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+}
+.dock-widget-acts button {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 99px;
+    padding: 4px 10px;
+    font-size: 0.74rem;
+    font-weight: 500;
+    color: #2A241F;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Center statement */
+.dock-center-text {
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #2A241F;
+    font-family: 'Albert Sans', 'Outfit', sans-serif;
+    padding: 0 12px;
+}
+
+/* Right trust badge */
+.dock-widget-right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+}
+.dock-widget-right span {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(42, 36, 31, 0.6);
+    font-weight: 600;
+}
+.dock-trust-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #2A241F;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1040px) {
+    .gallery-room { padding: 28px 24px 28px; }
+    .side-card { display: none; }
+    .meet-title { font-size: 4.2rem; bottom: 50px; }
+    .room-dock { grid-template-columns: 1fr; gap: 18px; text-align: center; }
+    .dock-widget-right { align-items: center; text-align: center; }
+    .room-tagline { position: static; max-width: 100%; margin: 12px 0 20px; text-align: center; }
+}
+
+    .center-persona-wrap { width: 100%; height: 420px; }
+    .center-portrait { width: 280px; height: 340px; }
+    .meet-title { font-size: 3.2rem; bottom: 44px; }
+    .room-nav { display: none; }
+}
+
+
+
+
+/* ==========================================================================
+   VIRTUAL HUMAN MASTER BRAND HARMONY OVERRIDES
+   Exact Brand Palette: Warm Ivory, Soft Sage, Muted Sage, Deep Forest Green,
+   Muted Clay, Soft Charcoal, Warm Sand, White.
+   ========================================================================== */
+
+/* 1. Body & Universal Surfaces */
+html, body { overflow-x: hidden !important; max-width: 100vw !important; width: 100% !important; margin: 0; padding: 0; }
+body { background: #F5F2EA !important; color: #303631 !important; }
+
+h1, h2, h3, h4, .h2 {
+    color: #263B35 !important;
+}
+
+p, .sub, .lede, .desc, blockquote {
+    color: #303631 !important;
+}
+
+.sub, .lede, .desc, .hint, .note {
+    color: #4A544C !important;
+}
+
+/* 2. Top Navigation Bar */
+.bar {
+    background: rgba(245, 242, 234, 0.92) !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 16px 32px -12px rgba(38, 59, 53, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    backdrop-filter: blur(14px) !important;
+}
+.brand {
+    color: #263B35 !important;
+}
+.mark {
+    background: linear-gradient(155deg, #324D45, #263B35 55%, #1B2A26) !important;
+    box-shadow: 0 8px 14px -8px rgba(38, 59, 53, .5), inset 1px 2px 3px rgba(255, 255, 255, .4) !important;
+}
+.mark::after {
+    background: rgba(245, 242, 234, 0.6) !important;
+}
+.nav a {
+    color: #303631 !important;
+}
+.nav a:hover, .nav a.active {
+    color: #263B35 !important;
+    background: rgba(229, 236, 228, 0.8) !important;
+    box-shadow: inset 1px 1px 2px rgba(38, 59, 53, 0.08) !important;
+}
+
+/* 3. Primary & Secondary Buttons */
+.btn.solid, .chat-persona-btn {
+    background: linear-gradient(155deg, #324D45 0%, #263B35 100%) !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 12px 24px -8px rgba(38, 59, 53, 0.42), var(--lip-jade) !important;
+    border: none !important;
+}
+.btn.solid:hover, .chat-persona-btn:hover {
+    background: #1B2A26 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 16px 30px -8px rgba(38, 59, 53, 0.52), var(--lip-jade) !important;
+}
+.btn {
+    background: rgba(245, 242, 234, 0.95) !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.18) !important;
+    box-shadow: 0 6px 14px -6px rgba(38, 59, 53, 0.12), var(--lip) !important;
+}
+.btn:hover {
+    background: #D8E2D8 !important;
+    color: #1B2A26 !important;
+    transform: translateY(-2px) !important;
+}
+
+/* 4. 3D Gallery Hero (Refined Warm Sand & Ivory, No Muddy Beige) */
+.gallery-room {
+    background: radial-gradient(circle at 50% 25%, #F5F2EA 0%, #E8E1D6 60%, #DDD5C8 100%) !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 44px 84px -24px rgba(38, 59, 53, 0.18), inset 0 2px 4px rgba(255, 255, 255, 0.95), inset 0 -4px 12px rgba(38, 59, 53, 0.04) !important;
+    color: #303631 !important;
+}
+.room-backplate {
+    border: 1px solid rgba(216, 226, 216, 0.6) !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(229, 236, 228, 0.25) 100%) !important;
+    box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.55), 0 20px 40px rgba(38, 59, 53, 0.04) !important;
+}
+.room-tagline {
+    color: #4A544C !important;
+}
+.room-badge-bubble {
+    background: rgba(245, 242, 234, 0.88) !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 12px 24px rgba(38, 59, 53, 0.08) !important;
+}
+.bubble-play {
+    background: #263B35 !important;
+}
+.bubble-play svg {
+    fill: #FFFFFF !important;
+}
+.switcher-btn {
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    background: rgba(245, 242, 234, 0.92) !important;
+    color: #263B35 !important;
+    box-shadow: 0 8px 18px rgba(38, 59, 53, 0.08) !important;
+}
+.switcher-btn:hover {
+    background: #FFFFFF !important;
+    color: #1B2A26 !important;
+}
+.side-card {
+    border: 1px solid rgba(216, 226, 216, 0.6) !important;
+    background: #E8E1D6 !important;
+    box-shadow: 0 20px 36px rgba(38, 59, 53, 0.12) !important;
+}
+.meet-title {
+    color: #FFFFFF !important;
+    text-shadow: 0 8px 32px rgba(38, 59, 53, 0.3) !important;
+}
+.room-dock {
+    border-top: 1px solid rgba(216, 226, 216, 0.6) !important;
+}
+.dock-widget-left {
+    background: rgba(255, 255, 255, 0.75) !important;
+    border: 1px dashed rgba(38, 59, 53, 0.22) !important;
+}
+.dock-icon-circle {
+    background: #E5ECE4 !important;
+}
+.dock-icon-circle svg {
+    stroke: #263B35 !important;
+}
+.dock-widget-acts button {
+    background: #FFFFFF !important;
+    border: 1px solid #D8E2D8 !important;
+    color: #263B35 !important;
+}
+.dock-widget-acts button:hover {
+    background: #E5ECE4 !important;
+}
+.dock-center-text {
+    color: #303631 !important;
+}
+.dock-widget-right span {
+    color: #5E6960 !important;
+}
+.dock-trust-tag {
+    color: #263B35 !important;
+}
+
+/* 5. Cards & Section Surfaces */
+.plan, .identity-card {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.1) !important;
+    box-shadow: 0 22px 38px -20px rgba(38, 59, 53, 0.12), inset 2px 3px 4px rgba(255, 255, 255, 0.95) !important;
+}
+.plan.hot {
+    background: linear-gradient(165deg, #FFFFFF 0%, #FAF8F4 50%, #F5F2EA 100%) !important;
+    border-top: 4px solid #263B35 !important;
+}
+.statplate {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.1) !important;
+    box-shadow: 0 20px 40px -20px rgba(38, 59, 53, 0.1), inset 0 1px 2px rgba(255, 255, 255, 0.95) !important;
+}
+.matrix-wrapper {
+    background: linear-gradient(158deg, #FFFFFF, #F5F2EA 46%, #E5ECE4) !important;
+    border-radius: 40px !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 36px 54px -24px rgba(38, 59, 53, 0.14), inset 3px 4px 6px rgba(255, 255, 255, .98) !important;
+}
+.matrix-table th {
+    color: #263B35 !important;
+    border-bottom: 2px solid rgba(38, 59, 53, 0.18) !important;
+}
+.matrix-table td {
+    color: #303631 !important;
+    border-bottom: 1px solid rgba(38, 59, 53, 0.08) !important;
+}
+.matrix-table tr:hover td {
+    background: rgba(255, 255, 255, 0.6) !important;
+}
+.check-pill {
+    background: rgba(38, 59, 53, 0.12) !important;
+    color: #263B35 !important;
+}
+.cross-pill {
+    background: rgba(48, 54, 49, 0.06) !important;
+    color: #5E6960 !important;
+}
+
+/* 6. Email Feature Card */
+.email-card {
+    background: linear-gradient(160deg, #FFFFFF, #F5F2EA 50%, #E5ECE4) !important;
+    border: 1px solid rgba(216, 226, 216, 0.8) !important;
+    box-shadow: 0 24px 44px -20px rgba(38, 59, 53, 0.14), inset 2px 3px 4px rgba(255, 255, 255, 0.95) !important;
+}
+.email-header {
+    border-bottom: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+.email-field b {
+    color: #4A544C !important;
+}
+.email-field span {
+    color: #303631 !important;
+}
+.email-body {
+    color: #303631 !important;
+}
+
+/* 7. Simulation Box in companion.html */
+.sim-box {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(216, 226, 216, 0.85) !important;
+    box-shadow: 0 32px 56px -24px rgba(38, 59, 53, 0.14), inset 2px 3px 4px rgba(255, 255, 255, 0.95) !important;
+}
+.sim-header {
+    border-bottom: 1px solid rgba(38, 59, 53, 0.1) !important;
+}
+.sim-meta b {
+    color: #263B35 !important;
+}
+.sim-meta span {
+    color: #5E6960 !important;
+}
+.pulse-dot {
+    background: #263B35 !important;
+}
+.chat-bubble.user {
+    background: #E5ECE4 !important;
+    color: #303631 !important;
+    border: 1px solid rgba(38, 59, 53, 0.08) !important;
+}
+.chat-bubble.companion {
+    background: #F5F2EA !important;
+    color: #303631 !important;
+    border: 1px solid rgba(38, 59, 53, 0.1) !important;
+}
+.chat-bubble .author {
+    color: #263B35 !important;
+    font-weight: 600 !important;
+}
+.chat-memory-badge {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+.sim-mode-btn {
+    background: rgba(245, 242, 234, 0.95) !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.16) !important;
+}
+.sim-mode-btn.active {
+    background: #263B35 !important;
+    color: #FFFFFF !important;
+    border-color: #263B35 !important;
+}
+
+/* 8. Pips, Eyebrows & Accents */
+.eyebrow {
+    color: #263B35 !important;
+    background: #E5ECE4 !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+.pill {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+.pill b { background: #263B35 !important; color: #FFFFFF !important; padding: 3px 10px !important; border-radius: 99px !important; }
+.chips .chip {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+    color: #303631 !important;
+}
+.chips .chip:hover {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+}
+.tile.t-jade, .tile.t-sky {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+}
+.tile.t-coral {
+    background: rgba(214, 165, 141, 0.22) !important;
+    color: #8F553D !important;
+}
+.face.t-jade, .face.t-sky {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+}
+.face.t-coral {
+    background: rgba(214, 165, 141, 0.25) !important;
+    color: #8F553D !important;
+}
+
+/* 9. Quotes (Testimonial Rail) */
+.quote {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.08) !important;
+}
+.quote.tint {
+    background: #E5ECE4 !important;
+}
+.qtop .co {
+    color: #4A544C !important;
+}
+.qtop .result {
+    color: #263B35 !important;
+}
+
+/* 10. Final Conversion Section & Footers */
+.close-plate {
+    background: linear-gradient(160deg, #FFFFFF 0%, #F5F2EA 50%, #E8E1D6 100%) !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+    box-shadow: 0 34px 60px -24px rgba(38, 59, 53, 0.16) !important;
+}
+.close-plate .field {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(38, 59, 53, 0.18) !important;
+    color: #303631 !important;
+}
+.close-plate .field:focus {
+    outline: 2px solid #263B35 !important;
+}
+.footlinks {
+    background: #E5ECE4 !important;
+    border: 1px solid rgba(38, 59, 53, 0.1) !important;
+}
+.footlinks a {
+    color: #303631 !important;
+}
+.footlinks a:hover {
+    color: #263B35 !important;
+}
+.footbar p, .footbar a {
+    color: #5E6960 !important;
+}
+.footbar a:hover {
+    color: #263B35 !important;
+}
+.sbtn {
+    background: rgba(245, 242, 234, 0.95) !important;
+    border: 1px solid rgba(38, 59, 53, 0.18) !important;
+    color: #263B35 !important;
+}
+.scue {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.12) !important;
+}
+
+
+
+/* Ensure all feature staves align with zero vertical jitter */
+.slabrow .stave {
+    transform: none !important;
+}
+.slabrow .stave:hover {
+    transform: translateY(-4px) !important;
+}
+.sfx {
+    bottom: 12px !important;
+    left: 14px !important;
+}
+.scue {
+    display: none !important;
+}
+
+
+/* ==========================================================================
+   VIRTUAL HUMAN — MASTER MOBILE RESPONSIVE ENGINE (320px - 768px)
+   ========================================================================== */
+
+/* 0. Header & Drawer Navigation */
+header.top {
+    z-index: 95 !important;
+}
+.drawer {
+    z-index: 90 !important;
+    background: #F5F2EA !important;
+    box-shadow: -10px 0 30px rgba(38, 59, 53, 0.18) !important;
+}
+.drawer a:not(.btn) {
+    color: #263B35 !important;
+}
+.drawer a:not(.btn):hover, .drawer a.active {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+}
+.drawer-close {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 99px !important;
+    background: #E5ECE4 !important;
+    border: 1px solid rgba(38, 59, 53, 0.16) !important;
+    color: #263B35 !important;
+    font-size: 1.5rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    line-height: 1 !important;
+    transition: background 0.2s ease !important;
+}
+.drawer-close:hover {
+    background: #D8E2D8 !important;
+}
+
+/* Universal Eyebrow & Pill Contrast Fix */
+.pill {
+    background: #E5ECE4 !important;
+    border: 1px solid rgba(38, 59, 53, 0.14) !important;
+    color: #263B35 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 6px 14px 6px 8px !important;
+    max-width: 95% !important;
+    white-space: normal !important;
+}
+.pill b {
+    background: #263B35 !important;
+    color: #FFFFFF !important;
+    padding: 3px 10px !important;
+    border-radius: 99px !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+/* Simulator button classes in companion.html */
+.sim-prompt-btn, .sim-mode-btn {
+    background: #E5ECE4 !important;
+    color: #263B35 !important;
+    border: 1px solid rgba(38, 59, 53, 0.16) !important;
+    padding: 10px 18px !important;
+    border-radius: 99px !important;
+    font-size: 0.88rem !important;
+    font-family: inherit !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+.sim-prompt-btn:hover, .sim-mode-btn:hover {
+    background: #D8E2D8 !important;
+    color: #263B35 !important;
+}
+.sim-prompt-btn.active, .sim-mode-btn.active {
+    background: #263B35 !important;
+    color: #FFFFFF !important;
+    border-color: #263B35 !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 12px rgba(38, 59, 53, 0.25) !important;
+}
+
+/* Card Button Alignment Across Columns */
+.plan {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+.plan .btn, .plan.identity-card .btn {
+    margin-top: auto !important;
+}
+
+/* Word-break for email */
+.email-field span {
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+}
+.matrix-scroll-hint {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    /* Staves Accordion Mobile Engine */
+    .slabrow {
+        flex-direction: column !important;
+        height: auto !important;
+        gap: 12px !important;
+    }
+    .stave {
+        width: 100% !important;
+        border-radius: 24px !important;
+        background: #F5F2EA !important;
+        border: 1px solid rgba(216, 226, 216, 0.85) !important;
+        box-shadow: 0 8px 18px -8px rgba(38, 59, 53, 0.08) !important;
+        overflow: hidden !important;
+        transition: background 0.3s ease !important;
+    }
+    .stave.open {
+        background: #FFFFFF !important;
+        box-shadow: 0 16px 32px -12px rgba(38, 59, 53, 0.12) !important;
+    }
+    .stave:not(.open) .bodywrap {
+        display: none !important;
+        height: 0 !important;
+        max-height: 0 !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .stave:not(.open) .bodywrap > .body {
+        display: none !important;
+        height: 0 !important;
+        overflow: hidden !important;
+    }
+    .spine {
+        padding: 16px 18px !important;
+        gap: 12px !important;
+    }
+    .spine .st {
+        font-size: 1.05rem !important;
+        color: #263B35 !important;
+        font-weight: 600 !important;
+    }
+    .stave.open .bodywrap {
+        display: block !important;
+        padding: 0 20px 22px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 1. Safe Anchor Scrolling (Header Clearances) */
+    section, [id] {
+        scroll-margin-top: 88px !important;
+    }
+
+    /* Fixed Top Bar on Mobile */
+    .bar {
+        padding: 10px 14px !important;
+        background: rgba(245, 242, 234, 0.96) !important;
+        border-bottom: 1px solid rgba(38, 59, 53, 0.12) !important;
+    }
+    .brand {
+        font-size: 1.15rem !important;
+    }
+
+    /* Floating UI Controls: avoid collisions */
+    .sfx {
+        bottom: 16px !important;
+        left: 14px !important;
+        z-index: 99 !important;
+    }
+    .scue {
+        display: none !important;
+    }
+    .top {
+        bottom: 16px !important;
+        right: 14px !important;
+        z-index: 99 !important;
+    }
+
+    /* Action Buttons in Hero & CTAs (.acts) */
+    .acts {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+        align-items: stretch !important;
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 22px auto !important;
+    }
+    .acts .btn {
+        width: 100% !important;
+        text-align: center !important;
+        margin: 0 !important;
+        padding: 14px 20px !important;
+    }
+
+    /* Grid Stacking for all card collections */
+    .plans.grid-2, .plans.grid-3, .plans.grid-4, .plans {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 18px !important;
+        width: 100% !important;
+    }
+    .plan {
+        width: 100% !important;
+        padding: 24px 18px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Problem and Opportunity statplate in index.html */
+    .statplate, #perspective .statplate {
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        padding: 16px !important;
+    }
+    .statplate .stat {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 24px 20px !important;
+        border-radius: 24px !important;
+    }
+
+    /* 2. Homepage 3D Gallery Hero (index.html) */
+    .gallery-hero-wrap {
+        padding: 82px 10px 36px !important;
+    }
+    .gallery-room {
+        padding: 20px 14px 22px !important;
+        border-radius: 28px !important;
+        background: radial-gradient(circle at 50% 25%, #E3DBD2 0%, #D0C6BB 55%, #BFAF9F 100%) !important;
+    }
+    .room-tagline {
+        position: static !important;
+        max-width: 100% !important;
+        margin: 0 auto 12px !important;
+        text-align: center !important;
+        font-size: 0.9rem !important;
+        line-height: 1.45 !important;
+        color: #2E2924 !important;
+        padding: 0 8px !important;
+    }
+    .room-badge-bubble {
+        position: static !important;
+        display: inline-flex !important;
+        justify-content: center !important;
+        margin: 0 auto 16px !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+    }
+    .gallery-stage {
+        min-height: auto !important;
+        height: auto !important;
+        margin-top: 6px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        position: relative !important;
+        padding: 0 !important;
+    }
+    .room-backplate { width: 90% !important; height: 50% !important; top: 125px !important;
+        border-radius: 20px !important;
+    }
+    .side-card {
+        display: none !important;
+    }
+    .center-persona-wrap {
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .center-portrait {
+        width: 250px !important;
+        height: 310px !important;
+        margin: 0 auto !important;
+        border-radius: 24px !important;
+        overflow: hidden !important;
+        box-shadow: 0 20px 36px -12px rgba(35, 45, 60, 0.35) !important;
+    }
+    .persona-switcher {
+        display: flex !important;
+        justify-content: space-between !important;
+        position: absolute !important;
+        top: 38% !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-width: 310px !important;
+        margin: 0 auto !important;
+        transform: translateY(-50%) !important;
+        z-index: 25 !important;
+        pointer-events: none !important;
+    }
+    .switcher-btn {
+        pointer-events: auto !important;
+        width: 44px !important;
+        height: 44px !important;
+        background: rgba(245, 242, 234, 0.95) !important;
+        border: 1px solid rgba(38, 59, 53, 0.18) !important;
+        color: #263B35 !important;
+        border-radius: 99px !important;
+        box-shadow: 0 6px 16px rgba(35, 45, 60, 0.2) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        cursor: pointer !important;
+    }
+    .meet-title {
+        position: relative !important;
+        bottom: auto !important;
+        left: auto !important;
+        transform: none !important;
+        font-size: 2.7rem !important;
+        margin: -28px auto 14px !important;
+        z-index: 20 !important;
+        text-align: center !important;
+        text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45) !important;
+    }
+    .chat-persona-btn {
+        width: 100% !important;
+        max-width: 270px !important;
+        margin: 0 auto !important;
+        padding: 13px 20px !important;
+        font-size: 0.96rem !important;
+        border-radius: 99px !important;
+        text-align: center !important;
+    }
+    .room-timeline {
+        display: none !important;
+    }
+    .room-dock {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        margin-top: 22px !important;
+        text-align: center !important;
+    }
+    .upload-card {
+        padding: 14px !important;
+        border-radius: 20px !important;
+        max-width: 310px !important;
+        margin: 0 auto !important;
+    }
+    .dock-upload-actions {
+        display: flex !important;
+        gap: 8px !important;
+        justify-content: center !important;
+    }
+    .dock-btn {
+        padding: 8px 12px !important;
+        font-size: 0.82rem !important;
+    }
+    .dock-text-center {
+        font-size: 0.86rem !important;
+        line-height: 1.45 !important;
+        padding: 0 6px !important;
+    }
+    .dock-widget-right {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* 3. Companion Simulator on Mobile */
+    .sim-box {
+        padding: 20px 14px !important;
+        border-radius: 26px !important;
+        margin-top: 22px !important;
+    }
+    .sim-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 12px !important;
+        padding-bottom: 16px !important;
+    }
+    .sim-status {
+        font-size: 0.78rem !important;
+        padding: 5px 10px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .sim-meta b {
+        font-size: 1.05rem !important;
+    }
+    .sim-meta span {
+        font-size: 0.82rem !important;
+    }
+    .chat-bubble {
+        max-width: 95% !important;
+        padding: 14px 16px !important;
+        font-size: 0.92rem !important;
+    }
+    .sim-prompt-btn, .sim-mode-btn {
+        width: 100% !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
+    }
+    .email-card {
+        padding: 20px 14px !important;
+        border-radius: 26px !important;
+    }
+    .email-header {
+        font-size: 0.82rem !important;
+    }
+    .email-field {
+        flex-wrap: wrap !important;
+        gap: 4px !important;
+    }
+    .email-body {
+        font-size: 0.92rem !important;
+        line-height: 1.55 !important;
+    }
+
+    /* 4. Pricing Matrix Table on Mobile */
+    .matrix-scroll-hint {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        font-size: 0.78rem !important;
+        color: #263B35 !important;
+        background: #E5ECE4 !important;
+        border: 1px solid rgba(38, 59, 53, 0.12) !important;
+        padding: 6px 14px !important;
+        border-radius: 99px !important;
+        margin: 0 auto 14px !important;
+    }
+    .matrix-wrapper {
+        padding: 20px 10px !important;
+        border-radius: 26px !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        position: relative !important;
+    }
+    .matrix-table {
+        min-width: 530px !important;
+        font-size: 0.86rem !important;
+    }
+    .matrix-table th, .matrix-table td {
+        padding: 12px 8px !important;
+    }
+    .matrix-table th:first-child, .matrix-table td:first-child {
+        position: sticky !important;
+        left: 0 !important;
+        background: #F5F2EA !important;
+        z-index: 5 !important;
+        box-shadow: 2px 0 6px rgba(38, 59, 53, 0.08) !important;
+        width: 145px !important;
+        min-width: 145px !important;
+    }
+
+    /* 5. Discover Filter Chips & Cards */
+    .chips {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+        justify-content: center !important;
+        padding: 0 4px !important;
+    }
+    .chip {
+        font-size: 0.78rem !important;
+        padding: 7px 12px !important;
+    }
+    .qtop {
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+    }
+    .qtop .co {
+        font-size: 0.82rem !important;
+        max-width: 65% !important;
+        white-space: normal !important;
+    }
+}
+
+</style>
+
+    </head>
+    <body>
+        <header class="top" id="top">
+            <div class="shell bar">
+                <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Virtual Human</a>
+                <nav class="nav">
+                    <a href="companion.html">AI Companion</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="how-it-works.html">How It Works</a>
+                    <a href="experts.html">For Experts</a>
+                    <a href="faq.html">FAQ</a>
+                </nav>
+                <a class="btn solid" href="https://univasvh.com" target="_blank" rel="noopener">Launch App</a>
+                <button class="burger"
+                        id="burger"
+                        aria-label="Open menu"
+                        aria-expanded="false"
+                        aria-controls="drawer">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </header>
+        <div class="scrim" id="scrim"></div>
+        <aside class="drawer" id="drawer" aria-label="Menu">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; padding: 0 4px;">
+                <span class="dtag">Menu</span>
+                <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+            </div>
+            <a href="companion.html">AI Companion</a>
+            <a href="discover.html">Discover</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="experts.html">For Experts</a>
+            <a href="faq.html">FAQ</a>
+            <div style="margin-top:16px; padding-top:14px; border-top:1px solid rgba(0,0,0,0.06); display:flex; flex-direction:column; gap:10px;">
+                <a class="btn solid" href="https://univasvh.com" target="_blank" rel="noopener" style="text-align:center; justify-content:center;">Launch Web App</a>
+                <a class="dock-play-btn" href="https://play.google.com/store/apps/details?id=com.univasos.virtualhuman" target="_blank" rel="noopener" style="text-align:center; justify-content:center; padding:10px 18px; border-radius:14px;">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" style="flex-shrink:0;">
+    <path d="M3.6 2.4a1.8 1.8 0 0 0-.4 1.2v16.8a1.8 1.8 0 0 0 .4 1.2l9.8-9.6L3.6 2.4z" fill="#00b0ff"/>
+    <path d="M17.4 8.7L13.4 12l4 3.3 2.5-1.4c1-.6 1.6-1.6 1.6-2.8 0-1.1-.6-2.2-1.6-2.8l-2.5-1.4z" fill="#ffc400"/>
+    <path d="M3.6 21.6c.6.5 1.5.5 2.3.1l11.5-6.6-4-3.3-9.8 9.8z" fill="#ff3d00"/>
+    <path d="M17.4 8.7L5.9 2.1C5.1 1.6 4.2 1.7 3.6 2.2l9.8 9.8 4-3.3z" fill="#00e676"/>
+</svg>
+                    <span>Google Play Store</span>
+                </a>
+            </div>
+        </aside>
+        <main id="home">
+                        <!-- HERO: EXACT ANAM / HALO-LAB 3D GALLERY REPLICATION -->
+            <section class="gallery-hero-wrap">
+                <div class="gallery-room">
+                    <!-- Perspective Room Backplate with Subtle Illumination -->
+                    <div class="room-backplate" aria-hidden="true"></div>
+
+                    <!-- Top Bar Inside Gallery Room -->
+                    <!-- Room Tagline (Top Left) -->
+                    <div class="room-tagline">
+                        Create lifelike, customizable AI companions—anchored in warmth, episodic memory, and human wisdom.
+                    </div>
+
+                    <!-- Live Voice / Video Preview Badge (Top Right) -->
+                    <a class="room-badge-bubble" href="companion.html#simulator" title="Listen to AI Companion live voice sample">
+                        <div class="bubble-inner">
+                            <img id="bubble-avatar-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Companion audio preview">
+                            <div class="bubble-play">
+                                <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Main 3D Gallery Stage -->
+                    <div class="gallery-stage">
+                        <!-- Left Angled 3D Perspective Card (David - Father Figure) -->
+                        <div class="side-card left" id="side-card-left" title="Click to view David (Father Figure)">
+                            <img id="left-card-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="David - Father Figure">
+                        </div>
+
+                        <!-- Center Persona Focus -->
+                        <div class="center-persona-wrap">
+                            <!-- Switcher Arrows (< and >) -->
+                            <div class="persona-switcher">
+                                <button class="switcher-btn" id="btn-persona-prev" aria-label="Previous Persona">
+                                    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                                </button>
+                                <button class="switcher-btn" id="btn-persona-next" aria-label="Next Persona">
+                                    <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                </button>
+                            </div>
+
+                            <!-- Central Portrait Image -->
+                            <div class="center-portrait">
+                                <img id="center-persona-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85" alt="Mia / Maya - Devoted Partner">
+                            </div>
+
+                            <!-- Massive Overlapping Headline "Meet Mia" -->
+                            <h1 class="meet-title" id="meet-persona-title">Meet Mia</h1>
+
+                            <!-- Central "Chat with Persona" Button -->
+                            <a class="chat-persona-btn" id="chat-persona-link" href="https://univasvh.com" target="_blank" rel="noopener">
+                                <span id="chat-persona-text">Chat with Persona</span>
+                                <svg viewBox="0 0 24 24" style="width:16px; height:16px; stroke:currentColor; stroke-width:2.2; fill:none;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+
+                        <!-- Right Angled 3D Perspective Card (Elena - Founder Mentor) -->
+                        <div class="side-card right" id="side-card-right" title="Click to view Elena (Founder Mentor)">
+                            <img id="right-card-img" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80" alt="Elena - SaaS Founder">
+                        </div>
+                    </div>
+
+                    <!-- Bottom Widget Strip / Room Dock -->
+                    <div class="room-dock">
+                        <!-- Left: Upload photo / Camera teaser -->
+                        <div class="dock-widget-left">
+                            <div class="dock-icon-circle">
+                                <svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                            </div>
+                            <div class="dock-widget-info">
+                                <b>Upload a photo or backstory</b>
+                                <span>Create from image or memory</span>
+                                <div class="dock-widget-acts">
+                                    <button type="button" onclick="location.href='companion.html#create-character'">Browse Files</button>
+                                    <button type="button" onclick="location.href='companion.html#create-character'">Use Studio</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center: Clear value statement -->
+                        <div class="dock-center-text">
+                            Create an AI persona for any relationship or choose from our curated library of personal &amp; expert minds.
+                        </div>
+
+                        <!-- Right: Trust Signals -->
+                        <div class="dock-widget-right">
+                            <div class="dock-live-indicator">
+                                <span class="live-pulse-dot"></span>
+                                <span>Now Live on Android &amp; Web</span>
+                            </div>
+                            <div class="dock-app-actions">
+                                <a href="https://play.google.com/store/apps/details?id=com.univasos.virtualhuman" target="_blank" rel="noopener" class="dock-play-btn" title="Download on Google Play">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" style="flex-shrink:0;">
+    <path d="M3.6 2.4a1.8 1.8 0 0 0-.4 1.2v16.8a1.8 1.8 0 0 0 .4 1.2l9.8-9.6L3.6 2.4z" fill="#00b0ff"/>
+    <path d="M17.4 8.7L13.4 12l4 3.3 2.5-1.4c1-.6 1.6-1.6 1.6-2.8 0-1.1-.6-2.2-1.6-2.8l-2.5-1.4z" fill="#ffc400"/>
+    <path d="M3.6 21.6c.6.5 1.5.5 2.3.1l11.5-6.6-4-3.3-9.8 9.8z" fill="#ff3d00"/>
+    <path d="M17.4 8.7L5.9 2.1C5.1 1.6 4.2 1.7 3.6 2.2l9.8 9.8 4-3.3z" fill="#00e676"/>
+</svg>
+                                    <span>Google Play</span>
+                                </a>
+                                <a href="https://univasvh.com" target="_blank" rel="noopener" class="dock-web-btn" title="Launch Web App">
+                                    <span>Web App &rarr;</span>
+                                </a>
+                            </div>
+                        </div></div>
+                </div>
+            </section>
+            <!-- trust -->
+            <section class="pad-s">
+                <div class="shell rv">
+                    <p class="trust-cap">Meaningful relationships &amp; interactive mentorship</p>
+                    <div class="trust">
+                        <span>Father &amp; Mother Figures</span><span>Devoted Spouses &amp; Partners</span><span>Lifelong Confidants</span><span>Founder Mentorship</span><span>Leadership Strategy</span><span>Creative Direction</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3: THE PROBLEM AND OPPORTUNITY -->
+            <section class="pad" id="perspective">
+                <div class="shell center">
+                    <span class="eyebrow rv">Why Virtual Human</span>
+                    <h2 class="h2 rv">Life moves fast. We all need someone who genuinely listens.</h2>
+                    <p class="lede rv d1">Whether navigating a stressful life transition, longing for steady family presence, or tackling a high-stakes decision, generic search results and stateless chatbots leave us isolated.</p>
+                </div>
+                <div class="shell">
+                    <div class="statplate rv d1" style="margin-top:36px;">
+                        <div class="stat" style="text-align:left; padding:32px 26px;">
+                            <div class="tile t-coral" style="width:48px; height:48px; border-radius:16px; margin-bottom:16px;">
+                                <svg viewBox="0 0 24 24" style="width:22px; height:22px; stroke:var(--coral-ink, #A8421F); fill:none; stroke-width:2;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            </div>
+                            <h3 style="font-size:1.2rem; margin-bottom:8px; color:var(--ink);">Meaningful Connection is Rare</h3>
+                            <p style="font-size:0.9rem; line-height:1.55; color:var(--ink-2); margin:0;">We carry heavy decisions alone. True emotional presence—a steady father, an empathetic partner, or a trusted friend who knows your story—is often out of reach.</p>
+                        </div>
+                        <div class="stat" style="text-align:left; padding:32px 26px;">
+                            <div class="tile t-sky" style="width:48px; height:48px; border-radius:16px; margin-bottom:16px;">
+                                <svg viewBox="0 0 24 24" style="width:22px; height:22px; stroke:var(--sky-ink); fill:none; stroke-width:2;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <h3 style="font-size:1.2rem; margin-bottom:8px; color:var(--ink);">Traditional AI Forgets You</h3>
+                            <p style="font-size:0.9rem; line-height:1.55; color:var(--ink-2); margin:0;">Conventional chatbots wipe their memory the moment you close the tab. They offer cold, repetitive replies and impersonal emails that feel robotic and detached.</p>
+                        </div>
+                        <div class="stat" style="text-align:left; padding:32px 26px;">
+                            <div class="tile t-jade" style="width:48px; height:48px; border-radius:16px; margin-bottom:16px;">
+                                <svg viewBox="0 0 24 24" style="width:22px; height:22px; stroke:var(--jade-ink); fill:none; stroke-width:2;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <h3 style="font-size:1.2rem; margin-bottom:8px; color:var(--ink);">Warmth, Memory &amp; Wisdom</h3>
+                            <p style="font-size:0.9rem; line-height:1.55; color:var(--ink-2); margin:0;">Virtual Human pairs emotional presence with long-term episodic memory. Craft the personal relationships you need, or tap into the 24/7 wisdom of proven leaders.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- features / discover -->
+            <section class="pad" id="discover">
+                <div class="shell center">
+                    <span class="eyebrow rv">Core Value</span>
+                    <h2 class="h2 rv">More than answers. A different kind of connection.</h2>
+                    <p class="lede rv d1">Discover how persistent relational memory, emotional warmth, and interactive expertise deliver presence where generic chatbots fall short.</p>
+                    <p class="hint rv d1">Click a panel to explore.</p>
+                </div>
+                <div class="shell">
+                    <div class="slabrow rv" id="slabrow">
+                        <!-- Panel 1 (70% Personal) -->
+                        <div class="stave open" role="button" tabindex="0" aria-expanded="true">
+                            <div class="spine"><span class="pip t-jade"></span><span class="st">Family &amp; Personal Companions</span></div>
+                            <div class="bodywrap">
+                                <div class="body">
+                                    <div class="tile t-jade">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                        </svg>
+                                    </div>
+                                    <h3>Family &amp; Personal Companions</h3>
+                                    <p>Craft meaningful personal companions—such as an encouraging father figure, a nurturing mother, a devoted spouse, or a lifelong confidant.</p>
+                                    <p class="proof">Anchored in <b>emotional warmth &amp; deep presence</b>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Panel 2 (70% Personal) -->
+                        <div class="stave" role="button" tabindex="0" aria-expanded="false">
+                            <div class="spine"><span class="pip t-sky"></span><span class="st">Persistent Episodic Memory</span></div>
+                            <div class="bodywrap">
+                                <div class="body">
+                                    <div class="tile t-sky">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                            <line x1="8" y1="9" x2="16" y2="9" />
+                                            <line x1="8" y1="13" x2="13" y2="13" />
+                                        </svg>
+                                    </div>
+                                    <h3>Persistent Episodic Memory</h3>
+                                    <p>Every session builds on the last. Your companion remembers past discussions, personal struggles, inside jokes, and milestones across months.</p>
+                                    <p class="proof">True continuity, <b>never resetting to zero</b>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Panel 3 (70% Personal) -->
+                        <div class="stave" role="button" tabindex="0" aria-expanded="false">
+                            <div class="spine"><span class="pip t-coral"></span><span class="st">Personalized Proactive Check-ins</span></div>
+                            <div class="bodywrap">
+                                <div class="body">
+                                    <div class="tile t-coral">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                            <polyline points="22,6 12,13 2,6" />
+                                        </svg>
+                                    </div>
+                                    <h3>Personalized Proactive Check-ins</h3>
+                                    <p>Receive thoughtful email and in-app follow-ups referencing your exact conversations, replacing impersonal automated email blasts.</p>
+                                    <p class="proof">Messages that <b>truly remember your life</b>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Panel 4 (70% Personal) -->
+                        <div class="stave" role="button" tabindex="0" aria-expanded="false">
+                            <div class="spine"><span class="pip t-sky"></span><span class="st">Emotional Warmth &amp; Tone</span></div>
+                            <div class="bodywrap">
+                                <div class="body">
+                                    <div class="tile t-sky">
+                                        <svg viewBox="0 0 24 24">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <path d="m4.93 4.93 4.24 4.24" />
+                                            <path d="m14.83 9.17 4.24-4.24" />
+                                            <path d="m14.83 14.83 4.24 4.24" />
+                                            <path d="m9.17 14.83-4.24 4.24" />
+                                            <circle cx="12" cy="12" r="4" />
+                                        </svg>
+                                    </div>
+                                    <h3>Emotional Warmth &amp; Tone</h3>
+                                    <p>Calibrate sliders for tenderness, directness, and intellectual rigor to craft a companion tailored to your emotional wavelength.</p>
+                                    <p class="proof">Adaptive personality <b>built around your comfort</b>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Panel 5 (30% Human Expertise) -->
+                        <div class="stave" role="button" tabindex="0" aria-expanded="false">
+                            <div class="spine"><span class="pip t-jade"></span><span class="st">Interactive Human Expertise</span></div>
+                            <div class="bodywrap">
+                                <div class="body">
+                                    <div class="tile t-jade">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                                            <circle cx="13" cy="10" r="3" />
+                                        </svg>
+                                    </div>
+                                    <h3>Interactive Human Expertise</h3>
+                                    <p>Engage 24/7 with the battle-tested wisdom, mental frameworks, and stories of proven founders, operators, and creators.</p>
+                                    <p class="proof">Lived human knowledge, <b>not internet consensus</b>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Panel 6 (Growth & Sharing) -->
+                        <div class="stave" role="button" tabindex="0" aria-expanded="false">
+                            <div class="spine"><span class="pip t-coral"></span><span class="st">Action, Milestones &amp; Studio</span></div>
+                            <div class="bodywrap">
+                                <div class="body">
+                                    <div class="tile t-coral">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M18 20V10M12 20V4M6 20v-6" />
+                                            <path d="M2 20h20" />
+                                        </svg>
+                                    </div>
+                                    <h3>Action, Milestones &amp; Studio</h3>
+                                    <p>Turn dialogue into personal milestones, reflection prompts, or publish your own expert AI identity for others to learn from.</p>
+                                    <p class="proof">Continuous growth &middot; <b>Personal &amp; professional</b>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- how it works -->
+            <section class="pad" id="how">
+                <div class="shell center">
+                    <span class="eyebrow rv">How It Works</span>
+                    <h2 class="h2 rv">Getting started is simple.</h2>
+                    <p class="lede rv d1">Three intuitive steps to craft a lifelong companion or consult with proven experts.</p>
+                </div>
+                <div class="shell">
+                    <div class="track">
+                        <div class="step rv">
+                            <div class="disc">1</div>
+                            <h3>01. Choose Your Relationship</h3>
+                            <p>Select a personal companion—father, mother, spouse, confidant—or discover a proven industry mentor.</p>
+                        </div>
+                        <div class="step rv d1">
+                            <div class="disc">2</div>
+                            <h3>02. Impart Memories &amp; Tone</h3>
+                            <p>Share your backstory, set emotional warmth, and calibrate communication style to your preference.</p>
+                        </div>
+                        <div class="step rv d2">
+                            <div class="disc">3</div>
+                            <h3>03. Grow with True Continuity</h3>
+                            <p>Enjoy daily conversations, heartfelt proactive check-ins, and shared milestones over months.</p>
+                        </div>
+                    </div>
+                    <div style="text-align:center; margin-top:36px;" class="rv d2">
+                        <a class="btn solid" href="companion.html">Create Your Companion</a>
+                        <a class="btn" href="discover.html" style="margin-left:12px;">Browse All Identities</a>
+                    </div>
+                </div>
+            </section>
+            <!-- possibilities -->
+            <section class="pad-s" id="possibilities">
+                <div class="shell center">
+                    <span class="eyebrow rv">Possibilities</span>
+                    <h2 class="h2 rv">One platform. Meaningful relationships &amp; expertise.</h2>
+                    <p class="lede rv d1">Whether you need unconditional family support, an empathetic ear, or strategic industry counsel.</p>
+                    <div class="chips rv d1">
+                        <span class="chip"><i style="background:var(--jade)"></i>Father Figures</span>
+                        <span class="chip"><i style="background:var(--coral)"></i>Devoted Spouses</span>
+                        <span class="chip"><i style="background:var(--sky)"></i>Nurturing Mothers</span>
+                        <span class="chip"><i style="background:#F0C980"></i>Lifelong Confidants</span>
+                        <span class="chip"><i style="background:var(--jade)"></i>Empathetic Listeners</span>
+                        <span class="chip"><i style="background:var(--sky)"></i>Mindfulness Guides</span>
+                        <span class="chip"><i style="background:var(--coral)"></i>Startup Founders</span>
+                        <span class="chip"><i style="background:#F0C980"></i>Leadership Strategists</span>
+                        <span class="chip"><i style="background:var(--jade)"></i>Creative Muses</span>
+                        <span class="chip"><i style="background:var(--sky)"></i>Executive Mentors</span>
+                    </div>
+                </div>
+            </section>
+            <!-- two pathways -->
+            <section class="pad-s" id="expert-opportunity">
+                <div class="shell center">
+                    <span class="eyebrow rv">Two Ways to Connect</span>
+                    <h2 class="h2 rv">Craft a companion you love. Or share the wisdom you've lived.</h2>
+                    <p class="lede rv d1">Build a private companion who is always in your corner with genuine warmth, or turn your career experience into an AI identity that mentors others worldwide.</p>
+                    <div class="acts rv d2" style="margin-top:24px;">
+                          <a class="btn solid" href="companion.html">Create Your Companion</a>
+                          <a class="btn" href="experts.html">Become an Expert Creator</a>
+                      </div>
+                </div>
+                <div class="shell" style="margin-top:40px;">
+                    <div class="statplate rv">
+                        <div class="stat"><b data-to="100" data-suffix="%">0%</b><span>private &amp; confidential personal companions</span></div>
+                        <div class="stat"><b data-to="14" data-suffix="+ sessions">0+ sessions</b><span>deep episodic memory retention per relationship</span></div>
+                        <div class="stat"><b data-to="24" data-suffix="/7">0/7</b><span>constant warmth &amp; mentorship whenever you need it</span></div>
+                    </div>
+                </div>
+            </section>
+            <!-- illustrative scenarios (testimonials rail) -->
+            <section class="pad" id="stories">
+                <div class="shell">
+                    <div class="railhead">
+                        <div>
+                            <span class="eyebrow rv">Illustrative Scenarios</span>
+                            <h2 class="h2 rv">Imagine the conversations waiting for you.</h2>
+                        </div>
+                        <div class="railnav rv d1">
+                            <button class="arw" id="prev" aria-label="Previous scenario">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M15 5l-7 7 7 7" />
+                                </svg>
+                            </button>
+                            <span class="count" id="count">01 / 06</span>
+                            <button class="arw" id="next" aria-label="Next scenario">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shell">
+                    <div class="viewport" id="viewport">
+                        <div class="lane" id="lane">
+                            <!-- Scenario 1: Father Figure (Personal 70%) -->
+                            <article class="quote">
+                                <div class="qtop"><span class="co"><i class="t-jade"></i>Father Figure &middot; Life Guidance</span><span class="result">Warm Presence</span></div>
+                                <blockquote>
+                                    "Take a slow breath, kiddo. Remember our porch talk before you moved? You've got that same grit. Check that kitchen radiator like we discussed, and get some rest."
+                                </blockquote>
+                                <div class="groove"></div>
+                                <div class="who">
+                                    <span class="face t-jade">DA</span>
+                                    <div><b>David (Father Figure)</b><span>Alex &middot; New City Transition</span></div>
+                                </div>
+                            </article>
+                            <!-- Scenario 2: Devoted Partner (Personal 70%) -->
+                            <article class="quote tint">
+                                <div class="qtop"><span class="co"><i class="t-coral"></i>Partner &middot; Daily Intimacy</span><span class="result">Emotional Care</span></div>
+                                <blockquote>
+                                    "Come here. You worked tirelessly on that pitch deck all week. Let's stick to our agreement tonight: zero work screens after 8 PM. I'm right here with you."
+                                </blockquote>
+                                <div class="groove"></div>
+                                <div class="who">
+                                    <span class="face t-coral">MA</span>
+                                    <div><b>Maya (Devoted Partner)</b><span>Elena &middot; Unwinding After Work</span></div>
+                                </div>
+                            </article>
+                            <!-- Scenario 3: Lifelong Confidant (Personal 70%) -->
+                            <article class="quote">
+                                <div class="qtop"><span class="co"><i class="t-sky"></i>Friend &middot; Confidant</span><span class="result">Zero Judgment</span></div>
+                                <blockquote>
+                                    "You can tell me anything without worrying about being a burden. Look at what you wrote in your journal two weeks ago—trust your intuition on this big decision."
+                                </blockquote>
+                                <div class="groove"></div>
+                                <div class="who">
+                                    <span class="face t-sky">JU</span>
+                                    <div><b>Julian (Confidant)</b><span>Marcus &middot; Personal Crossroad</span></div>
+                                </div>
+                            </article>
+                            <!-- Scenario 4: Nurturing Mother (Personal 70%) -->
+                            <article class="quote tint">
+                                <div class="qtop"><span class="co"><i class="t-jade"></i>Mother Figure &middot; Unconditional Care</span><span class="result">Gentle Heart</span></div>
+                                <blockquote>
+                                    "Close your eyes, sweetheart. Put your hand on your heart. You've prepared so thoughtfully for this keynote. Eat a warm breakfast and know how proud I am of you."
+                                </blockquote>
+                                <div class="groove"></div>
+                                <div class="who">
+                                    <span class="face t-jade">CL</span>
+                                    <div><b>Clara (Nurturing Mother)</b><span>Sophia &middot; Career Milestone</span></div>
+                                </div>
+                            </article>
+                            <!-- Scenario 5: SaaS Founder (Expert 30%) -->
+                            <article class="quote">
+                                <div class="qtop"><span class="co"><i class="t-coral"></i>Founder &middot; B2B SaaS</span><span class="result">Growth Strategy</span></div>
+                                <blockquote>
+                                    "In year two of scaling, annual upfront billing saved our runway. Don't discount your price until you understand exactly why early cohorts are churning."
+                                </blockquote>
+                                <div class="groove"></div>
+                                <div class="who">
+                                    <span class="face t-coral">ER</span>
+                                    <div><b>Elena Rostova ($12M ARR)</b><span>Daniel &middot; Startup Dilemma</span></div>
+                                </div>
+                            </article>
+                            <!-- Scenario 6: Growth Strategist (Expert 30%) -->
+                            <article class="quote tint">
+                                <div class="qtop"><span class="co"><i class="t-sky"></i>Strategy &middot; Product Loops</span><span class="result">Decision Clarity</span></div>
+                                <blockquote>
+                                    "Before you spend weeks rebuilding onboarding, measure where users drop off in the invite modal. An inline fix protects your launch timeline far better."
+                                </blockquote>
+                                <div class="groove"></div>
+                                <div class="who">
+                                    <span class="face t-sky">MV</span>
+                                    <div><b>Marcus Vance (Growth)</b><span>Liam &middot; High-Leverage Bet</span></div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- faq -->
+            <section class="pad" id="faq">
+                <div class="shell center">
+                    <span class="eyebrow rv">Questions</span>
+                    <h2 class="h2 rv">A few things you might be wondering.</h2>
+                </div>
+                <div class="shell">
+                    <div class="faq">
+                        <!-- Q1 -->
+                        <div class="q rv" role="button" tabindex="0" aria-expanded="false">
+                            <div class="qh">
+                                <h3>What is Virtual Human?</h3>
+                                <span class="plus"></span>
+                            </div>
+                            <div class="qb">
+                                <div>
+                                    <p>Virtual Human is an AI companion and interactive AI identity platform developed by <b>UnivasOS LTD</b>. It enables you to craft meaningful personal companions—such as an encouraging father figure, a nurturing mother, a devoted spouse, or a lifelong confidant—anchored in emotional warmth and persistent memory. It also enables proven leaders and creators to publish conversational AI identities representing their real-world wisdom.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="q rv" role="button" tabindex="0" aria-expanded="false">
+                            <div class="qh">
+                                <h3>Can I create personal companions like a father, mother, or spouse?</h3>
+                                <span class="plus"></span>
+                            </div>
+                            <div class="qb">
+                                <div>
+                                    <p>Yes. In the Companion Studio, you can choose any relationship you need—from a loving father or mother to an intimate partner or trusted confidant. You calibrate their emotional warmth, share personal backstories, and set communication styles so they feel genuinely supportive.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="q rv" role="button" tabindex="0" aria-expanded="false">
+                            <div class="qh">
+                                <h3>How does persistent episodic memory work?</h3>
+                                <span class="plus"></span>
+                            </div>
+                            <div class="qb">
+                                <div>
+                                    <p>Unlike generic chatbots that wipe context when a tab closes, Virtual Human retains relational episodic memory across sessions. Your companion remembers your personal milestones, family details, recurring struggles, and past decisions over months of ongoing connection.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="q rv" role="button" tabindex="0" aria-expanded="false">
+                            <div class="qh">
+                                <h3>How are proactive email check-ins personalized to my real conversations?</h3>
+                                <span class="plus"></span>
+                            </div>
+                            <div class="qb">
+                                <div>
+                                    <p>Users hate generic automated email blasts. Virtual Human companions dispatch thoughtful follow-ups tailored specifically to what you discussed—like checking in on how your apartment move went or whether you rested after a stressful workday.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="q rv" role="button" tabindex="0" aria-expanded="false">
+                            <div class="qh">
+                                <h3>How do proven leaders and experts turn their experience into AI identities?</h3>
+                                <span class="plus"></span>
+                            </div>
+                            <div class="qb">
+                                <div>
+                                    <p>Leaders, founders, and creators upload their essays, frameworks, case studies, and methodologies in the Expert Studio. Virtual Human creates a conversational AI identity that accurately represents their mental models and makes their mentorship accessible 24/7.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q6 -->
+                        <div class="q rv" role="button" tabindex="0" aria-expanded="false">
+                            <div class="qh">
+                                <h3>Are my personal companion conversations private and secure?</h3>
+                                <span class="plus"></span>
+                            </div>
+                            <div class="qb">
+                                <div>
+                                    <p>Yes, 100%. Personal companion conversations, journal entries, and memory anchors are completely private and end-to-end encrypted. They are never shared publicly or used to train external models.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q7 -->
+                        <div class="q rv" role="button" tabindex="0" aria-expanded="false">
+                            <div class="qh">
+                                <h3>How is Virtual Human different from generic chatbots like ChatGPT?</h3>
+                                <span class="plus"></span>
+                            </div>
+                            <div class="qb">
+                                <div>
+                                    <p>Ordinary AI chatbots provide generic, stateless answers scraped from broad internet data without persistent relational memory or human warmth. Virtual Human is designed around long-term human relationships, emotional presence, proactive check-ins, and verified expert frameworks.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q8 -->
+                        <div class="q rv" role="button" tabindex="0" aria-expanded="false">
+                            <div class="qh">
+                                <h3>How do I get started?</h3>
+                                <span class="plus"></span>
+                            </div>
+                            <div class="qb">
+                                <div>
+                                    <p>Getting started takes less than a minute. You can immediately visit the AI Companion studio to customize your companion, browse public identities on Discover, or create your free account.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align:center; margin-top:28px;" class="rv d2">
+                        <a class="btn" href="faq.html">View Detailed FAQ &rarr;</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- app download showcase -->
+            <section class="pad" id="download-app">
+                <div class="shell">
+                    <div class="app-download-card rv">
+                        <div class="app-download-header">
+                            <span class="app-live-status">
+                                <span class="live-pulse-dot"></span>
+                                Now Live on Android &amp; Web
+                            </span>
+                            <h2 class="app-download-title">Experience Virtual Human Anywhere.</h2>
+                            <p class="app-download-subtitle">
+                                Continuous presence right in your pocket. Seamlessly sync your personal companions, lifelike voice dialogue, and long-term memory across your Android phone and desktop browser.
+                            </p>
+                        </div>
+
+                        <!-- 3 Key Mobile Capabilities -->
+                        <div class="app-features-grid">
+                            <div class="app-feature-item">
+                                <div class="app-feat-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                                </div>
+                                <h4>Real-Time Voice Dialogue</h4>
+                                <p>Speak freely with your companion during walks, commutes, or evening wind-downs with natural conversational cadence.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <div class="app-feat-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                                </div>
+                                <h4>Proactive Daily Check-ins</h4>
+                                <p>Warm morning greetings and thoughtful evening reflections. Your companion stays aware of your context and mood.</p>
+                            </div>
+                            <div class="app-feature-item">
+                                <div class="app-feat-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                                </div>
+                                <h4>Encrypted Episodic Memory</h4>
+                                <p>Your relationship history and shared memories sync securely in real time between your Android phone and web app.</p>
+                            </div>
+                        </div>
+
+                        <!-- Call to Actions -->
+                        <div class="app-cta-group">
+                            <a href="https://play.google.com/store/apps/details?id=com.univasos.virtualhuman" target="_blank" rel="noopener" class="playstore-badge" aria-label="Get it on Google Play">
+                                <svg class="playstore-icon" viewBox="0 0 24 24" width="28" height="28" fill="none">
+                                    <path d="M3.6 2.4a1.8 1.8 0 0 0-.4 1.2v16.8a1.8 1.8 0 0 0 .4 1.2l9.8-9.6L3.6 2.4z" fill="#00b0ff"/>
+                                    <path d="M17.4 8.7L13.4 12l4 3.3 2.5-1.4c1-.6 1.6-1.6 1.6-2.8 0-1.1-.6-2.2-1.6-2.8l-2.5-1.4z" fill="#ffc400"/>
+                                    <path d="M3.6 21.6c.6.5 1.5.5 2.3.1l11.5-6.6-4-3.3-9.8 9.8z" fill="#ff3d00"/>
+                                    <path d="M17.4 8.7L5.9 2.1C5.1 1.6 4.2 1.7 3.6 2.2l9.8 9.8 4-3.3z" fill="#00e676"/>
+                                </svg>
+                                <div class="playstore-text">
+                                    <span class="playstore-sub">GET IT ON</span>
+                                    <span class="playstore-title">Google Play</span>
+                                </div>
+                            </a>
+                            <a href="https://univasvh.com" target="_blank" rel="noopener" class="webapp-badge" aria-label="Launch Web App">
+                                <div class="webapp-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                </div>
+                                <div class="webapp-text">
+                                    <span class="webapp-sub">INSTANT ACCESS</span>
+                                    <span class="webapp-title">Launch Web App</span>
+                                </div>
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" style="margin-left:4px;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </a>
+                        </div>
+
+                        <p class="app-guarantee-note">
+                            <span>Free to download &amp; use</span> &bull; <span>100% Private &amp; Confidential</span> &bull; <span>Virtual Human is a subsidiary of UnivasOS LTD</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- closing cta -->
+            <section class="pad" id="start">
+                <div class="shell">
+                    <div class="close-plate rv">
+                        <span class="eyebrow">Start Today</span>
+                        <h2>The companion you need most. The wisdom you seek.</h2>
+                        <p class="lede">Whether you need an encouraging father figure, an empathetic partner, a loyal confidant, or the strategic guidance of proven leaders—begin your journey today.</p>
+                        <div class="form">
+                            <input class="field"
+                                   id="signup-email"
+                                   type="email"
+                                   placeholder="you@domain.com"
+                                   aria-label="Your email address">
+                            <button class="btn solid" type="button" id="create">Get Started Free</button>
+                        </div>
+                        <div id="signup-feedback" style="display:none; margin-top:14px; font-size:0.92rem; color:var(--jade); font-weight:500;"></div>
+                        <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:22px;">
+                            <a class="btn solid" href="https://univasvh.com" target="_blank" rel="noopener" style="padding:10px 24px; font-size:0.92rem; display:inline-flex; align-items:center; gap:7px;">
+                                <span>Launch Web App</span>
+                                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.2" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                            <a class="dock-play-btn" href="https://play.google.com/store/apps/details?id=com.univasos.virtualhuman" target="_blank" rel="noopener" style="padding:10px 22px; font-size:0.92rem; border-radius:18px;">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" style="flex-shrink:0;">
+    <path d="M3.6 2.4a1.8 1.8 0 0 0-.4 1.2v16.8a1.8 1.8 0 0 0 .4 1.2l9.8-9.6L3.6 2.4z" fill="#00b0ff"/>
+    <path d="M17.4 8.7L13.4 12l4 3.3 2.5-1.4c1-.6 1.6-1.6 1.6-2.8 0-1.1-.6-2.2-1.6-2.8l-2.5-1.4z" fill="#ffc400"/>
+    <path d="M3.6 21.6c.6.5 1.5.5 2.3.1l11.5-6.6-4-3.3-9.8 9.8z" fill="#ff3d00"/>
+    <path d="M17.4 8.7L5.9 2.1C5.1 1.6 4.2 1.7 3.6 2.2l9.8 9.8 4-3.3z" fill="#00e676"/>
+</svg>
+                                <span>Google Play Store</span>
+                            </a>
+                        </div>
+                        <div style="margin-top:14px;">
+                            <a class="btn" href="companion.html" style="font-size:0.84rem; padding:6px 16px;">Create Your Companion</a>
+                            <a class="btn" href="experts.html" style="font-size:0.84rem; padding:6px 16px; margin-left:8px;">Become an Expert</a>
+                        </div>
+                        <p class="note" style="margin-top:16px;">Free to get started &middot; 100% private &amp; confidential &middot; Cancel anytime</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="foot">
+            <div class="shell">
+                <div class="footlinks rv" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px; padding:24px 30px; margin-bottom:18px; background:var(--plate); border-radius:28px; box-shadow:var(--clay-sm), var(--lip);">
+                    <div>
+                        <a class="brand" href="index.html" style="margin-bottom:6px;"><span class="mark" aria-hidden="true"></span>Virtual Human</a>
+                        <p style="font-size:0.88rem; color:var(--ink-2); max-width:480px; margin:6px 0 0;">An interactive AI companion and human identity platform. Virtual Human is a subsidiary of <b>UnivasOS LTD</b>.</p>
+                    </div>
+                    <div class="footlinks-nav" style="display:flex; flex-wrap:wrap; align-items:center; gap:16px;">
+                        <a href="companion.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">AI Companion</a>
+                        <a href="discover.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">Discover</a>
+                        <a href="experts.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">For Experts</a>
+                        <a href="how-it-works.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">How It Works</a>
+                        <a href="faq.html" style="font-size:0.88rem; color:var(--ink-2); text-decoration:none; font-weight:500;">FAQ</a>
+                        <a href="https://univasvh.com" target="_blank" rel="noopener" style="font-size:0.88rem; color:var(--forest, #263B35); text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:4px;">Launch App &rarr;</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.univasos.virtualhuman" target="_blank" rel="noopener" style="font-size:0.88rem; color:var(--forest, #263B35); text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:5px;">
+                            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" style="flex-shrink:0;">
+    <path d="M3.6 2.4a1.8 1.8 0 0 0-.4 1.2v16.8a1.8 1.8 0 0 0 .4 1.2l9.8-9.6L3.6 2.4z" fill="#00b0ff"/>
+    <path d="M17.4 8.7L13.4 12l4 3.3 2.5-1.4c1-.6 1.6-1.6 1.6-2.8 0-1.1-.6-2.2-1.6-2.8l-2.5-1.4z" fill="#ffc400"/>
+    <path d="M3.6 21.6c.6.5 1.5.5 2.3.1l11.5-6.6-4-3.3-9.8 9.8z" fill="#ff3d00"/>
+    <path d="M17.4 8.7L5.9 2.1C5.1 1.6 4.2 1.7 3.6 2.2l9.8 9.8 4-3.3z" fill="#00e676"/>
+</svg>
+                            <span>Google Play</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footbar">
+                    <p>&copy; 2026 Virtual Human. A subsidiary of UnivasOS LTD. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <div class="sfx" id="sfx">
+            <button class="sbtn"
+                    id="sbtn"
+                    aria-pressed="true"
+                    aria-label="Sound on"
+                    title="Sound on">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path class="cone" d="M3.5 9.4v5.2h3.4l4.6 3.8V5.6L6.9 9.4H3.5z" />
+                    <path class="w1" d="M14.6 9.3a3.7 3.7 0 0 1 0 5.4" />
+                    <path class="w2" d="M17.3 6.6a7.4 7.4 0 0 1 0 10.8" />
+                    <path class="slash" d="M4.5 19.5L19.5 4.5" />
+                </svg>
+            </button>
+            <span class="scue" id="scue">Click once to wake the sound</span>
+        </div>
+        <button class="up" id="up" aria-label="Back to top">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 19V6M6 12l6-6 6 6" />
+            </svg>
+        </button>
+        <script src="templatemo-633-celadon-script.js"></script>
+            <script>
+        // Interactive Persona Carousel for Anam / Halo-Lab 3D Gallery Hero
+        (function() {
+            const personas = [
+                {
+                    name: "Mia",
+                    role: "Devoted Partner",
+                    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85",
+                    bubble: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80",
+                    btnText: "Chat with Mia"
+                },
+                {
+                    name: "David",
+                    role: "Grounded Father Figure",
+                    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=85",
+                    bubble: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+                    btnText: "Chat with David"
+                },
+                {
+                    name: "Clara",
+                    role: "Nurturing Mother",
+                    image: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=800&q=85",
+                    bubble: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=150&q=80",
+                    btnText: "Chat with Clara"
+                },
+                {
+                    name: "Julian",
+                    role: "Lifelong Confidant",
+                    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=85",
+                    bubble: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+                    btnText: "Chat with Julian"
+                },
+                {
+                    name: "Elena",
+                    role: "SaaS Founder ($12M ARR)",
+                    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=85",
+                    bubble: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=150&q=80",
+                    btnText: "Chat with Elena"
+                }
+            ];
+
+            let currentIndex = 0;
+            const titleEl = document.getElementById("meet-persona-title");
+            const imgEl = document.getElementById("center-persona-img");
+            const btnTextEl = document.getElementById("chat-persona-text");
+            const bubbleEl = document.getElementById("bubble-avatar-img");
+            const leftImgEl = document.getElementById("left-card-img");
+            const rightImgEl = document.getElementById("right-card-img");
+            const prevBtn = document.getElementById("btn-persona-prev");
+            const nextBtn = document.getElementById("btn-persona-next");
+
+            function updatePersona(index) {
+                if (!titleEl || !imgEl) return;
+                currentIndex = (index + personas.length) % personas.length;
+                const p = personas[currentIndex];
+
+                imgEl.style.opacity = "0";
+                titleEl.style.opacity = "0";
+                titleEl.style.transform = "translateX(-50%) translateY(10px)";
+
+                setTimeout(() => {
+                    imgEl.src = p.image;
+                    titleEl.innerText = "Meet " + p.name;
+                    btnTextEl.innerText = p.btnText;
+                    if (bubbleEl) bubbleEl.src = p.bubble;
+
+                    // Update side cards to reflect adjacent personas
+                    const leftIndex = (currentIndex - 1 + personas.length) % personas.length;
+                    const rightIndex = (currentIndex + 1) % personas.length;
+                    if (leftImgEl) leftImgEl.src = personas[leftIndex].image;
+                    if (rightImgEl) rightImgEl.src = personas[rightIndex].image;
+
+                    imgEl.style.opacity = "1";
+                    titleEl.style.opacity = "1";
+                    titleEl.style.transform = "translateX(-50%) translateY(0)";
+                }, 200);
+            }
+
+            if (prevBtn) prevBtn.addEventListener("click", () => updatePersona(currentIndex - 1));
+            if (nextBtn) nextBtn.addEventListener("click", () => updatePersona(currentIndex + 1));
+
+            // Also click side cards to switch
+            const sideLeft = document.getElementById("side-card-left");
+            const sideRight = document.getElementById("side-card-right");
+            if (sideLeft) sideLeft.addEventListener("click", () => updatePersona(currentIndex - 1));
+            if (sideRight) sideRight.addEventListener("click", () => updatePersona(currentIndex + 1));
+        })();
+        </script>
+
+</body>
+</html>
